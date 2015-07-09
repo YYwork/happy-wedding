@@ -1,0 +1,27 @@
+/* 
+ *CSS Reset
+ *Author: Grayfive
+ *Time: 2014.6.4
+ *喜事网 初始化样式,基本和原网站类似,如有问题,联系制作者即可.
+ *所有ico 及 各类图片没有合成一张定位处理 (时间不够)
+ */
+
+/* 全局重置 */
+* { margin:0; padding:0; }
+body { color: #333; font:12px/1.5 'Microsoft YaHei',arial,helvetica,clean,sans-serif; }
+ul, ol, li { list-style:none; }
+table { border-collapse:collapse; border-spacing:0; table-layout:fixed; width:100%; }
+a { color:#666; }
+a, a:active, a:hover { text-decoration:none; }
+img { vertical-align:top; border:0; }
+address, caption, cite, code, dfn, em, var { font-style:normal; font-weight:normal; }
+
+/* 全局兼容 */
+.clearfix:after { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0; }
+.clearfix { zoom:1; }
+
+/* 框架样式 */
+.g-wraps { width:1000px; margin:0 auto; }
+
+.g-footer { background:#f8f8f8; }
+    .g-footer .g-wraps { padding:20px 0; }

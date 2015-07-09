@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta charset="UTF-8">
+<!--设置语言编码为uft-8-->
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!--按1:1比例执行.不允许扩大与缩小.-->
+<meta content="telephone=no" name="format-detection" />
+<!--telephone=no 不允许执行手机播放 telephone=yes 允许执行手机播放-->
+<meta content="email=no" name="format-detection" />
+<!--email=no 不允许执行邮件 email=yes 允许执行邮件-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--如果内容设置为YES，Web应用程序运行在全屏模式;否则，它不会。默认行为是使用Safari浏览器显示网页内容-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--苹果自有顶部状态栏样式:当前设置为"黑色"-->
+<link rel="stylesheet" type="text/css" href="./css/css.css">
+<link rel="stylesheet" type="text/css" href="./css/lucky-day.css">
+<title>黄道吉日</title>
+<script type="text/javascript">
+    var $STCONFIG = {
+      VERSION   : '1.0',
+      SHAREIT   : {
+        title : '分享标题',
+        con : '分享内容',
+        link : document.URL,
+        img  : "图片地址"
+      }
+    };
+
+    /*
+     * 吉日1 start
+     * FuYin
+     * Time: 2015.7.6
+     * email: fooying#qq.com
+     *
+     * 需要用到
+     */
+    if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+      var version = parseFloat(RegExp.$1);
+      if(version > 2.3){
+        var phoneScale = parseInt(window.screen.width) / 640;
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+      }else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+      }
+    }else{
+      document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+    if(navigator.userAgent.indexOf('MicroMessenger') >= 0){
+      document.addEventListener('WeixinJSBridgeReady', function() {
+        //WeixinJSBridge.call('hideToolbar');
+      });
+    }
+    /*
+     * 吉日1 end
+     */
+
+  var baseUrl = "";
+  var indexUrl = "/index/index";
+  var jiriUrl = "/laohuangli/jiri";
+  </script>
+</head>
+<body>
+<!--/*
+ * 吉日2 start
+ * FuYin
+ * Time: 2015.7.6
+ * email: fooying#qq.com
+ */-->
+<div class=" fix m-white-top ">
+  <a onclick="javascript:history.go(-1);" class="m-top-backb"></a>
+  <span class="m-top-center">黄道吉日</span>
+</div>
+<div id="lucky-data" class="m-data-mid">
+  <div class="fix m-data-top">
+    <div class="m-data-day J-data-icon">今</div>
+    <div class="f_l">
+      <span>
+        <span class="m-data-year J-data-year">2015</span>年
+      </span>
+      <strong>
+        <span class="J-data-month">7</span>月
+        <span class="J-data-day">06</span>日
+      </strong>
+      <span class="data-state-icon">宜嫁娶</span>
+    </div>
+    <span class="lucky-day-jiri-top f_r"></span>
+  </div>
+  <div class="m-data-selbox ">
+    <div class="m-data-selbag fix">
+      <div class="m-data-yearsel J-data-yearsel">
+        <div>2015</div>
+        <div class="m-data-yearabs" style="display: none;">
+          <ul>
+          <li class="z-on">2015</li><li>2016</li><li>2017</li>          </ul>
+        </div>
+      </div>
+      <div class="m-data-selline"></div>
+      <div class="m-data-monthsel J-data-monthsel">
+        <div>7月</div>
+        <div class="m-data-monthabs" style="display: none;">
+          <ul class="fix">
+          <li>1月</li><li>2月</li><li>3月</li><li>4月</li><li>5月</li><li>6月</li><li class="z-on">7月</li><li>8月</li><li>9月</li><li>10月</li><li>11月</li><li>12月</li>          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="m-data-box J-date-box">
+    <div class="m-data-boxcon">
+      <div class="fix m-data-thead">
+        <span>日</span>
+        <span>一</span>
+        <span>二</span>
+        <span>三</span>
+        <span>四</span>
+        <span>五</span>
+        <span>六</span>
+      </div>
+      <div class="fix m-data-tbody J-data-tbody">
+      <span class="noclick">1</span><span class="z-on  noclick">2</span><span class="z-on  noclick">3</span><span class="noclick">4</span><span class="z-on  noclick">5</span><span class="today">6</span><span class="z-on ">7</span><span class="z-on ">8</span><span class="z-on ">9</span><span class="z-on ">10</span><span>11</span><span class="z-on ">12</span><span>13</span><span>14</span><span class="z-on ">15</span><span class="z-on ">16</span><span class="z-on ">17</span><span class="z-on ">18</span><span class="z-on ">19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span class="z-on ">28</span><span>29</span><span class="z-on ">30</span><span>31</span>      </div>
+    </div>
+  </div>
+  <div class="m-data-btnbox">
+    <a href="javascript:;" class="J-date-selbtn" >查询该日婚宴场地情况</a>
+  </div>
+</div>
+<div class="jr-data-main">
+  <img src="./images/lucky-content.png">
+</div>
+<script type="text/javascript" src="./js/zepto.js"></script>
+<script type="text/javascript" src="./js/touch.js"></script>
+<script type="text/javascript" src="./js/happly20150710.js"></script>
+
+
+</body>
+
+</html>

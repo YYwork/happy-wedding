@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>一站式婚礼酒店</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./css/modular.css">
+<link rel="stylesheet" type="text/css" href="./css/hotel.css">
+<script src="./js/jquery.min.js"></script>
+<!-- js -->
+<script type="text/javascript">
+/*
+ * hotel 弹层 js
+ * Author: FuYin
+ * Time: 2015.7.1
+ * email: fooying@qq.com
+ */
+$(function() {
+
+  // 点击 x 隐藏
+  $('body').delegate('span.xx', 'click', function(){
+    var action = $(this).data('action');
+    console.log(action);
+    switch(action) {
+      case 'hotel-x':
+        $('.hotel-pop-cover, .hotel-pop').hide();
+      break;
+      case 'order-input-x':
+        $('.hotel-pop-order-cover, .order-input').hide();
+      break;
+      case 'order-result-x':
+        $('.hotel-pop-order-cover, .order-result').hide();
+      break;
+    }
+  });
+  // 点击 button 显示 弹层
+  $('.hotel-button').click(function() {
+    $('.hotel-pop-cover, .hotel-pop').show();
+  });
+  //继续看看
+  $('body').delegate('.continue-look', 'click', function() {
+      $('.hotel-pop-cover, .hotel-pop').hide();
+  });
+  //马上预约
+  $('body').delegate('.order-soon', 'click', function(){
+    $('.hotel-pop-order-cover, .order-input').show();
+  });
+  // 预约确定
+  $('body').delegate('.order-yes', 'click', function() {
+    var phoneNumber = $('#phone-number').val();
+    if(!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(phoneNumber))){
+        $('#input-alert').show();
+        $('#phone-number').focus();
+        return false;
+    } else {
+      $('.order-input').hide();
+      $('.order-result').show();
+    }
+  });
+});
+</script>
+</head>
+<body>
+<!-- hotel 头部 start
+/*
+ * hotel 弹层 html
+ * Author: FuYin
+ * Time: 2015.7.1
+ * email: fooying@qq.com
+ */
+ -->
+            <div class="hotel-ad">
+                <article class="hotel-ad-content">
+                    <h3>一站式婚礼酒店<span class="midcourt-line">——</span>婚宴+婚庆，省心，省力，更省钱</h3>
+                    <ul>
+                        <li>喜事网优选百家婚礼酒店</li>
+                        <li>婚宴婚庆18项服务一价全包</li>
+                        <li>最高立省20%还送酒水畅饮，家电大礼包</li>
+                        <li>免费陪同专车接送看店选店</li>
+                        <li>筹婚全程服务监理，服务过程全透明</li>
+                    </ul>
+                    <button class="hotel-button hotel-ad-btn xs1-hotel-ad-btn">
+                        查看详情
+                    </button>
+                </article>
+            </div>
+<!-- hotel 头部 start -->
+
+<!-- hotel 弹层 start
+/*
+ * hotel 弹层 html
+ * Author: FuYin
+ * Time: 2015.7.1
+ * email: fooying@qq.com
+ */
+ -->
+
+<div class="hotel-pop-cover"></div>
+
+<div class="hotel-pop">
+  <div class="hotel-pop-x">
+    <span class="hotel-x xs1-xs1-x xx" data-action="hotel-x"></span>
+  </div>
+  <div class="hotel-pop-content">
+    <div class="hotel-top">
+      <img src="./images/hotel_top.png">
+    </div>
+    <article class="hotel-introduce">
+
+      <div class="hotel-introduce-group">
+        <div class="hotel-introduce-title">
+          <span class="title-span xs1-xs1-btn">
+            一站式婚礼酒店时什么
+          </span>
+          <span class="title-span-icon xs1-xs1-circle">
+            <span class="title-span-icon xs1-xs1-que">
+              &nbsp;
+            </span>
+          </span>
+        </div>
+        <p class="hotel-introduce-text">
+          喜事网独享，婚宴+婚庆打包套餐。18项服务一价全包，全网最优！
+        </p>
+      </div>
+
+
+      <div class="hotel-introduce-group">
+        <div class="hotel-introduce-title">
+          <span class="title-span xs1-xs1-btn">
+            18项服务包含什么
+          </span>
+          <span class="title-span-icon xs1-xs1-circle">
+            <span class="title-span-icon xs1-xs1-hand">
+              &nbsp;
+            </span>
+          </span>
+        </div>
+        <p class="hotel-introduce-text">
+          婚礼管家一对一婚宴场地精准推荐<br/>
+
+          婚礼场地花艺设计 <span class="backslash">/</span> 细节配花装饰 <span class="backslash">/</span> 人体花配饰（20余项）<br/>
+
+          婚礼灯光师（暗场套餐）<span class="backslash">/</span> 婚礼化妆造型<br/>
+
+          婚礼场地迎宾区装饰设计、道具 <span class="backslash">/</span> 婚礼场地仪式区装饰设计、道具<br/>
+
+          签单专享大礼包 <span class="backslash">/</span> 再送喜宴酒水畅饮<br/>
+
+          婚礼管家陪同考察婚宴场地，选店攻略，看店总结，专业解读<br/>
+
+          婚礼仪式区装饰设计、道具 <span class="backslash">/</span> 婚礼现场灯光设计（暗场套餐）<br/>
+
+          婚礼主持人 <span class="backslash">/</span> 婚礼摄影<span class="backslash">/</span> 婚礼摄像 <span class="backslash">/</span> 婚礼现场统筹督<br/>
+
+          喜事网360度全程筹备指导、流程品控、服务保障，过程全透明<br/>
+        </p>
+      </div>
+
+      <div class="hotel-introduce-group">
+        <div class="hotel-introduce-title">
+          <span class="title-span xs1-xs1-btn">
+            零风险有保障
+          </span>
+          <span class="title-span-icon xs1-xs1-circle">
+            <span class="title-span-icon xs1-xs1-shield">
+              &nbsp;
+            </span>
+          </span>
+        </div>
+        <div class="hotel-introduce-text">
+          <ul>
+            <li>只有我们保护个人信息，杜绝被各类商家骚扰</li>
+
+            <li>一价全包，婚礼无忧，签单后无陷阱式二销。</li>
+
+            <li>每家婚礼酒店均由2家以上甄选的婚庆服务商提供产品，避免被婚庆</li>
+
+            <li>公司绑定的高价风险。</li>
+
+            <li>质量保障，先行赔付</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hotel-introduce-group">
+        <div class="hotel-introduce-title">
+          <span class="title-span xs1-xs1-btn">
+            免费送
+          </span>
+          <span class="title-span-icon xs1-xs1-circle">
+            <span class="title-span-icon xs1-xs1-dolar">
+              &nbsp;
+            </span>
+          </span>
+        </div>
+        <p class="hotel-introduce-text text-align-center">
+          婚宴软饮、啤酒无限畅饮 / 新婚小家电组合套装 / 婚庆礼包
+        </p>
+      </div>
+
+      <div class="hotel-introduce-group">
+        <div class="hotel-introduce-title">
+          <span class="title-span xs1-xs1-btn">
+            个性化升级包
+          </span>
+          <span class="title-span-icon xs1-xs1-circle">
+            <span class="title-span-icon xs1-xs1-up">
+              &nbsp;
+            </span>
+          </span>
+        </div>
+        <p class="hotel-introduce-text text-align-center">
+          婚宴菜品升级包 / 灯光设计升级包 / 户外场地设计升级包<br/>
+
+          婚礼场地装饰升级包 / 婚礼服务团队升级包
+        </p>
+      </div>
+
+    </article>
+    <div class="btn-group">
+      <div>
+        <button class="hotel-button continue-look" data-action="continue-look">继续看看</button>
+        <button class="hotel-button order-soon" data-action="order-soon">马上预约</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hotel-pop-order-cover"></div>
+<div class="hotel-pop-order order-input">
+  <div class="hotel-order-x">
+    <span class="order-x xs1-xs1-x xx" data-action="order-input-x"></span>
+  </div>
+  <div class="order-content">
+    <div class="order-content-text">
+      留下手机号，婚礼管家将与您进一步沟通！
+    </div>
+    <div>
+      <input type="text" id="phone-number" placeholder="请输入你的电话号码"/>
+    </div>
+    <!-- 隐藏 class input-alert-hide -->
+    <div class="input-alert input-alert-hide" id="input-alert">
+      输入的电话号码有误
+    </div>
+  </div>
+  <div class="order-btn">
+    <button class="order-yes" data-action="order-input-yes">确定</button>
+  </div>
+</div>
+
+<div class="hotel-pop-order order-result">
+  <div class="hotel-order-x">
+    <span class="order-x xs1-xs1-x xx" data-action="order-result-x"></span>
+  </div>
+  <div class="order-content">
+    <div class="order-title">
+      恭喜您预约成功！
+    </div>
+    <div class="order-contact">
+      请您保持手机通畅，我们将尽快与您取得联系！
+    </div>
+    <div class="order-contact">
+      如有疑问，免费咨询1010-1314
+    </div>
+  </div>
+</div>
+<!-- hotel 弹层 end -->
+
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+// @import "common.scss";
+// @import "modular.scss";
+
+@import "compass/css3";
+
+@import "compass/utilities/sprites";
+
+
+/*
+ * hotel 弹层 hotel.css
+ * Author: FuYin
+ * Time: 2015.7.1
+ * email: fooying@qq.com
+ */
+
+$xs1-sprite-dimensions: true;
+$xs1-layout: smart;
+
+@import "xs1/*.png";
+
+@include all-xs1-sprites();
+
+.xs1-sprite {
+  margin-top: 10px;
+}
+.xs1-xs1-hand {
+  margin-top: 20px;
+}
+.hotel-x {
+  display: inline-block;
+}
+
+
+$color: #ff6299;
+$backslash-color: #434343;
+
+.hotel-pop-cover {
+  position: fixed;
+  background-color: #4c4c4c;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 9990;
+  @include opacity(0.7);
+}
+.hotel-pop-order-cover {
+  position: fixed;
+  background-color: #4c4c4c;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 9995;
+  @include opacity(0.7);
+}
+.hotel-pop {
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -275px 0 0 -350px;
+  width: 800px;
+  display: none;
+  z-index: 9993;
+  @include border-radius(5px);
+}
+.hotel-pop-content {
+  margin: 0px 50px;
+  width: 680px;
+  height: 550px;
+  overflow-y: scroll;
+  padding: 0px 10px;
+}
+.hotel-introduce-group {
+  border-bottom: 1px dashed #d8d8d8;
+}
+.hotel-pop-x {
+  margin: 0px 50px;
+  width: 700px;
+  text-align: right;
+}
+.hotel-top img {
+  width: 100%;
+}
+.title-span {
+  display: inline-block;
+  line-height: 65px;
+  vertical-align: top;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+}
+.title-span-icon {
+  display: inline-block;
+  vertical-align: top;
+}
+.hotel-introduce-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hotel-introduce-text {
+  color: $color;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  ul {
+    color: $color;
+    //list-style: disc;
+    li {
+      //list-style: disc;
+      //margin-left: 20px;
+      color: $color;
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+}
+.backslash {
+  color: $backslash-color;
+}
+.text-align-center {
+  text-align: center;
+}
+.btn-group {
+  height: 180px;
+  text-align: center;
+  .hotel-button {
+    border: 0;
+    @include border-radius(10px);
+    padding: 10px 50px;
+    background-color: #f88230;
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 60px;
+    outline: none;
+  }
+  .hotel-button:hover {
+    background-color: #FDA567;
+  }
+  .hotel-button:nth-child(2) {
+    margin-left: 80px;
+  }
+}
+
+.hotel-pop-order {
+  width: 490px;
+  height: 290px;
+  @include border-radius(10px);
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -145px 0 0 -245px;
+  z-index: 9997;
+  display: none;
+  .hotel-order-x {
+    text-align: right;
+  }
+  .order-x {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .order-content {
+    padding: 20px 75px 30px;
+    input {
+      width: 310px;
+      height: 40px;
+      line-height: 38px;
+      font-size: 16px;
+      background-color: #f0f0f1;
+      border: 1px solid #f0f0f0;
+      border-radius: 0px;
+      padding-left: 7px;
+    }
+  }
+  .input-alert {
+    font-size: 16px;
+    margin-top: 10px;
+    color: red;
+  }
+  .input-alert-hide {
+    display: none;
+  }
+  .order-content-text {
+    color: #868586;
+    font-size: 17px;
+    height: 40px;
+  }
+  .order-btn {
+    text-align: center;
+  }
+  .order-yes {
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    font-size: 16px;
+    background-color: #ff6299;
+    color: #fff;
+    line-height: 38px;
+    outline: none;
+    @include border-radius(5px);
+  }
+  .order-yes:hover {
+    background-color: #FC73A3;
+  }
+}
+
+.order-result {
+  text-align: center;
+  .order-title {
+    font-size: 24px;
+    color: #ff4d6b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .order-contact {
+    margin-top: 10px;
+    color: #666;
+  }
+}
+
+.hotel-ad {
+  position: relative;
+  width: 100%;
+  min-width: 1000px;
+  height: 285px;
+  background-image: url(../images/hotel-ad.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #8ef7fe;
+  img {
+    width: 1400px;
+    overflow-x: hidden;
+  }
+  .hotel-ad-content {
+    position: absolute;
+    height: 100%;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+    top: 0px;
+    color: #fff;
+    padding-top: 50px;
+    text-align: center;
+    h3 {
+      font-size: 18px;
+      margin-top: -7px;
+      margin-bottom: 7px;
+    }
+    ul {
+      text-align: left;
+      list-style: disc;
+    }
+    li {
+      list-style: disc;
+      margin-left: 30px;
+      font-size: 14px;
+      line-height: 32px;
+    }
+    .hotel-ad-btn {
+      display: inline-block;
+      border: 0;
+      @include border-radius(5px);
+      color: #fff;
+      font-size: 14px;
+      padding-left: 25px;
+      margin-top: 4px;
+    }
+  }
+}
+.midcourt-line {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.hotel-button {
+  font-family: "Microsoft YaHei";
+}

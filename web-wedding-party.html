@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>喜事网 - 一站式婚庆</title>
+    <link type="image/x-icon" rel="shortcut icon" href="http://2.img.m10cdn.com/favicon.ico">
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="http://yizhanshi.xishiwang.com/Public/frontend/css/modular.css">
+
+    <script language="javascript" type="text/javascript" src="./DatePicker/WdatePicker.js"></script>
+    <link rel="stylesheet" href="./css/lucky-web.css">
+    <link rel="stylesheet" href="./css/wedding-party.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="g-header">
+        <div class="wedding-party-nav">
+            <div class="g-wraps">
+                <div class="mn-city-link logo">
+                    <a href=""><span class="zhaolu-logo"></span></a>
+                </div>
+                <div class="mn-tools">
+                    <a href="">返回首页</a> | <span>一站式婚礼酒店</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lucky-pop-cover" style="display: none;"></div>
+    <div class="wedding-pop-order lucky-pop-order" style="display: none;">
+        <div class="zhaolu-pop-x">
+            <span class="order-x xx" data-action="order-result-x"></span>
+        </div>
+        <div class="lucky-pop-order-content">
+            <div class="lucky-pop-content">
+                <span class="zhaolu-pop-chirld"></span>
+                <div class="wedding-pop">
+                    <p>
+                        您希望能容纳 <span class="pop-desk">30桌 以上的</span> 婚宴场地
+                    </p>
+                    <p>
+                        共有<span class="pop-place-number">140</span>家婚宴场地符合您的要求。
+                    </p>
+                    <div class="pop-label">
+                        提交成功后，看店即送大礼包！有钱就是这么任性！
+                    </div>
+                    <div class="pop-input-group">
+                        <input type="text" id="phone-number" placeholder="请输入手机号码" />
+                        <span class="wrong-number-label">请输入正确的手机号！</span>
+                        <span class="zhaolu-pop-right"></span>
+                    </div>
+                    <button class="wedding-pop-yes">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wedding-pop-result lucky-pop-order" style="display:none;">
+        <div class="zhaolu-pop-x">
+            <span class="order-x xx" data-action="order-result-x"></span>
+        </div>
+        <div class="lucky-pop-order-content">
+            <div class="lucky-pop-content">
+                <span class="zhaolu-pop-face"></span>
+                <div class="wedding-pop">
+                    <div class="order-title">
+                        恭喜您预约成功！
+                    </div>
+                    <div class="order-zhuanche">
+                        免费专车将接送看酒店,并提供超值大礼包！
+                    </div>
+                    <p class="order-contact">
+                        请您保持手机通畅，我们将尽快与您取得联系！
+                    </p>
+                    <p class="order-contact">
+                        如有疑问，免费咨询1010-1314
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wedding-party">
+        <div class="wedding-party-content">
+            <div class="party-content-left">
+                <div class="zhaolu-percent"></div>
+                <div class="wedding-reserve">
+                    <div class="wedding-reserve-label">好日子酒店档期很紧张，抓紧时间预定哦！</div>
+                    <div class="wedding-reserve-number">
+                        已有
+                        <span class="number-tag">1</span>
+                        <span class="number-tag">2</span>
+                        <span class="number-tag">4</span>
+                        <span class="number-tag">3</span>
+                        <span class="number-tag">5</span>对新人在喜事网完成婚宴预订
+                    </div>
+                </div>
+            </div>
+            <div class="party-content-right">
+                <div class="party-content-text1">提交婚宴需求</div>
+                <div class="party-content-text2">两步轻松找酒店</div>
+                <div class="zhaolu-flower"></div>
+                <div class="select">
+                    <div class="select-div">
+                        <span>婚礼举办地：</span>
+                        <span class="select-value" value=""></span>
+                        <span class="zhaolu-down"></span>
+                    </div>
+                    <ul class="select-ul">
+                        <li value="01">北京</li>
+                        <li value="02">天津</li>
+                        <li value="03">上海</li>
+                        <li value="04">武汉</li>
+                        <li value="05">长沙</li>
+                        <li value="06">厦门</li>
+                        <li value="07">海口</li>
+                        <li value="08">海南</li>
+                        <li value="09">无锡</li>
+                        <li value="10">广州</li>
+                    </ul>
+                </div>
+                <div class="select">
+                    <div class="select-div">
+                        <span>行政区：</span>
+                        <span class="select-value"></span>
+                        <span class="zhaolu-down"></span>
+                    </div>
+                    <ul class="select-ul" style="display: none;">
+                        <li>不限</li>
+                        <li>朝阳</li>
+                        <li>海淀</li>
+                        <li>大兴</li>
+                    </ul>
+                </div>
+                <div class="select">
+                    <div class="select-div">
+                        <span>婚宴餐桌数：</span>
+                        <span class="select-value"></span>
+                        <span class="zhaolu-down"></span>
+                    </div>
+                    <ul class="select-ul" style="display: none;">
+                        <li value="">不限</li>
+                        <li value="10">10桌以下</li>
+                        <li value="15">11－15桌</li>
+                        <li value="20">16-20桌</li>
+                        <li value="30">21-30桌</li>
+                        <li value="30">31-40桌</li>
+                        <li value="30">40桌以上</li>
+                    </ul>
+                </div>
+                <div class="weding-date">
+                    <input class="Wdate" type="text" onClick="WdatePicker()" value="我的婚期：">
+                    <span class="not-true">还未确定</span>
+                    <span class="zhaolu-right"></span>
+                </div>
+                <div>
+                    <button class="wedding-searching">马上查询</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wedding-party-explain">
+        <div class="party-explain-block">
+            <div class="zhaolu-diamond"></div>
+            <div class="party-explain-title">优选</div>
+            <div class="party-explain-text">优选百家婚礼酒店</div>
+        </div>
+        <div class="party-explain-block peb">
+            <div class="zhaolu-diamond"></div>
+            <div class="party-explain-title">优惠</div>
+            <div class="party-explain-text">18 项服务全包送酒水畅饮</div>
+        </div>
+        <div class="party-explain-block peb">
+            <div class="zhaolu-diamond"></div>
+            <div class="party-explain-title">免费专车</div>
+            <div class="party-explain-text">免费陪同专车选店</div>
+        </div>
+        <div class="party-explain-block peb">
+            <div class="zhaolu-diamond"></div>
+            <div class="party-explain-title">监理</div>
+            <div class="party-explain-text">筹婚全程服务监理</div>
+        </div>
+    </div>
+    <div class="bottom-line">
+        <span class="zhaolu-line"></span>
+    </div>
+    <div class="wedding-party-footer">
+        <p>
+            <div class="copyright-company">© 2011-2015 <span class="c-company">北京纳吉喜事科技有限公司</span> 版权所有</div>
+            <div class="copyright-number">京ICP证120374号 <span class="c-number">京公网安备110105007138</span> 京ICP备 11042486号</div>
+        </p>
+    </div>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript">
+    var isIE = function() {
+        return navigator.appName.indexOf("Microsoft Internet Explorer") != -1 && document.all;
+    }
+    var checkInput = function() {
+        var phoneNumber = $('#phone-number').val();
+        if (!(/^1[3|4|5|8][0-9]\d{8}$/.test(phoneNumber))) {
+            $('.zhaolu-pop-right').css({
+                'visibility': 'hidden'
+            });
+            $('.wrong-number-label').css({
+                'visibility': 'visible'
+            });
+            $('#phone-number').focus();
+            return false;
+        } else {
+            $('.wrong-number-label').css({
+                'visibility': 'hidden'
+            });
+            $('.zhaolu-pop-right').css({
+                'visibility': 'visible'
+            });
+            return true;
+        }
+    }
+    $(function() {
+        $('body').delegate('.zhaolu-pop-x', 'click', function() {
+            $('.lucky-pop-cover, .lucky-pop-order').hide();
+        });
+        $('.select-div').click(function() {
+            $that = $(this);
+            $next = $that.next();
+            $('.select ul').hide();
+            $next.show();
+            $next.find('li').click(function() {
+                $that.find('.select-value').html($(this).html());
+                $next.hide();
+            });
+        });
+        $('.not-true').click(function() {
+            $('.Wdate').val('我的婚期:');
+        });
+
+        // 查询提交
+        $('.wedding-searching').click(function() {
+            $('.wedding-pop-order, .lucky-pop-cover').show();
+        });
+        // phone number 提交
+        $('body').delegate('.wedding-pop-yes', 'click', function() {
+            if (checkInput()) {
+                // ajax 操作
+                $('.wedding-pop-order').hide();
+                $('.wedding-pop-result, .lucky-pop-cover').show();
+            }
+        });
+        //输入实时监测
+        if (isIE()) {
+            $('#phone-number').bind('propertychange', function() {
+                checkInput();
+            });
+        } else {
+            $('#phone-number').bind('input', function() {
+                checkInput();
+            });
+        }
+    })
+    </script>
+</body>
+
+</html>

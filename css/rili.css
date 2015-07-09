@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/*全局清除浮动样式*/
+.fix {
+  display: inline-block;
+}
+
+.fix {
+  display: block;
+}
+
+.fix:after {
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+/*全局浮动*/
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+/*全局显示隐藏*/
+.ndis {
+  display: none;
+}
+
+.m-data-mid {
+  width: 250px;
+}
+
+.m-data-mid {
+  border-top: 1px #c8c8c8 solid;
+}
+
+.m-data-top {
+  padding-right: 23px;
+  font-size: 36px;
+  line-height: 82px;
+  color: #565a5c;
+}
+
+.m-data-do {
+  float: right;
+  color: #ff4d6a;
+}
+
+.m-data-year {
+  color: #a0a0a0;
+  font-family: Tahoma, sans-serif;
+}
+
+.m-data-day {
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  overflow: hidden;
+  border: 1px #a5a5a4 solid;
+  border-radius: 17px;
+  float: left;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: center;
+  margin: 23px 0 0 8px;
+}
+
+.m-data-selbox {
+  height: 40px;
+  background: #e2dfd7;
+  padding: 1px;
+}
+
+.m-data-selline {
+  float: left;
+  margin-top: 14px;
+  height: 58px;
+  width: 1px;
+  overflow: hidden;
+  background: #a0a0a0;
+}
+
+.m-data-yearsel,
+.m-data-monthsel {
+  float: left;
+  height: 18px;
+  width: 98px;
+  position: relative;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.m-d-mouth, .m-d-year {
+  background: url(../images/lucky-day-down.png) 81px 1px no-repeat;
+  background-color: #FFC599;
+}
+
+.m-data-left-arrow {
+  float: left;
+}
+
+.m-data-right-arrow {
+  float: right;
+}
+
+.m-data-selbag {
+  background: #fff;
+  height: 100%;
+}
+
+.m-data-yearabs {
+  position: absolute;
+  top: 90px;
+  width: 564px;
+  background: #e2dfd7;
+  left: -1px;
+  padding: 1px;
+  z-index: 10;
+  display: none;
+}
+
+.m-data-yearabs ul {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.m-data-monthabs {
+  position: absolute;
+  padding: 1px;
+  top: 90px;
+  width: 586px;
+  left: -294px;
+  background: #e2dfd7;
+  display: none;
+}
+
+.m-data-monthabs ul {
+  background: #fff;
+  padding: 30px 5px;
+}
+
+.m-data-monthabs ul li {
+  float: left;
+  font-size: 40px;
+  width: 88px;
+  margin: 23px 50px 19px;
+  border-bottom: 4px #fff solid;
+  line-height: 56px;
+  text-align: center;
+}
+
+.m-data-monthabs .z-on {
+  border-color: #ff4d6a;
+}
+
+.m-data-yearsel li {
+  padding: 0 0 1px 77px;
+  line-height: 122px;
+  border-bottom: 1px #bfbfbf solid;
+  color: #c9c9c9;
+}
+
+.m-data-yearsel li:nth-last-child(1) {
+  border: none;
+}
+
+.m-data-yearsel .z-on {
+  color: #7d7d7d;
+}
+
+.m-data-box {
+  background: #e2dfd7;
+  padding: 1px;
+}
+
+.m-data-boxcon {
+  background: #fff;
+}
+
+.m-data-thead {
+  line-height: 25px;
+  font-size: 14px;
+  color: #000;
+  padding: 0px 7px;
+}
+
+.m-data-thead span {
+  float: left;
+  width: 20px;
+  margin: 0 6px;
+  text-align: center;
+}
+
+.m-data-thead span:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.m-data-tbody {
+  margin-top: -5px;
+  padding-left: 5px;
+  width: 250px;
+}
+
+.m-data-tbody span {
+  float: left;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 25px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  color: #a0a0a0;
+  margin: 2px 2px 0;
+  border: 2px #fff solid;
+  border-radius: 30px;
+}
+
+.m-data-tbody span:nth-child(7n) {
+  margin-left: 0;
+}
+
+.m-data-tbody .z-on {
+  border-color: #ff4d6a;
+}
+
+.m-data-tbody .today {
+  border-color: #ff4d6a;
+  background: #ff4d6a;
+  color: #fff;
+}
+
+.m-data-btnbox {
+  padding: 22px 26px 46px 0;
+  height: 86px;
+}
+
+.m-data-btnbox a,
+.m-dateal-btnbox a {
+  display: block;
+  height: 100%;
+  line-height: 86px;
+  text-align: center;
+  font-size: 30px;
+  background: rgba(255, 77, 106, 0.9);
+  color: #fff;
+}
+
+.m-date-alert {
+  position: absolute;
+  z-index: 20;
+  padding: 1px;
+  width: 585px;
+  left: 27px;
+  top: 207px;
+  background: #e2dfd7;
+}
+
+.m-data-yearsel .noclick,
+.m-data-monthsel .noclick,
+.m-data-tbody .noclick {
+  color: #999;
+}
+
+.m-data-tbody .today {
+  color: #fff;
+}
+
+.m-data-animate {
+  -webkit-animation: bag 1s ease-in-out;
+}
+
+@-webkit-keyframes bag {
+  0% {
+    background: #e2dfd7;
+  }
+  25% {
+    background: #f60a0a;
+  }
+  50% {
+    background: #e2dfd7;
+  }
+  75% {
+    background: #f60a0a;
+  }
+  100% {
+    background: #e2dfd7;
+  }
+}
+@-webkit-keyframes border {
+  0% {
+    border: 1px #e7e4e5 solid;
+  }
+  25% {
+    border: 1px #f60a0a solid;
+  }
+  50% {
+    border: 1px #e7e4e5 solid;
+  }
+  75% {
+    border: 1px #f60a0a solid;
+  }
+  100% {
+    border: 1px #e7e4e5 solid;
+  }
+}

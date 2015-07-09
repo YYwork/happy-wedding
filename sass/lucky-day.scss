@@ -1,0 +1,303 @@
+@import "compass/utilities/sprites";
+@import "compass/css3";
+
+body {
+  color: #333;
+}
+.lucky-wrap {
+    .m-hotel-list li {
+        padding-bottom:1px;
+        border-bottom:1px solid #ccc;
+        margin-bottom:35px;
+    }
+    .mhl-pic {
+        position:relative;
+    }
+    .mhl-pic img {
+        width:100%;
+    }
+    .mhlp-bot {
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        padding:6px 0px 6px 10px;
+        background:rgba(0, 0, 0, 0.65);
+    }
+    .mhlp-bot a {
+        margin-left:14px;
+        float:left;
+        position:relative;
+        color:#fb7f1c;
+        line-height:49px;
+        font-size:28px;
+    }
+    .mhlp-bot a em {
+        position:absolute;
+        left:-8px;
+        top:4px;
+        line-height:16px;
+        font-size:10px;
+        font-weight:bold;
+    }
+    .mhlp-bot strong {
+        float:left;
+        font-size:10px;
+        line-height:16px;
+        margin:8px 0 0 2px;
+        color:#fb7f1c;
+    }
+    .mhlp-bot span {
+        float:left;
+        font-size:10px;
+        line-height:16px;
+        margin:8px 0 0 10px;
+        color:#fff;
+    }
+    .mhlp-bot span.through {
+        text-decoration:line-through;
+    }
+    @media screen and (min-width:330px) {
+        .mhlp-bot a {
+            font-size: 35px;
+        }
+        .mhlp-bot a em {
+            left: -15px;
+            top: 10px;
+            font-size: 20px;
+        }
+        .mhlp-bot strong {
+            font-size: 24px;
+            margin: 16px 0 0 4px;
+            color: #fb7f1c;
+        }
+        .mhlp-bot span {
+            color: #fff;
+            font-size: 20px;
+            margin:16px 20px 20px 10px;
+        }
+        .mhlp-bot .through {
+            margin-left: 30px;
+        }
+    }
+    .mhlp-no {
+        position:absolute;
+        right:10px;
+        top:10px;
+        color:#fff;
+        line-height:22px;
+        height:22px;
+        display:inline-block;
+        border-radius:8px;
+        background:rgba(0,0,0,0.35);
+        padding:0 4px;
+        font-size:14px;
+    }
+    .mhlp-layer {
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.35);
+    }
+    .mhlp-layer-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin-top: -50px;
+        text-align: center;
+    }
+    .mhlp-layer a {
+        display: inline-block;
+        line-height: 28px;
+        border: 2px solid #fff;
+        padding: 30px 30px;
+        font-size: 28px;
+        color: #fff;
+    }
+    .mhl-info {
+        padding:14px 10px;
+    }
+    .mhl-info h4 {
+        margin-bottom: 4px;
+    }
+    .mhl-info h4 a {
+        display: inline-block;
+        padding: 10px 10px 5px;
+        font-size: 26.5px;
+        margin-bottom: 2px;
+        color: #333;
+    }
+    .mhli-add span {
+        display: inline-block;
+        padding: 5px 10px 10px;
+        font-size: 24px;
+        color: #999;
+    }
+    .mhli-add span.point {
+        padding: 0 4px;
+    }
+    .mhli-add span.distance {
+        float:right;
+    }
+}
+.lucky-day {
+    background-color: #fbf8ef;
+    padding-top: 27px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+.lucky-day-content {
+    background-color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 65px;
+    border: 1px solid #e2dfd7;
+}
+.lucky-day-jiri-flower {
+    vertical-align: top;
+}
+.lucky-day-analysis {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    .analysis {
+       color: #7d7d7d;
+       font-size: 28px;
+       line-height: 46px;
+    }
+}
+.lucky-day-ymd {
+    color: #ff4d6a;
+    font-size: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.contact-explain {
+    text-align: center;
+    color: #7d7d7d;
+    font-size: 28px;
+    line-height: 46px;
+}
+.lucky-phone-group {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.lucky-phone-number {
+    padding: 20px 15px;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: 2px solid #c9c9c9;
+    font-size: 25px;
+    line-height: 30px;
+    @include border-radius(8px);
+}
+.lucky-button {
+    width: 100%;
+    padding: 20px 15px;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: #ff4d6a;
+    color: #fff;
+    @include border-radius(8px);
+}
+.g-warp-title {
+    height: 88px;
+    background-color: #ff4d6a;
+    color: #fff;
+    font-size: 22px;
+    line-height: 88px;
+    text-align: center;
+}
+.hotel-total-number {
+    padding: 0px 5px;
+}
+.m-white-top {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+
+$lucky-day-sprite-dimensions: true;
+// 设置精灵的布局
+// $<map>-layout: vertical / horizontal / diagonal / smart;
+$lucky-day-layout: smart;
+// @import "<map>/*.png";
+@import "lucky-day/*.png";
+// @include all-<map>-sprites; // 会为整个精灵地图撰写所有必要的css
+@include all-lucky-day-sprites();
+
+.lucky-day-sprite {
+    display: inline-block;
+}
+.lucky-day-jiri-arrow {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.m-data-day {
+    width: 31px;
+    height: 31px;
+}
+.jr-data-main img {
+    width: 100%;
+}
+#lucky-data {
+    background-color: #fbf8ef;
+}
+#lucky-data .m-data-top {
+    font-family: '黑体';
+    vertical-align: bottom;
+    .J-data-icon {
+        width: 29px;
+        height: 29px;
+        margin-left: 0px;
+        margin-top: 25px;
+        margin-right: 10px;
+        color: #a0a0a0;
+    }
+    span, strong {
+        color: #a0a0a0;
+        font-size: 28px;
+    }
+    .data-state-icon {
+        vertical-align: top;
+        display: inline;
+        color: #fff;
+        font-size: 18px;
+        background-color: #ff4d6a;
+        padding: 6px 10px;
+        @include border-radius(4px);
+    }
+    .lucky-day-jiri-top {
+        margin-top: -12px;
+    }
+}
+.lucky-no-more {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #999;
+    font-family: 'Microsoft YaHei';
+}
+.look-for-more {
+    border: 0;
+    background-color: #ff4d6a;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    @include border-radius(4px);
+}

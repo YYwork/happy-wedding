@@ -1,0 +1,512 @@
+.lucky-sprite, .lucky-arrow-line, .lucky-btn-circle, .lucky-btn-circle2, .lucky-btn, .lucky-circle, .lucky-circle2, .lucky-down, .lucky-face, .lucky-ji, .lucky-left, .lucky-line, .lucky-logo, .lucky-pop-x, .lucky-right, .lucky-yi {
+  background-image: url('../images/lucky-s3d4024e9b3.png');
+  background-repeat: no-repeat;
+}
+
+.lucky-arrow-line {
+  background-position: 0 -71px;
+  height: 116px;
+  width: 1000px;
+}
+
+.lucky-btn-circle {
+  background-position: -424px 0;
+  height: 29px;
+  width: 96px;
+}
+
+.lucky-btn-circle2 {
+  background-position: -520px 0;
+  height: 29px;
+  width: 96px;
+}
+
+.lucky-btn {
+  background-position: -276px 0;
+  height: 17px;
+  width: 82px;
+}
+
+.lucky-circle {
+  background-position: -400px 0;
+  height: 24px;
+  width: 24px;
+}
+
+.lucky-circle2 {
+  background-position: -376px 0;
+  height: 24px;
+  width: 24px;
+}
+
+.lucky-down {
+  background-position: -358px 0;
+  height: 17px;
+  width: 18px;
+}
+
+.lucky-face {
+  background-position: -831px 0;
+  height: 71px;
+  width: 75px;
+}
+
+.lucky-ji {
+  background-position: -749px 0;
+  height: 41px;
+  width: 41px;
+}
+
+.lucky-left {
+  background-position: -254px 0;
+  height: 10px;
+  width: 6px;
+}
+
+.lucky-line {
+  background-position: 0 0;
+  height: 1px;
+  width: 248px;
+}
+
+.lucky-logo {
+  background-position: -616px 0;
+  height: 38px;
+  width: 133px;
+}
+
+.lucky-pop-x {
+  background-position: -260px 0;
+  height: 16px;
+  width: 16px;
+}
+
+.lucky-right {
+  background-position: -248px 0;
+  height: 10px;
+  width: 6px;
+}
+
+.lucky-yi {
+  background-position: -790px 0;
+  height: 41px;
+  width: 41px;
+}
+
+.lucky-sprite, .lucky-arrow-line, .lucky-btn-circle, .lucky-btn-circle2, .lucky-btn, .lucky-circle, .lucky-circle2, .lucky-down, .lucky-face, .lucky-ji, .lucky-left, .lucky-line, .lucky-logo, .lucky-pop-x, .lucky-right, .lucky-yi {
+  display: inline-block;
+}
+
+.lucky-arrow-line {
+  margin: 0px auto;
+}
+
+.lucky-face {
+  vertical-align: middle;
+}
+
+.lucky-day-product, .calendar-line {
+  width: 100%;
+  text-align: center;
+}
+
+.calendar-line {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+.calendars {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #faebdf;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  padding: 25px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.calendar-content {
+  vertical-align: top;
+  display: inline-block;
+  width: 540px;
+  height: 235px;
+  background-color: #fff;
+  border: 1px solid #d0c3b9;
+  padding: 20px 25px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.calendar {
+  vertical-align: top;
+  display: inline-block;
+  width: 265px;
+  height: 200px;
+  word-wrap: normal;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.calendar-explain {
+  vertical-align: top;
+  display: inline-block;
+  width: 215px;
+  height: 200px;
+  border-left: 1px solid #ddd;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.calendar-explain {
+  font-family: 'Simhei';
+  color: #8b3b30;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.c-explain-title {
+  font-size: 40px;
+}
+
+.c-explain-nong {
+  font-size: 14px;
+}
+
+.c-e-blocks {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.calendar-explain-block {
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+}
+
+.calendar-explain-tag {
+  text-align: left;
+  padding: 2px 5px;
+}
+
+.calendar-form {
+  vertical-align: top;
+  display: inline-block;
+  width: 380px;
+  height: 235px;
+  margin-left: 25px;
+  background-color: #fff;
+  border: 1px solid #d0c3b9;
+  color: #8b3b30;
+  padding: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.calendar-form div {
+  padding-top: 2px;
+}
+
+.c-form-title {
+  font-size: 28px;
+}
+
+.c-form-label {
+  font-size: 14px;
+}
+
+.c-form-tag {
+  color: red;
+  text-align: center;
+  padding-left: 8px;
+  line-height: 28px;
+  margin-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.c-form-tag input {
+  width: 96px;
+  height: 29px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  margin-left: -34px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.c-tag-checkbox {
+  position: absolute;
+  display: inline-block;
+  background-color: #F46177;
+  margin-left: -58px;
+  margin-top: 10px;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c-form-tag input[type=checkbox]:checked + .c-tag-checkbox {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+.c-tag-red {
+  color: #ff0000;
+}
+
+.float-left {
+  vertical-align: top;
+  display: inline-block;
+  float: left;
+}
+
+.float-right {
+  vertical-align: top;
+  display: inline-block;
+  float: right;
+}
+
+.float-div {
+  overflow: hidden;
+}
+
+.lucky-phone-label {
+  font-size: 14px;
+}
+
+.lucky-wrong-number {
+  display: none;
+  color: #f4526a;
+  font-size: 12px;
+}
+
+.lucky-phone-number {
+  width: 100%;
+  height: 33px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #F46177;
+  outline: none;
+  padding: 0 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.lucky-phone-button {
+  background-color: #F46177;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.c-married-day {
+  margin-top: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  border: 1px solid #d0c3b9;
+  width: 300px;
+  height: 106px;
+  padding: 10px 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.c-married-day-center {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.c-m-title {
+  font-size: 18px;
+  color: #707070;
+}
+
+.c-married-year {
+  color: #f4526a;
+}
+
+.c-m-month span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 30px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 9px;
+  font-size: 12px;
+  color: #a4a9ae;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+.c-m-month span:hover {
+  color: #f67588;
+  border-bottom: 1px solid #f67588;
+}
+
+.lucky-pop-cover {
+  position: fixed;
+  background-color: #4c4c4c;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 9990;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+.lucky-pop-order {
+  width: 700px;
+  height: 250px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -350px;
+  z-index: 9997;
+}
+
+.lucky-pop-order-content {
+  color: #ff4d6b;
+  text-align: center;
+}
+
+.lucky-pop-text {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 70px;
+}
+
+.lucky-pop-x {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.lucky-pop-content {
+  margin-top: 50px;
+}
+
+.lucky-pop-yes {
+  margin-top: 30px;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #F46177;
+  border: 0;
+  color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wedding-party-nav, .lucky-nav {
+  height: 45px;
+  border-bottom: 1px solid #b9b7b9;
+}
+.wedding-party-nav .logo, .lucky-nav .logo {
+  padding: 3px;
+}
+.wedding-party-nav .mn-tools, .lucky-nav .mn-tools {
+  color: #ff4d6a;
+  font-size: 18px;
+  padding-top: 9px;
+}
+.wedding-party-nav .mn-tools a, .lucky-nav .mn-tools a {
+  color: #ff4d6a;
+  margin-right: 5px;
+}
+.wedding-party-nav .mn-tools span, .lucky-nav .mn-tools span {
+  margin-left: 10px;
+}
+.wedding-party-nav .mn-tel, .lucky-nav .mn-tel {
+  float: right;
+  line-height: 14px;
+  margin-top: 15px;
+  margin-left: 12px;
+}
+
+.wedding-party-nav {
+  border-bottom: 0px;
+}
+
+.lucky-footer {
+  background-color: #fbcea4;
+  height: 60px;
+  text-align: center;
+  font-size: 14px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wedding-party-footer {
+  height: 60px;
+  text-align: center;
+  font-size: 14px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.copyright-company {
+  padding: 10px 10px 1px;
+}
+
+.c-company {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.c-number {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta charset="UTF-8">
+<!--设置语言编码为uft-8-->
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!--按1:1比例执行.不允许扩大与缩小.-->
+<meta content="telephone=no" name="format-detection" />
+<!--telephone=no 不允许执行手机播放 telephone=yes 允许执行手机播放-->
+<meta content="email=no" name="format-detection" />
+<!--email=no 不允许执行邮件 email=yes 允许执行邮件-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--如果内容设置为YES，Web应用程序运行在全屏模式;否则，它不会。默认行为是使用Safari浏览器显示网页内容-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--苹果自有顶部状态栏样式:当前设置为"黑色"-->
+<link rel="stylesheet" type="text/css" href="./css/css.css">
+<link rel="stylesheet" type="text/css" href="./css/sem-landing.css">
+<title></title>
+<script type="text/javascript">
+  if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+    var version = parseFloat(RegExp.$1);
+    if(version > 2.3){
+      var phoneScale = parseInt(window.screen.width) / 640;
+      document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+    }else{
+      document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+  }else{
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+  }
+  if(navigator.userAgent.indexOf('MicroMessenger') >= 0){
+    document.addEventListener('WeixinJSBridgeReady', function() {
+      //WeixinJSBridge.call('hideToolbar');
+    });
+  }
+</script>
+</head>
+<body>
+<div class="sem-landing">
+  <div class="sem-top">
+    <div class="sem-top-label">提交婚宴需求</div>
+    <div class="sem-top-label"><span class="sem-top-label-span">2步</span>轻松找酒店</div>
+    <span class="sem-white-logo"></span>
+  </div>
+  <div class="sem-form">
+      <div class="sem-select">
+          <div class="sem-select-div">
+              <span class="sem-select-value" value="">北京</span>
+              <span class="sem-sem-down sem-down-position"></span>
+          </div>
+          <ul class="sem-select-ul">
+              <li value="01">北京</li>
+              <li value="02">天津</li>
+              <li value="03">上海</li>
+              <li value="04">武汉</li>
+              <li value="05">长沙</li>
+              <li value="06">厦门</li>
+              <li value="07">海口</li>
+              <li value="08">海南</li>
+              <li value="09">无锡</li>
+              <li value="10">广州</li>
+          </ul>
+      </div>
+      <div class="sem-desk">
+        <div class="sem-title">
+          每桌预算
+        </div>
+        <div class="sem-desk-tab">
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-budget" value="不限"/>不限
+          </span>
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-budget" value="2000以下"/>2000以下
+          </span>
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-budget" value="2001-3000"/>2001-3000
+          </span>
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-budget" value="3001-4000"/>3001-4000
+          </span>
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-budget" value="4000以上"/>4000以上
+          </span>
+        </div>
+      </div>
+      <div class="sem-desk">
+        <div class="sem-title">
+          婚宴桌数
+        </div>
+        <div class="sem-desk-tab">
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-number" value="不限"/>不限
+          </span>
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-number" value="2000以下"/>10桌以下
+          </span>
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-number" value="2001-3000"/>11-20桌
+          </span>
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-number" value="3001-4000"/>21-30桌
+          </span>
+          <span class="sem-span-radio">
+            <input type="radio" name="desk-number" value="4000以上"/>31桌以上
+          </span>
+        </div>
+      </div>
+      <div>
+        <button class="sem-submit">提交</button>
+      </div>
+  </div>
+</div>
+<script type="text/javascript" src="./js/zepto.js"></script>
+<script type="text/javascript">
+// $('body').click(function() {
+//     $('.sem-select ul').hide();
+// });
+$('.sem-select-div').click(function() {
+    $that = $(this);
+    $next = $that.next();
+    $('.sem-select ul').hide();
+    $next.show();
+    $next.find('li').click(function() {
+        $that.find('.sem-select-value').html($(this).html());
+        $next.hide();
+    });
+});
+
+$('.sem-span-radio input').click(function() {
+  $('input[name=desk-number], input[name=desk-budget]').parent().removeClass('sem-span-radio-change');
+  $('input[name=desk-number]:checked, input[name=desk-budget]:checked').parent().addClass('sem-span-radio-change');
+})
+</script>
+</body>
+
+</html>

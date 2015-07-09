@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--设置语言编码为uft-8-->
+<meta content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!--按1:1比例执行.不允许扩大与缩小.-->
+<meta content="telephone=no" name="format-detection" />
+<!--telephone=no 不允许执行手机播放 telephone=yes 允许执行手机播放-->
+<meta content="email=no" name="format-detection" />
+<!--email=no 不允许执行邮件 email=yes 允许执行邮件-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--如果内容设置为YES，Web应用程序运行在全屏模式;否则，它不会。默认行为是使用Safari浏览器显示网页内容-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--苹果自有顶部状态栏样式:当前设置为"黑色"-->
+<link rel="stylesheet" type="text/css" href="./css/css.css">
+<link rel="stylesheet" type="text/css" href="./css/lucky-day.css">
+<title>结婚黄道吉日</title>
+<script type="text/javascript">
+    /*
+     * 吉日1 start
+     * FuYin
+     * Time: 2015.7.6
+     * email: fooying#qq.com
+     */
+    if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+      var version = parseFloat(RegExp.$1);
+      if(version > 2.3){
+        var phoneScale = parseInt(window.screen.width) / 640;
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+      }else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+      }
+    }else{
+      document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+    if(navigator.userAgent.indexOf('MicroMessenger') >= 0){
+      document.addEventListener('WeixinJSBridgeReady', function() {
+        //WeixinJSBridge.call('hideToolbar');
+      });
+    }
+    /*
+     * 吉日1 end
+     */
+    $(window).scroll(function(){
+        // 当滚动到最底部以上100像素时， 加载新内容—
+        if (!is_ajax_loading) {
+            if ($(document).height() - $(this).scrollTop() - $(this).height()<100) loadMore();
+        }
+    });
+  </script>
+</head>
+<body>
+<!--/*
+ * 吉日2 start
+ * FuYin
+ * Time: 2015.7.6
+ * email: fooying#qq.com
+ */-->
+<div class=" fix m-white-top ">
+  <a onclick="javascript:history.go(-1);" class="m-top-backb"></a>
+  <span class="m-top-center">黄道吉日</span>
+</div>
+<div class="lucky-day">
+    <div class="lucky-day-content">
+        <span class="lucky-day-jiri-flower"></span>
+        <div class="lucky-day-analysis">
+            <div class="lucky-day-ymd">2015年5月17号</div>
+            <div class="analysis">宜：嫁娶，破屋，出行</div>
+            <div class="analysis">忌：诸事不宜</div>
+        </div>
+        <div class="lucky-day-jiri-arrow"></div>
+        <div class="contact-explain">
+           因场地档期实时变化，请留下联系方式<br/>
+                婚礼管家帮您查询档期情况
+        </div>
+        <div class="lucky-phone-group">
+            <input type="text" class="lucky-phone-number" placeholder="请输入手机号码" />
+            <button class="lucky-button">确定</button>
+        </div>
+    </div>
+</div>
+<div class="lucky-wrap">
+    <div class="g-warp-title">
+    当天有档期的一站式(婚宴+婚庆)婚礼酒店还有<span class="hotel-total-number">24</span> 家!
+    </div>
+    <div class="m-hotel-list">
+        <ul>
+            <li>
+                <div class="mhl-pic">
+                    <img src="images/images-1.fw.png" />
+                    <div class="mhlp-bot">
+                        <a href="javascript:;"><em>￥</em>58,000</a>
+                        <strong>起</strong>
+                        <span class="through">原价 ￥61,900</span>
+                        <span>已节省 ￥5,000</span>
+                        <span>已预约20人</span>
+                    </div>
+                    <div class="mhlp-layer">
+                        <div class="mhlp-layer-box">
+                             <a href="javascript:;">召唤婚礼管家,详细了解该酒店</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mhl-info">
+                    <h4><a href="javascript:;">Hotel MoMc北京蔓兰酒店</a></h4>
+                    <div class="mhli-add">
+                        <span>四星级酒店</span>
+                        <span class="point">•</span>
+                        <span>东城区</span>
+                        <span class="point">•</span>
+                        <span>东直门商圈</span>
+                        <span class="distance"><1km</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="mhl-pic">
+                    <img src="images/images-1.fw.png" />
+                    <div class="mhlp-bot">
+                        <a href="javascript:;"><em>￥</em>58,000</a>
+                        <strong>起</strong>
+                        <span class="through">原价 ￥61,900</span>
+                        <span>已节省 ￥5,000</span>
+                        <span>已预约20人</span>
+                    </div>
+                </div>
+                <div class="mhl-info">
+                    <h4><a href="javascript:;">Hotel MoMc北京蔓兰酒店</a></h4>
+                    <div class="mhli-add">
+                        <span>四星级酒店</span>
+                        <span class="point">•</span>
+                        <span>东城区</span>
+                        <span class="point">•</span>
+                        <span>东直门商圈</span>
+                        <span class="distance"><1km</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="lucky-no-more">
+        没有更多了哦! <button class="look-for-more">查看其他酒店</button>
+    </div>
+
+</div>
+<script type="text/javascript" src="./js/zepto.js"></script>
+<script type="text/javascript" src="./js/touch.js"></script>
+<script type="text/javascript" src="./js/happly20150710.js"></script>
+
+
+</body>
+
+</html>
+</body>
+</html>

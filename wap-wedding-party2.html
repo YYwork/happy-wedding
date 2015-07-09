@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta charset="UTF-8">
+<!--设置语言编码为uft-8-->
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!--按1:1比例执行.不允许扩大与缩小.-->
+<meta content="telephone=no" name="format-detection" />
+<!--telephone=no 不允许执行手机播放 telephone=yes 允许执行手机播放-->
+<meta content="email=no" name="format-detection" />
+<!--email=no 不允许执行邮件 email=yes 允许执行邮件-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--如果内容设置为YES，Web应用程序运行在全屏模式;否则，它不会。默认行为是使用Safari浏览器显示网页内容-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--苹果自有顶部状态栏样式:当前设置为"黑色"-->
+<link rel="stylesheet" type="text/css" href="./css/css.css">
+<link rel="stylesheet" type="text/css" href="./css/sem-landing.css">
+<title></title>
+<script type="text/javascript">
+  if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+    var version = parseFloat(RegExp.$1);
+    if(version > 2.3){
+      var phoneScale = parseInt(window.screen.width) / 640;
+      document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+    }else{
+      document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+  }else{
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+  }
+  if(navigator.userAgent.indexOf('MicroMessenger') >= 0){
+    document.addEventListener('WeixinJSBridgeReady', function() {
+      //WeixinJSBridge.call('hideToolbar');
+    });
+  }
+</script>
+</head>
+<body>
+<div class="sem-landing-bg">
+    <div class="sem-sem-arrow2"></div>
+    <div class="sem-face-tag">
+      <span class="sem-sem-x"></span>
+      <div class="sem-place-number">
+        符合您的婚宴场地，有 <span>188</span> 家
+      </div>
+      <div>
+        <input id="phone-number" class="sem-phone-number" type="text" placeholder="请输入手机号码" />
+      </div>
+      <div>
+        <button  class="sem-search-button button-disabled" disabled="true">
+          查询酒店
+        </button>
+      </div>
+      <div class="sem-explain">
+        <span class="sem-explain-title">您将获得：</span>
+        <div>
+        · 免费专车接送看店<br/>
+        · 筹婚全程服务监理<br/>
+        · 精美看店大礼包<br/>
+        </div>
+      </div>
+    </div>
+    <span class="sem-white-logo sem-white-logo2"></span>
+</div>
+<script type="text/javascript" src="./js/zepto.js"></script>
+<script type="text/javascript">
+
+
+  var checkInput = function() {
+      var phoneNumber = $('#phone-number').val();
+      if (!(/^1[3|4|5|8][0-9]\d{8}$/.test(phoneNumber))) {
+          $('.sem-search-button').addClass('button-disabled').attr('disabled', 'true');
+          $('#phone-number').focus();
+          return false;
+      } else {
+          $('.sem-search-button').removeClass('button-disabled').attr('disabled', 'false');
+          return true;
+      }
+  }
+  $(function() {
+    $('#phone-number').bind('input', function() {
+        checkInput();
+    });
+  });
+</script>
+</body>
+
+</html>
