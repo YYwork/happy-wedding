@@ -10,14 +10,14 @@
 
 待交付(600 完成)task4(7月10号): SEM移动端页面数量2个 wap-wedding-party.html wap-wedding-party2.html
 
-  文件:
-    html
-      ＊wap-wedding-party.html
-      ＊wap-wedding-party2.html
-    css
-      css.css
-      ＊sem-landing.css
-    images
-      ＊sem-**.png
+    文件:
+      html
+        ＊wap-wedding-party.html
+        ＊wap-wedding-party2.html
+      css
+        css.css
+        ＊sem-landing.css
+      images
+        ＊sem-**.png`
 
 待完成(500 待完成)task5: 黄道吉日PC版一个 web-lukcy.html
