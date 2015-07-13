@@ -1,6 +1,7 @@
 @import "compass/utilities/sprites";
 @import "compass/css3";
 
+@import "rili.scss";
 
 $lucky-sprite-dimensions:true;
 // $<map>-layout: vertical / horizontal / diagonal / smart;
@@ -13,13 +14,21 @@ $lucky-layout:smart;
 
 
 .lucky-sprite {
-    display: inline-block;
+  display: inline-block;
 }
 .lucky-arrow-line {
   margin: 0px auto;
 }
 .lucky-face {
   vertical-align: middle;
+}
+
+.m-data-tbody .z-on {
+  @include lucky-sprite(circle2);
+}
+.m-data-tbody .today {
+  color: #fff;
+  @include lucky-sprite(circle);
 }
 
 .lucky-day-product, .calendar-line {
@@ -58,20 +67,21 @@ $lucky-layout:smart;
   height: 200px;
   word-wrap: normal;
   @include box-sizing(border-box);
+  margin-left: -15px;
+  margin-top: -15px;
 }
 .calendar-explain {
   vertical-align: top;
   display: inline-block;
   width: 215px;
   height: 200px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #fddee3;
   @include box-sizing(border-box);
-}
-.calendar-explain {
   font-family: 'Simhei';
   color: #8b3b30;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 15px;
+  margin-left: 9px;
 }
 .c-explain-title {
   font-size: 40px;
@@ -130,6 +140,7 @@ $lucky-layout:smart;
     margin-left: -34px;
     @include box-sizing(border-box);
     @include opacity(0);
+    z-index: 100;
   }
 }
 .c-tag-checkbox {
@@ -223,6 +234,10 @@ $lucky-layout:smart;
   cursor: pointer;
 }
 .c-m-month span:hover {
+  color: #f67588;
+  border-bottom: 1px solid #f67588;
+}
+.c-m-month span.active {
   color: #f67588;
   border-bottom: 1px solid #f67588;
 }

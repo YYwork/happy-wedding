@@ -1,4 +1,336 @@
-.lucky-sprite, .lucky-arrow-line, .lucky-btn-circle, .lucky-btn-circle2, .lucky-btn, .lucky-circle, .lucky-circle2, .lucky-down, .lucky-face, .lucky-ji, .lucky-left, .lucky-line, .lucky-logo, .lucky-pop-x, .lucky-right, .lucky-yi {
+@charset "UTF-8";
+/*全局清除浮动样式*/
+.fix {
+  display: inline-block;
+}
+
+.fix {
+  display: block;
+}
+
+.fix:after {
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+/*全局浮动*/
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+/*全局显示隐藏*/
+.ndis {
+  display: none;
+}
+
+.m-data-mid {
+  width: 250px;
+}
+
+.m-data-mid {
+  border-top: 1px #c8c8c8 solid;
+}
+
+.m-data-top {
+  padding-right: 23px;
+  font-size: 36px;
+  line-height: 82px;
+  color: #565a5c;
+}
+
+.m-data-do {
+  float: right;
+  color: #ff4d6a;
+}
+
+.m-data-year {
+  color: #a0a0a0;
+  font-family: Tahoma, sans-serif;
+}
+
+.m-data-day {
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  overflow: hidden;
+  border: 1px #a5a5a4 solid;
+  border-radius: 17px;
+  float: left;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: center;
+  margin: 23px 0 0 8px;
+}
+
+.m-data-selbox {
+  border-bottom: 1px solid #ddd;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.md-data-year-selbox {
+  border-bottom: 1px solid #ddd;
+}
+
+.m-data-selline {
+  float: left;
+  margin-top: 14px;
+  height: 58px;
+  width: 1px;
+  overflow: hidden;
+  background: #a0a0a0;
+}
+
+.m-data-yearsel,
+.m-data-monthsel {
+  float: left;
+  height: 18px;
+  width: 98px;
+  position: relative;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.m-d-mouth, .m-d-year {
+  background: url(../images/lucky-day-down.png) 81px 1px no-repeat;
+  background-color: #FFC599;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+}
+
+.m-data-monthsel {
+  margin-left: 20px;
+}
+
+.m-data-left-arrow {
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.m-data-right-arrow {
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.m-data-left-arrow:hover, .m-data-right-arrow:hover {
+  color: #a0a0a0;
+}
+
+.m-data-selbag {
+  background: #fff;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.m-data-yearabs {
+  position: absolute;
+  width: 98px;
+  background: #6a3906;
+  z-index: 10;
+  display: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.m-data-yearabs ul {
+  background: #fff;
+}
+
+.m-data-monthabs {
+  position: absolute;
+  width: 98px;
+  background: #6a3906;
+  display: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.m-data-monthabs ul {
+  background: #fff;
+}
+
+.m-data-monthabs ul li {
+  text-align: center;
+  line-height: 16px;
+  color: #6a3906;
+}
+
+.m-data-monthabs ul li:nth-last-child(1) {
+  border: none;
+}
+
+.m-data-monthabs .z-on {
+  color: #fff;
+  background-color: #fda868;
+}
+
+.m-data-yearsel li {
+  text-align: center;
+  line-height: 16px;
+  color: #6a3906;
+}
+
+.m-data-yearsel li:nth-last-child(1) {
+  border: none;
+}
+
+.m-data-yearsel .z-on {
+  color: #fff;
+  background-color: #fda868;
+}
+
+.m-data-box {
+  background: #e2dfd7;
+}
+
+.m-data-boxcon {
+  background: #fff;
+}
+
+.m-data-thead {
+  line-height: 25px;
+  font-size: 14px;
+  color: #000;
+  padding: 0px 15px;
+}
+
+.m-data-thead span {
+  float: left;
+  width: 21px;
+  margin: 0 6px;
+  text-align: center;
+}
+
+.m-data-thead span:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.m-data-tbody {
+  margin-top: -5px;
+  padding-left: 10px;
+  width: 250px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.m-data-tbody span {
+  float: left;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 24px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  color: #a0a0a0;
+  margin: -2px 3px 0;
+  border: 2px #fff solid;
+  border-radius: 30px;
+}
+
+.m-data-tbody span:nth-child(7n) {
+  margin-left: 0;
+}
+
+.m-data-tbody .today {
+  color: #fff;
+}
+
+.m-data-btnbox {
+  padding: 22px 26px 46px 0;
+  height: 86px;
+}
+
+.m-data-btnbox a,
+.m-dateal-btnbox a {
+  display: block;
+  height: 100%;
+  line-height: 86px;
+  text-align: center;
+  font-size: 30px;
+  background: rgba(255, 77, 106, 0.9);
+  color: #fff;
+}
+
+.m-date-alert {
+  position: absolute;
+  z-index: 20;
+  padding: 1px;
+  width: 585px;
+  left: 27px;
+  top: 207px;
+  background: #e2dfd7;
+}
+
+.m-data-yearsel .noclick,
+.m-data-monthsel .noclick,
+.m-data-tbody .noclick {
+  color: #999;
+}
+
+.m-data-tbody .today {
+  color: #fff;
+}
+
+.m-data-animate {
+  -webkit-animation: bag 1s ease-in-out;
+}
+
+@-webkit-keyframes bag {
+  0% {
+    background: #e2dfd7;
+  }
+  25% {
+    background: #f60a0a;
+  }
+  50% {
+    background: #e2dfd7;
+  }
+  75% {
+    background: #f60a0a;
+  }
+  100% {
+    background: #e2dfd7;
+  }
+}
+@-webkit-keyframes border {
+  0% {
+    border: 1px #e7e4e5 solid;
+  }
+  25% {
+    border: 1px #f60a0a solid;
+  }
+  50% {
+    border: 1px #e7e4e5 solid;
+  }
+  75% {
+    border: 1px #f60a0a solid;
+  }
+  100% {
+    border: 1px #e7e4e5 solid;
+  }
+}
+.lucky-sprite, .lucky-arrow-line, .lucky-btn-circle, .lucky-btn-circle2, .lucky-btn, .lucky-circle, .lucky-circle2, .lucky-down, .lucky-face, .lucky-ji, .lucky-left, .lucky-line, .lucky-logo, .lucky-pop-x, .lucky-right, .lucky-yi, .m-data-tbody .z-on, .m-data-tbody .today {
   background-image: url('../images/lucky-s3d4024e9b3.png');
   background-repeat: no-repeat;
 }
@@ -93,7 +425,7 @@
   width: 41px;
 }
 
-.lucky-sprite, .lucky-arrow-line, .lucky-btn-circle, .lucky-btn-circle2, .lucky-btn, .lucky-circle, .lucky-circle2, .lucky-down, .lucky-face, .lucky-ji, .lucky-left, .lucky-line, .lucky-logo, .lucky-pop-x, .lucky-right, .lucky-yi {
+.lucky-sprite, .lucky-arrow-line, .lucky-btn-circle, .lucky-btn-circle2, .lucky-btn, .lucky-circle, .lucky-circle2, .lucky-down, .lucky-face, .lucky-ji, .lucky-left, .lucky-line, .lucky-logo, .lucky-pop-x, .lucky-right, .lucky-yi, .m-data-tbody .z-on, .m-data-tbody .today {
   display: inline-block;
 }
 
@@ -103,6 +435,19 @@
 
 .lucky-face {
   vertical-align: middle;
+}
+
+.m-data-tbody .z-on {
+  background-position: -376px 0;
+  height: 24px;
+  width: 24px;
+}
+
+.m-data-tbody .today {
+  color: #fff;
+  background-position: -400px 0;
+  height: 24px;
+  width: 24px;
 }
 
 .lucky-day-product, .calendar-line {
@@ -150,6 +495,8 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin-left: -15px;
+  margin-top: -15px;
 }
 
 .calendar-explain {
@@ -157,17 +504,15 @@
   display: inline-block;
   width: 215px;
   height: 200px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #fddee3;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.calendar-explain {
   font-family: 'Simhei';
   color: #8b3b30;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 15px;
+  margin-left: 9px;
 }
 
 .c-explain-title {
@@ -243,6 +588,7 @@
   box-sizing: border-box;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
+  z-index: 100;
 }
 
 .c-tag-checkbox {
@@ -371,6 +717,11 @@
 }
 
 .c-m-month span:hover {
+  color: #f67588;
+  border-bottom: 1px solid #f67588;
+}
+
+.c-m-month span.active {
   color: #f67588;
   border-bottom: 1px solid #f67588;
 }

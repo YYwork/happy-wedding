@@ -688,7 +688,9 @@ function pinfo(){
 function data(){
   if ($(".J-data-yearsel").length>0){
     $("body").height(Math.max($(window).height(),$("body").height()));
-    var yBox=$(".J-data-yearsel"),
+    var dayUp=$(".m-data-right-arrow"),
+        dayDown=$(".m-data-left-arrow"),
+        yBox=$(".J-data-yearsel"),
         mBox=$(".J-data-monthsel"),
         oYear=$(".J-data-year"),
         oMonth=$(".J-data-month"),
@@ -711,6 +713,30 @@ function data(){
         }
       }
     })
+    dayUp.on("click",function(){
+      month=parseInt($(".m-d-mouth").text()) + 1;
+       console.log(month);
+      if (month == 13) {
+        //year = parseInt($('.m-d-year').text()) + 1;
+        month = 1;
+        //yBox.children().eq(0).text(year+"年").next().hide();
+      }
+      day=$(".today").text();
+      datepublic(year,month,day);
+      mBox.children().eq(0).text(month+"月").next().hide();
+    });
+    dayDown.on("click",function(){
+      month=parseInt($(".m-d-mouth").text()) - 1;
+       console.log(month);
+      if (month == 0) {
+        //year = parseInt($('.m-d-year').text()) - 1;
+        month = 12;
+        //yBox.children().eq(0).text(year+"年").next().hide();
+      }
+      day=$(".today").text();
+      datepublic(year,month,day);
+      mBox.children().eq(0).text(month+"月").next().hide();
+    });
     yBox.on("click",function(){
       $(this).children().eq(1).show();
     }).on("click","li",function(){

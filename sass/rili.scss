@@ -1,5 +1,5 @@
 /*全局清除浮动样式*/
-
+@import "compass/css3";
 .fix,
 {
     display: inline-block;
@@ -71,11 +71,14 @@
 }
 
 .m-data-selbox {
-    height: 40px;
-    background: #e2dfd7;
-    padding: 1px;
+    border-bottom: 1px solid #ddd;
+    @include box-sizing(border-box);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
-
+.md-data-year-selbox {
+    border-bottom: 1px solid #ddd;
+}
 .m-data-selline {
     float: left;
     margin-top: 14px;
@@ -97,68 +100,80 @@
 .m-d-mouth, .m-d-year {
     background: url(../images/lucky-day-down.png) 81px 1px no-repeat;
     background-color: #FFC599;
+    @include border-radius(2px);
+    text-align: center;
+    color: #fff;
+}
+.m-data-monthsel {
+    margin-left: 20px;
 }
 .m-data-left-arrow {
     float: left;
+    margin-right: 10px;
+    cursor: pointer;
 }
 .m-data-right-arrow {
     float: right;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.m-data-left-arrow, .m-data-right-arrow {
+    &:hover {
+        color: #a0a0a0;
+    }
 }
 .m-data-selbag {
     background: #fff;
     height: 100%;
+    padding-top: 10px;
 }
 
 .m-data-yearabs {
     position: absolute;
-    top: 90px;
-    width: 564px;
-    background: #e2dfd7;
-    left: -1px;
-    padding: 1px;
+    width: 98px;
+    background: #6a3906;;
     z-index: 10;
     display: none;
+    @include box-sizing(border-box);
+    padding: 1px;
 }
 
 .m-data-yearabs ul {
     background: #fff;
-    padding: 0 10px;
 }
 
 .m-data-monthabs {
     position: absolute;
-    padding: 1px;
-    top: 90px;
-    width: 586px;
-    left: -294px;
-    background: #e2dfd7;
+    width: 98px;
+    background: #6a3906;
     display: none;
+    @include box-sizing(border-box);
+    padding: 1px;
 }
 
 .m-data-monthabs ul {
     background: #fff;
-    padding: 30px 5px;
 }
 
 .m-data-monthabs ul li {
-    float: left;
-    font-size: 40px;
-    width: 88px;
-    margin: 23px 50px 19px;
-    border-bottom: 4px #fff solid;
-    line-height: 56px;
     text-align: center;
+    line-height: 16px;
+    color: #6a3906;;
+}
+
+.m-data-monthabs ul li:nth-last-child(1) {
+    border: none;
 }
 
 .m-data-monthabs .z-on {
-    border-color: #ff4d6a;
+    color: #fff;
+    background-color: #fda868;
 }
 
 .m-data-yearsel li {
-    padding: 0 0 1px 77px;
-    line-height: 122px;
-    border-bottom: 1px #bfbfbf solid;
-    color: #c9c9c9;
+    text-align: center;
+    line-height: 16px;
+    color: #6a3906;
 }
 
 .m-data-yearsel li:nth-last-child(1) {
@@ -166,12 +181,12 @@
 }
 
 .m-data-yearsel .z-on {
-    color: #7d7d7d;
+    color: #fff;
+    background-color: #fda868;
 }
 
 .m-data-box {
     background: #e2dfd7;
-    padding: 1px;
 }
 
 .m-data-boxcon {
@@ -182,12 +197,12 @@
     line-height: 25px;
     font-size: 14px;
     color: #000;
-    padding: 0px 7px;
+    padding: 0px 15px;
 }
 
 .m-data-thead span {
     float: left;
-    width: 20px;
+    width: 21px;
     margin: 0 6px;
     text-align: center;
 }
@@ -198,21 +213,22 @@
 
 .m-data-tbody {
     margin-top: -5px;
-    padding-left: 5px;
+    padding-left: 10px;
     width: 250px;
+    @include box-sizing(border-box);
 }
 
 .m-data-tbody span {
     float: left;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     overflow: hidden;
     text-align: center;
-    line-height: 25px;
+    line-height: 24px;
     font-family: 'Tahoma', sans-serif;
     font-size: 12px;
     color: #a0a0a0;
-    margin: 2px 2px 0;
+    margin: -2px 3px 0;
     border: 2px #fff solid;
     border-radius: 30px;
 }
@@ -222,12 +238,12 @@
 }
 
 .m-data-tbody .z-on {
-    border-color: #ff4d6a;
+    //border-color: #ff4d6a;
 }
 
 .m-data-tbody .today {
-    border-color: #ff4d6a;
-    background: #ff4d6a;
+    //border-color: #ff4d6a;
+    //background: #ff4d6a;
     color: #fff;
 }
 
