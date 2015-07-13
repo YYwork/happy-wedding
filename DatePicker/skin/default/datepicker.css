@@ -245,3 +245,68 @@
 	margin-top:2px;
 	margin-right:1px;
 }
+
+
+/*日历样式修改*/
+.WdateDiv #dpQS {
+  display: none;
+}
+.WdateDiv #dpControl {
+  display: none;
+}
+.WdateDiv .yminput, .WdateDiv #dpTitle {
+  background-color: #f9f9f9;
+}
+.WdateDiv .WdayTable {
+  border: #fff 1px solid;
+}
+.WdateDiv .MTitle {
+  background-color: #f7f7f7;
+}
+.WdateDiv .WotherDay {
+  color: #ddd;
+}
+.WdateDiv .Wwday {
+  cursor: pointer;
+  color: #000;
+}
+.WdateDiv .Wselday {
+  background-color: #FF9A99;
+  color: #fff;
+}
+.WdateDiv .yminput {
+  margin-top: -1px;
+	outline: none;
+  margin-left: 25px;
+}
+.WdateDiv .yminputfocus {
+  color: #000;
+  outline: none;
+  margin-left: 25px;
+}
+.WdateDiv .menuOn{
+  background-color: #FF9A99;
+  color: #fff;
+}
+.WdateDiv .Wtoday {
+  background-color: #FF9A99;
+  color: #fff;
+}
+.WdateDiv {
+  width: 240px;
+  background-color: #f9f9f9;
+  border: #E4E1E1 1px solid;
+  padding: 10px;
+}
+.WdateDiv .WdayTable td {
+  padding: 5px;
+}
+.WdateDiv .WdayTable {
+  background-color: #fff;
+}
+.WdateDiv .MTitle td:nth-last-child(1){
+  color: #FE5E5E;
+}
+.WdateDiv .MTitle td:nth-child(1){
+  color: #FE5E5E;
+}

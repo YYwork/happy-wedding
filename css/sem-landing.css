@@ -217,11 +217,11 @@ body {
 }
 
 .sem-span-radio-change {
+  border: 1px solid #fff;
+  color: #fff;
   background-position: 0 -74px;
   height: 45px;
   width: 141px;
-  border: 1px solid #fff;
-  color: #fff;
 }
 
 .sem-desk-tab {

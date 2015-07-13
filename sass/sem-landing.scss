@@ -151,9 +151,9 @@ body {
   color: $grayColor;
 }
 .sem-span-radio-change {
-  @include sem-sprite(sem-btn);
   border: 1px solid #fff;
   color: $whiteColor;
+  @include sem-sprite(sem-btn);
 }
 .sem-desk-tab {
   padding-left: 25px;
