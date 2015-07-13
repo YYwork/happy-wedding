@@ -182,6 +182,7 @@ html, body {
   *zoom: 1;
   *display: inline;
   margin-left: 40px;
+  width: 630px;
 }
 
 .party-content-right {
@@ -198,7 +199,6 @@ html, body {
   border-radius: 5px;
   margin-top: 39px;
   margin-right: 65px;
-  margin-left: 215px;
   padding: 30px 30px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

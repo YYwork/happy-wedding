@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   color: #333;
 }
@@ -361,7 +360,6 @@ body {
 }
 
 #lucky-data .m-data-top {
-  font-family: '黑体';
   vertical-align: bottom;
 }
 #lucky-data .m-data-top .J-data-icon {
