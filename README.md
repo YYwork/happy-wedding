@@ -21,3 +21,17 @@
         ＊sem-**.png`
 
 待完成(500 待完成)task5: 黄道吉日PC版一个 web-lukcy.html
+
+    文件:
+      html
+        ＊web-lucky.html
+      css
+        common.css
+        modular.css
+        ＊lucky-web.css
+      images
+        ＊lucky-s3d4024e9b3.png
+        ＊lucky-day-down.png
+        ＊lucky-product.png
+        ＊images-1.fw.png
+        ＊mn-tel.fw.png
