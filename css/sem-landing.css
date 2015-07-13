@@ -1,50 +1,37 @@
-@charset "UTF-8";
-.sem-sprite, .sem-sem-arrow, .sem-sem-btn, .sem-sem-down, .sem-sem-face-tag, .sem-sem-x, .sem-white-logo {
-  background-image: url('../images/sem-s52e9271244.png');
+.sem-sprite, .sem-sem-btn, .sem-sem-down, .sem-sem-x, .sem-white-logo {
+  background-image: url('../images/sem-s0150b4fda5.png');
   background-repeat: no-repeat;
 }
 
-.sem-sem-arrow {
-  background-position: 0 -45px;
-  height: 82px;
-  width: 528px;
-}
-
 .sem-sem-btn {
-  background-position: -164px 0;
+  background-position: 0 -74px;
   height: 45px;
   width: 141px;
 }
 
 .sem-sem-down {
-  background-position: -495px -127px;
+  background-position: 0 0;
   height: 9px;
   width: 16px;
 }
 
-.sem-sem-face-tag {
-  background-position: 0 -127px;
-  height: 713px;
-  width: 495px;
-}
-
 .sem-sem-x {
-  background-position: -126px 0;
+  background-position: -16px 0;
   height: 38px;
   width: 38px;
 }
 
 .sem-white-logo {
-  background-position: 0 0;
+  background-position: 0 -38px;
   height: 36px;
   width: 126px;
 }
 
 body {
-  font-family: '冬青黑体简体中文';
+  font-family: 'Microsoft YaHei',arial,helvetica,clean,sans-serif;
 }
 
-.sem-sprite, .sem-sem-arrow, .sem-sem-btn, .sem-sem-down, .sem-sem-face-tag, .sem-sem-x, .sem-white-logo {
+.sem-sprite, .sem-sem-btn, .sem-sem-down, .sem-sem-x, .sem-white-logo {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -71,11 +58,11 @@ body {
 .sem-face-tag {
   background-image: url("../images/sem-face-tag.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right top;
   width: 100%;
-  height: 713px;
+  height: 785px;
   margin-top: 25px;
-  padding: 250px 145px 35px 115px;
+  padding: 250px 95px 35px 115px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -98,25 +85,29 @@ body {
   box-sizing: border-box;
 }
 
-.sem-top-label {
+.sem-top-label1, .sem-top-label {
   font-size: 32px;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 5px;
+}
+
+.sem-top-label1 {
+  margin-top: 10px;
 }
 
 .sem-top-label-span {
   font-size: 48px;
+  margin-right: 10px;
 }
 
 .sem-white-logo {
   position: absolute;
-  margin-top: -35px;
+  margin-top: -42px;
   margin-left: 390px;
 }
 
 .sem-white-logo2 {
-  position: relative;
-  margin-top: 25px;
+  position: absolute;
   margin-left: -63px;
 }
 
@@ -149,7 +140,6 @@ body {
 }
 
 .sem-select-ul {
-  position: absolute;
   width: 580px;
   margin-top: 4px;
   -moz-border-radius: 5px;
@@ -201,7 +191,7 @@ body {
 
 .sem-title {
   font-size: 24px;
-  border-bottom: 1px solid #959595;
+  border-bottom: 1px solid #9fa0a0;
   padding: 20px 45px;
 }
 
@@ -216,13 +206,14 @@ body {
   height: 45px;
   line-height: 45px;
   background-color: #fff;
-  border: 1px solid #959595;
+  border: 1px solid #9fa0a0;
   font-size: 24px;
   text-align: center;
   margin: 30px 15px 0px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  color: #959595;
 }
 
 .sem-span-radio-change {

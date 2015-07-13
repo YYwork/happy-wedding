@@ -160,13 +160,13 @@ html, body {
 .select-ul {
   position: absolute;
   width: 200px;
-  margin-top: -15px;
-  @include border-radius(5px);
+  margin-top: -13px;
   background-color: #fff;
   border: 1px solid #fe3052;
+  @include border-radius(5px);
   @include box-sizing(border-box);
-  max-height: 150px;
-  overflow-y: auto;
+  max-height: 300px;
+  overflow: auto;
   display: none;
   z-index: 99;
 }
@@ -175,9 +175,13 @@ html, body {
   color: #ff4d6a;
   padding-left: 20px;
   padding-right: 20px;
-  border: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
   &:hover {
+    @include border-radius(5px);
     background-color: #dcdcdc;
+  }
+  &:nth-last-child(1) {
+    border-bottom: 0;
   }
 }
 .select-value {

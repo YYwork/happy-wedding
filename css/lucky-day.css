@@ -135,7 +135,8 @@ body {
   color: #999;
 }
 .lucky-wrap .mhli-add span.point {
-  padding: 0 4px;
+  padding: 0 1px;
+  font-size: 15px;
 }
 .lucky-wrap .mhli-add span.distance {
   float: right;
@@ -367,7 +368,7 @@ body {
   width: 29px;
   height: 29px;
   margin-left: 0px;
-  margin-top: 25px;
+  margin-top: 27px;
   margin-right: 10px;
   color: #a0a0a0;
 }
@@ -381,7 +382,7 @@ body {
   color: #fff;
   font-size: 18px;
   background-color: #ff4d6a;
-  padding: 6px 10px;
+  padding: 3px 5px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -408,4 +409,15 @@ body {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+}
+
+#lucky-data .m-data-yearsel, #lucky-data .m-data-monthsel {
+  color: #ff4d6a;
+  background: url(../images/sel-icon4.png) 247px 38px no-repeat;
+}
+#lucky-data .m-data-thead {
+  border-bottom: 1px solid #ddd;
+}
+#lucky-data .m-data-btnbox a {
+  letter-spacing: 5px;
 }

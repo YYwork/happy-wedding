@@ -531,12 +531,12 @@
 .calendar-explain-block {
   vertical-align: top;
   display: inline-block;
-  width: 49%;
+  width: 90px;
 }
 
 .calendar-explain-tag {
-  text-align: left;
-  padding: 2px 5px;
+  text-align: center;
+  padding: 2px 4px;
 }
 
 .calendar-form {

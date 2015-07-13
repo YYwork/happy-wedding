@@ -137,7 +137,8 @@ body {
         color: #999;
     }
     .mhli-add span.point {
-        padding: 0 4px;
+        padding: 0 1px;
+        font-size: 15px;
     }
     .mhli-add span.distance {
         float:right;
@@ -264,7 +265,7 @@ $lucky-day-layout: smart;
         width: 29px;
         height: 29px;
         margin-left: 0px;
-        margin-top: 25px;
+        margin-top: 27px;
         margin-right: 10px;
         color: #a0a0a0;
     }
@@ -278,7 +279,7 @@ $lucky-day-layout: smart;
         color: #fff;
         font-size: 18px;
         background-color: #ff4d6a;
-        padding: 6px 10px;
+        padding: 3px 5px;
         @include border-radius(4px);
     }
     .lucky-day-jiri-top {
@@ -300,4 +301,16 @@ $lucky-day-layout: smart;
     padding: 10px 20px;
     margin-left: 10px;
     @include border-radius(4px);
+}
+#lucky-data {
+    .m-data-yearsel, .m-data-monthsel {
+        color: #ff4d6a;
+        background: url(../images/sel-icon4.png) 247px 38px no-repeat;
+    }
+    .m-data-thead {
+        border-bottom: 1px solid #ddd;
+    }
+    .m-data-btnbox a {
+        letter-spacing: 5px;
+    }
 }

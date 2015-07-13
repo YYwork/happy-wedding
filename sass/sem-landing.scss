@@ -12,7 +12,7 @@ $whiteColor: #fff;
 $borderColor: #E3E3E3;
 
 body {
-  font-family: '冬青黑体简体中文';
+  font-family: 'Microsoft YaHei',arial,helvetica,clean,sans-serif;
 }
 .sem-sprite {
   @include inline-block;
@@ -32,11 +32,11 @@ body {
 .sem-face-tag {
   background-image: url('../images/sem-face-tag.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right top;
   width: 100%;
-  height: 713px;
+  height: 785px;
   margin-top: 25px;
-  padding: 250px 145px 35px 115px;
+  padding: 250px 95px 35px 115px;
   @include box-sizing(border-box);
 }
 .sem-landing {
@@ -52,22 +52,26 @@ body {
   padding: 35px 40px 55px 60px;
   @include box-sizing(border-box);
 }
-.sem-top-label {
+.sem-top-label1, .sem-top-label {
   font-size: 32px;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 5px;
+}
+
+.sem-top-label1 {
+  margin-top: 10px;
 }
 .sem-top-label-span {
   font-size: 48px;
+  margin-right: 10px;
 }
 .sem-white-logo {
   position: absolute;
-  margin-top: -35px;
+  margin-top: -42px;
   margin-left: 390px;
 }
 .sem-white-logo2 {
-  position: relative;
-  margin-top: 25px;
+  position: absolute;
   margin-left: -63px;
 }
 .sem-form {
@@ -92,7 +96,6 @@ body {
   @include box-sizing(border-box);
 }
 .sem-select-ul {
-  position: absolute;
   width: 580px;
   margin-top: 4px;
   @include border-radius(5px);
@@ -130,7 +133,7 @@ body {
 }
 .sem-title {
   font-size: 24px;
-  border-bottom: 1px solid $grayColor;
+  border-bottom: 1px solid #9fa0a0;
   padding: 20px 45px;
 }
 .sem-span-radio {
@@ -140,11 +143,12 @@ body {
   height: 45px;
   line-height: 45px;
   background-color: #fff;
-  border: 1px solid $grayColor;
+  border: 1px solid #9fa0a0;
   font-size: 24px;
   text-align: center;
   margin: 30px 15px 0px;
   @include border-radius(5px);
+  color: $grayColor;
 }
 .sem-span-radio-change {
   border: 1px solid #fff;
@@ -205,6 +209,9 @@ html, body {
   span {
     font-size: 24px;
   }
+}
+.sem-explain-text {
+
 }
 .sem-place-number {
   font-size: 28px;
