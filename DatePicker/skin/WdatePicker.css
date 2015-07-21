@@ -1,6 +1,6 @@
 .Wdate{
-	border:#999 1px solid;
-	height:20px;
+	border:1px;
+	height:inherit;
 	background:#fff url(rili.png) no-repeat 90px;
 }
 .Wdate::-ms-clear{display:none;}

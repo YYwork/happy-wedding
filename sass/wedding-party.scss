@@ -294,3 +294,172 @@ html, body {
     margin-top: 15px;
   }
 }
+
+$sem-color: #864505;
+$sem-color2: #ff9123;
+
+.m-hotel-list-bg {
+  background: #fff;
+  border-top: 0;
+}
+.g-warp-title {
+  width: 1000px;
+  margin: 0 auto;
+  color: #66412c;
+  font-size: 20px;
+  padding-top: 50px;
+  a {
+    padding-top: 5px;
+    float: right;
+  }
+  span {
+    color: #ff4d6a;
+  }
+}
+.wedding-party-sem {
+  height: 690px;
+  width: 100%;
+  background-image: url('../images/sem-web/sem-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1635px 690px;
+  .wedding-party-content {
+    width: 1240px;
+  }
+  .sem-content-left {
+    @include inline-block;
+    margin-left: -5px;
+  }
+  .sem-content-right {
+    @include inline-block;
+    margin-top: 39px;
+    margin-left: 70px;
+    padding: 30px 30px;
+    @include box-sizing(border-box);
+    height: 439px;
+    width: 353px;
+    background-image: url('../images/sem-web/sem-form-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 353px 439px;
+  }
+}
+.sem-content-right {
+  h2 {
+    color: $sem-color;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+.sem-btn-group {
+  text-align: center;
+}
+.phone-number-div {
+  margin-top: 20px;
+  text-align: center;
+  input[type="text"] {
+    @include input-placeholder {
+      color: $sem-color2;
+    }
+  }
+}
+.sem-sprites-top-btn {
+  border: 0;
+  outline: none;
+  @include border-radius(5px);
+  font-size: 20px;
+  color: #ff9123;
+  cursor: pointer;
+}
+.sem-sprites-face {
+  margin-right: 35px;
+  margin-top: 0px;
+}
+.sem-phone-number {
+  width: 200px;
+  height: 35px;
+  @include border-radius(5px);
+  border: 1px solid $sem-color;
+  outline: none;
+  padding: 0 10px;
+  color: $sem-color;
+  @include box-sizing(border-box);
+}
+.zhaolu-percent-sem {
+  margin-top: 55px;
+  background-image: url('../images/sem-web/sem-left-title.png');
+  background-repeat: no-repeat;
+  height: 427px;
+  width: 778px;
+}
+.wedding-reserve-sem {
+  background-image: url('../images/sem-web/sem-left-tab.png');
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 695px;
+  margin-top: 25px;
+}
+
+
+$sem-sprites-sprite-dimensions:true;
+// $<map>-layout: vertical / horizontal / diagonal / smart;
+$sem-sprites-layout:smart;
+// @import "<map>/*.png";
+@import "sem-sprites/*.png";
+// 设置精灵的布局
+// @include all-<map>-sprites; // 会为整个精灵地图撰写所有必要的css
+@include all-sem-sprites-sprites();
+
+.sem-sprites-sprite {
+  @include inline-block;
+}
+.sem-sprites-radio-c {
+  margin-left: -55px;
+}
+.sem-sprites-pop-x {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.gender-div {
+  width: 200px;
+  margin: 10px auto;
+}
+.gender-group {
+  position: relative;
+  width: 55px;
+  height: 24px;
+  color: #864505;
+  margin-left: 20px;
+}
+.gender-madam {
+  margin-left: 50px;
+}
+.gender-input {
+  visibility: hidden;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: -25px;
+}
+.sem-article {
+  color: #864505;
+  font-size: 14px;
+  margin: 35px 0px 0px 60px;
+  ul, li {
+    list-style: initial;
+    margin-left: 11px;
+  }
+}
+.sem-pop-result {
+  .zhaolu-pop-face {
+    margin-top: 20px;
+  }
+  .wedding-pop .order-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .zhaolu-pop-face {
+    margin-top: 0px;
+  }
+}
