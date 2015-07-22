@@ -161,6 +161,12 @@ html, body {
   height: 100%;
 }
 
+#back-home {
+  font-size: 12px;
+  line-height: 45px;
+  padding-top: 0;
+}
+
 .wedding-party {
   height: 580px;
   width: 100%;
@@ -474,7 +480,6 @@ html, body {
   padding-top: 50px;
 }
 .g-warp-title a {
-  padding-top: 5px;
   float: right;
 }
 .g-warp-title span {
@@ -556,6 +561,8 @@ html, body {
   font-size: 20px;
   color: #ff9123;
   cursor: pointer;
+  line-height: 36px;
+  font-family: "Hiragino Sans GB";
 }
 
 .sem-sprites-face {
