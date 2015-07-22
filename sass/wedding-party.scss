@@ -391,6 +391,12 @@ $sem-color2: #ff9123;
   color: $sem-color;
   @include box-sizing(border-box);
 }
+a.sem-more {
+  &:hover {
+    text-decoration: underline;
+    color: #ff4d6a;
+  }
+}
 .zhaolu-percent-sem {
   margin-top: 55px;
   background-image: url('../images/sem-web/sem-left-title.png');
