@@ -1,0 +1,344 @@
+@import "compass/utilities/sprites";
+@import "compass/css3";
+$yy-cus-sprite-dimensions:true;
+// $<map>-layout: vertical / horizontal / diagonal / smart;
+$yy-cus-layout:smart;
+// @import "<map>/*.png";
+@import "yy-cus/*.png";
+// 设置精灵的布局
+// @include all-<map>-sprites; // 会为整个精灵地图撰写所有必要的css
+@include all-yy-cus-sprites();
+.yy-cus-sprite {
+  @include inline-block;
+}
+
+$red-color: #ff4d6b;
+$padding: 34px;
+.yy-main {
+  position: relative;
+  widows: 640px;
+  margin: 0 auto;
+  color: #565a5c;
+  * {
+    @include box-sizing(boreder-box);
+    font-size: 24px;
+  }
+}
+
+.yy-com-customer {
+  widows: 100%;
+}
+
+.yy-com-requirement {
+  padding: 34px 34px 20px;
+  background-color: #f6f6f6;
+}
+
+.yy-title {
+  position: relative;
+  border-bottom: 1px solid #acacac;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  .title-left {
+    font-size: 28px;
+    @include inline-block;
+    width: 49%;
+  }
+  .title-right {
+    font-size: 20px;
+    @include inline-block;
+    float: right;
+    width: 49%;
+    text-align: right;
+  }
+}
+
+.yy-contain {
+  font-size: 20px;
+  color: #777;
+  div {
+    margin-bottom: 25px;
+  }
+}
+
+.yy-circle {
+  position: relative;
+  width: 288px;
+  height: 288px;
+  margin: 140px auto 110px;
+  border: 2px solid #a0a0a0;
+  @include border-radius(143px);
+  text-align: center;
+}
+
+.yy-circle-red {
+  width: 240px;
+  height: 240px;
+  margin: 23px auto;
+  border: 3px solid #ff4d6b;
+  @include border-radius(120px);
+}
+
+.yy-circle-text {
+  margin: 45px auto;
+}
+
+.circle-watch {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -10px;
+  width: 100%;
+  height: 20px;
+  text-align: right;
+  //background-color: #555;
+  .circle-point {
+    @include inline-block;
+    @include border-radius(10px);
+    width: 20px;
+    height: 20px;
+    margin-right: -10px;
+    margin-top: -10px;
+    background-color: #ff4d6b;
+  }
+  @include transform-origin(0 0 0);
+  @include transform(rotate(0deg));
+  @include animation(seconds 10s steps(360, end) 0s infinite);
+}
+
+@-webkit-keyframes seconds {
+  to {
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@-moz-keyframes seconds {
+  to {
+    -moz-transform: rotate(360deg)
+  }
+}
+
+@keyframes seconds {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.yy-time {
+  font-size: 24px;
+}
+
+.yy-time-number {
+  font-size: 100px;
+  line-height: 110px;
+}
+
+.yy-com-btn {
+  padding: 0px 34px 30px;
+}
+
+.gettheorder-btn {
+  width: 100%;
+  height: 105px;
+  background-color: $red-color;
+  color: #fff;
+  font-size: 30px;
+  border: 1px solid $red-color;
+}
+
+.yy-com-warming {
+  height: 250px;
+  text-align: center;
+  font-size: 22px;
+  color: $red-color;
+  line-height: 250px;
+}
+
+.yy-customer-warming {
+  @include box-sizing(border-box);
+  height: 150px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 30px $padding;
+  .yy-customer-warming-label {
+    font-size: 28px;
+    color: #565a5c;
+  }
+  .yy-customer-label {
+    float: left;
+    color: #777;
+    margin-right: 40px;
+    margin-top: 30px;
+  }
+}
+
+.yy-form-label {
+  padding: 30px $padding;
+  color: #ffae00;
+  font-size: 24px;
+  .yy-form-span {
+    font-size: 28px;
+    color: #565a5c;
+  }
+}
+
+.yy-customer-form {
+  form {
+    //padding: 0px $padding;
+  }
+}
+
+.yy-customer-tags {
+  position: relative;
+  overflow: hidden;
+  .li {
+    @include box-sizing(border-box);
+    width: 170px;
+    height: 70px;
+    border: 1px solid #777;
+    color: #777;
+    float: left;
+    @include border-radius(6px);
+    line-height: 70px;
+    text-align: center;
+    margin-left: $padding;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .li-lg {
+    @include box-sizing(border-box);
+    height: 70px;
+    border: 1px solid #777;
+    color: #777;
+    float: left;
+    @include border-radius(6px);
+    line-height: 70px;
+    text-align: center;
+    margin-left: $padding;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: inherit;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.yy-textarea {
+  padding: 20px $padding;
+  position: relative;
+}
+
+#yy-tags_tag {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+#yy-tags_tagsinput,
+.yy-customer-textarea {
+  width: 99%;
+  display: block;
+  border: 1px solid #777;
+  height: 344px;
+  @include border-radius(6px);
+  padding: 20px;
+  color: #777;
+  font-size: 22px;
+  background-color: #f6f6f6;
+  line-height: 30px;
+  @include box-sizing(border-box);
+}
+
+.yy-textarea-placeholder {
+  position: absolute;
+  top: 48px;
+  left: 64px;
+  font-size: 22px;
+  z-index: 1;
+}
+
+.yy-textarea-alert {
+  position: absolute;
+  right: 60px;
+  bottom: 40px;
+  font-size: 22px;
+  span {
+    font-size: 22px;
+  }
+  .yy-textarea-number {
+    color: $red-color;
+  }
+}
+
+.yy-textarea-text {
+  display: none;
+}
+
+#yy-tags_addTag {
+  z-index: 2;
+}
+
+//=====
+div.tagsinput {
+  border: 1px solid #CCC;
+  background: #FFF;
+  width: 300px;
+  height: 100px;
+  overflow-y: auto;
+}
+
+div.tagsinput span.tag {
+  @include box-sizing(border-box);
+  min-width: 150px;
+  max-width: 500px;
+  border: 1px solid #777;
+  color: #777;
+  float: left;
+  @include border-radius(6px);
+  text-align: center;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 20px 30px;
+  .li-lg {
+    width: inherit;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+div.tagsinput span.tag a {
+  font-weight: bold;
+  color: #82ad2b;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+div.tagsinput input {
+  width: 315px;
+  margin: 0px;
+  font-family: helvetica;
+  font-size: 13px;
+  border: 1px solid transparent;
+  padding: 5px;
+  background: transparent;
+  color: #000;
+  outline: 0px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+div.tagsinput div {
+  display: block;
+  float: left;
+}
+
+.tags_clear {
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+
+.not_valid {
+  background: #FBD8DB !important;
+  color: #90111A !important;
+}
