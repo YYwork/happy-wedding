@@ -358,17 +358,24 @@ div.tagsinput span.tag a {
 }
 
 div.tagsinput input {
-  width: 315px;
+  width: 160px;
+  height: 72px;
   margin: 0px;
   font-family: helvetica;
   font-size: 13px;
-  border: 1px solid transparent;
+  border: 1px dashed transparent;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
   padding: 5px;
   background: transparent;
   color: #000;
   outline: 0px;
   margin-right: 5px;
   margin-bottom: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 div.tagsinput div {
