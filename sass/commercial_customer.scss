@@ -101,7 +101,11 @@ $padding: 34px;
     margin-top: -10px;
     background-color: #ff4d6b;
   }
-  @include transform-origin(0 0 0);
+  //@include transform-origin(0 0 0);
+  transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
   @include transform(rotate(0deg));
   @include animation(seconds 10s steps(360, end) 0s infinite);
 }
