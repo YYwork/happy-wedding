@@ -38,5 +38,6 @@
         ＊mn-tel.fw.png
 
 [*待支付](#)(300 完成)task6(7月22号): sem着陆页PC版一个 sem.html
+
 [*待支付](#)(500 完成)task6(8月18号): 商户页面 wap commercial_customer.html
 
