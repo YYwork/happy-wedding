@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .yy-cus-sprite, .yy-cus-green-right, .yy-cus-horn {
   background-image: url('../images/yy-cus-s26d813391b.png');
   background-repeat: no-repeat;
@@ -41,8 +42,9 @@
 }
 
 .yy-com-requirement {
-  padding: 34px 34px 20px;
+  padding: 34px 34px 0px;
   background-color: #f6f6f6;
+  border-bottom: 1px solid #acacac;
 }
 
 .yy-title {
@@ -62,6 +64,7 @@
 }
 .yy-title .title-right {
   font-size: 20px;
+  line-height: 30px;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -70,6 +73,7 @@
   float: right;
   width: 49%;
   text-align: right;
+  vertical-align: bottom;
 }
 
 .yy-contain {
@@ -167,6 +171,7 @@
 }
 
 .gettheorder-btn {
+  font-family: '微软雅黑';
   width: 100%;
   height: 105px;
   background-color: #ff4d6b;
@@ -176,11 +181,11 @@
 }
 
 .yy-com-warming {
-  height: 250px;
   text-align: center;
   font-size: 22px;
   color: #ff4d6b;
-  line-height: 250px;
+  padding-top: 140px;
+  padding-bottom: 180px;
 }
 
 .yy-customer-warming {
@@ -207,10 +212,30 @@
   padding: 30px 34px;
   color: #ffae00;
   font-size: 24px;
+  vertical-align: middle;
 }
 .yy-form-label .yy-form-span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   font-size: 28px;
   color: #565a5c;
+  line-height: 30px;
+}
+
+.yy-cus-horn {
+  line-height: 30px;
+}
+
+.yy-cus-label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  line-height: 30px;
 }
 
 .yy-customer-tags {
@@ -388,4 +413,19 @@ div.tagsinput div {
 .not_valid {
   background: #FBD8DB !important;
   color: #90111A !important;
+}
+
+.yy-com-ordered {
+  border-top: 1px solid #d8d8d8;
+  background-color: #f6f6f6;
+  font-size: 32px;
+  text-align: center;
+  color: #777;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.yy-com-warming-label {
+  margin-top: 30px;
+  padding: 0;
 }

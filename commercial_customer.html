@@ -63,31 +63,47 @@
         </div>
       </div>
       <div class="yy-com-gettheorder">
-        <div class="yy-circle">
-          <div class="yy-circle-red">
-            <div class="yy-circle-text">
-              <div class="yy-time">
-                剩余接单时间
-              </div>
-              <div class="yy-time-number">
-                18
-              </div>
-              <div class="yy-time">
-                分钟
-              </div>
-              <div class="circle-watch">
-                <span class="circle-point"></span>
+        <div class="yy-has-order" style="display: none">
+          <div class="yy-circle">
+            <div class="yy-circle-red">
+              <div class="yy-circle-text">
+                <div class="yy-time">
+                  剩余接单时间
+                </div>
+                <div class="yy-time-number">
+                  18
+                </div>
+                <div class="yy-time">
+                  分钟
+                </div>
+                <div class="circle-watch">
+                  <span class="circle-point"></span>
+                </div>
               </div>
             </div>
           </div>
+          <div class="yy-com-has-order">
+            <div class="yy-com-btn">
+              <button class="gettheorder-btn" id="yy-gettheorder">
+                有档期，我要接
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="yy-com-btn">
-          <button class="gettheorder-btn" id="yy-gettheorder">
-            有档期，我要接
-          </button>
+        <div class="yy-com-order">
+          <div class="yy-com-warming">
+            <div class="warming-chirld">
+              <img src="./images/pop-chirld.png">
+            </div>
+            <div class="yy-com-warming-label">
+              您来晚了,错过了一个好大的订单！下次继续努力！
+            </div>
+          </div>
         </div>
-        <div class="yy-com-warming">
-          您来晚了,错过了一个好大的订单！下次继续努力！
+        <div class="yy-com-ordered" style="display: none">
+          <div class="yy-com-ordered-label">
+            您已经接单了，请耐心等待
+          </div>
         </div>
       </div>
     </div>
@@ -107,8 +123,9 @@
     </div>
     <div class="yy-customer-form">
       <div class="yy-form-label">
-        <span class="yy-form-span">可提供优惠项:</span>
-        <span class="yy-cus-horn"></span> 提供优惠，可提高用户成单率！
+        <span class="yy-form-span">可提供优惠项：</span>
+        <span class="yy-cus-horn"></span>
+        <span class="yy-cus-label">提供优惠，可提高用户成单率!</span>
       </div>
       <div>
         <ul class="yy-customer-tags">
@@ -168,11 +185,22 @@
       initInput();
     });
 
-    function initInput() {
-      $('.yy-textarea-placeholder').hide();
+    $('.yy-customer-form').delegate('#yy-tags_tag', 'focus', function() {
       $('#yy-tags_tag').css({
         'border': '1px dashed #777'
       })
+    });
+    $('.yy-customer-form').delegate('#yy-tags_tag', 'blur', function() {
+      $('#yy-tags_tag').css({
+        'border': '0px dashed #777'
+      });
+      if ($('span.tag').length == 0) {
+        $('.yy-textarea-placeholder').show();
+      }
+    });
+
+    function initInput() {
+      $('.yy-textarea-placeholder').hide();
     }
   });
   </script>

@@ -30,8 +30,9 @@ $padding: 34px;
 }
 
 .yy-com-requirement {
-  padding: 34px 34px 20px;
+  padding: 34px 34px 0px;
   background-color: #f6f6f6;
+  border-bottom: 1px solid #acacac;
 }
 
 .yy-title {
@@ -46,10 +47,12 @@ $padding: 34px;
   }
   .title-right {
     font-size: 20px;
+    line-height: 30px;
     @include inline-block;
     float: right;
     width: 49%;
     text-align: right;
+    vertical-align: bottom;
   }
 }
 
@@ -102,10 +105,9 @@ $padding: 34px;
     background-color: #ff4d6b;
   }
   // //@include transform-origin(0 0 0);// transform-origin: center center;
-// -moz-transform-origin: center center;
-// -ms-transform-origin: center center;
-// -webkit-transform-origin: center center;
-
+  // -moz-transform-origin: center center;
+  // -ms-transform-origin: center center;
+  // -webkit-transform-origin: center center;
   @include transform(rotate(0deg));
   @include animation(seconds 10s steps(360, end) 0s infinite);
 }
@@ -142,6 +144,7 @@ $padding: 34px;
 }
 
 .gettheorder-btn {
+  font-family: '微软雅黑';
   width: 100%;
   height: 105px;
   background-color: $red-color;
@@ -151,11 +154,11 @@ $padding: 34px;
 }
 
 .yy-com-warming {
-  height: 250px;
   text-align: center;
   font-size: 22px;
   color: $red-color;
-  line-height: 250px;
+  padding-top: 140px;
+  padding-bottom: 180px;
 }
 
 .yy-customer-warming {
@@ -180,10 +183,22 @@ $padding: 34px;
   padding: 30px $padding;
   color: #ffae00;
   font-size: 24px;
+  vertical-align: middle;
   .yy-form-span {
+    @include inline-block;
     font-size: 28px;
     color: #565a5c;
+    line-height: 30px;
   }
+}
+
+.yy-cus-horn {
+  line-height: 30px;
+}
+
+.yy-cus-label {
+  @include inline-block;
+  line-height: 30px;
 }
 
 .yy-customer-form {
@@ -348,4 +363,19 @@ div.tagsinput div {
 .not_valid {
   background: #FBD8DB !important;
   color: #90111A !important;
+}
+
+.yy-com-ordered {
+  border-top: 1px solid #d8d8d8;
+  background-color: #f6f6f6;
+  font-size: 32px;
+  text-align: center;
+  color: #777;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.yy-com-warming-label {
+  margin-top: 30px;
+  padding: 0;
 }
