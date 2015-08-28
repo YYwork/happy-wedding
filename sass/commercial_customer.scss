@@ -60,7 +60,7 @@ $padding: 34px;
   font-size: 20px;
   color: #777;
   div {
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 }
 
@@ -373,6 +373,9 @@ div.tagsinput div {
   color: #777;
   padding-top: 40px;
   padding-bottom: 70px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .yy-com-warming-label {

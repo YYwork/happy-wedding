@@ -63,83 +63,89 @@
         </div>
       </div>
     </div>
-    <!-- 1 -->
     <div class="yy-com-orders">
       <div class="yy-com-gettheorder">
-        <div class="yy-has-order">
-          <div class="yy-circle">
-            <div class="yy-circle-red">
-              <div class="yy-circle-text">
-                <div class="yy-time">
-                  剩余接单时间
-                </div>
-                <div class="yy-time-number">
-                  18
-                </div>
-                <div class="yy-time">
-                  分钟
-                </div>
-                <div class="circle-watch">
-                  <span class="circle-point"></span>
-                </div>
+        <div class="yy-circle">
+          <div class="yy-circle-red">
+            <div class="yy-circle-text">
+              <div class="yy-time">
+                剩余接单时间
+              </div>
+              <div class="yy-time-number">
+                18
+              </div>
+              <div class="yy-time">
+                分钟
+              </div>
+              <div class="circle-watch">
+                <span class="circle-point"></span>
               </div>
             </div>
           </div>
-          <div class="yy-com-has-order">
+        </div>
+      </div>
+      <!-- 1 -->
+      <div class="yy-has-order" style="display: none;">
+        <div class="yy-com-has-order">
+          <div class="yy-com-btn">
+            <button class="gettheorder-btn" id="yy-gettheorder">
+              有档期，我要接
+            </button>
+          </div>
+        </div>
+        <div class="yy-customer-warming">
+          <div class="yy-customer-warming-label">婚礼管家提醒您，该用户希望：</div>
+          <div>
+            <div class="yy-customer-label">
+              <span class="yy-coin yy-cus-green-right"></span> 赠送婚房
+            </div>
+            <div class="yy-customer-label">
+              <span class="yy-coin yy-cus-green-right"></span> 赠送婚房
+            </div>
+            <div class="yy-customer-label">
+              <span class="yy-coin yy-cus-green-right"></span> 赠送婚房
+            </div>
+          </div>
+        </div>
+        <div class="yy-customer-form">
+          <div class="yy-form-label">
+            <span class="yy-form-span">可提供优惠项：</span>
+            <span class="yy-cus-horn"></span>
+            <span class="yy-cus-label">提供优惠，可提高用户成单率!</span>
+          </div>
+          <div>
+            <ul class="yy-customer-tags">
+              <li value="1" class="li">赠送婚房</li>
+              <li value="2" class="li">餐标免费升级</li>
+              <li value="3" class="li">免费服务</li>
+              <li value="4" class="li">有柱子</li>
+              <li value="5" class="li">有柱子</li>
+              <li value="6" class="li">有柱子</li>
+              <li value="7" class="li-lg">免费提供新娘化妆间</li>
+            </ul>
+            <div class="yy-textarea">
+              <input name="tags" class="tags" id="yy-tags" />
+              <span class="yy-textarea-placeholder">点击优惠项标签或者直接输入</span>
+              <span class="yy-textarea-alert">还可以添加
+            <span class="yy-textarea-tags"><span class="yy-textarea-number">5</span>个标签</span>
+              <span class="yy-textarea-text"><span class="yy-textarea-number">50</span>个字</span>
+              </span>
+            </div>
             <div class="yy-com-btn">
-              <button class="gettheorder-btn" id="yy-gettheorder">
-                有档期，我要接
-              </button>
+              <button class="gettheorder-btn" id="submit-theorder">提交</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="yy-customer-warming">
-        <div class="yy-customer-warming-label">婚礼管家提醒您，该用户希望：</div>
-        <div>
-          <div class="yy-customer-label">
-            <span class="yy-coin yy-cus-green-right"></span> 赠送婚房
-          </div>
-          <div class="yy-customer-label">
-            <span class="yy-coin yy-cus-green-right"></span> 赠送婚房
-          </div>
-          <div class="yy-customer-label">
-            <span class="yy-coin yy-cus-green-right"></span> 赠送婚房
-          </div>
-        </div>
-      </div>
-      <div class="yy-customer-form">
-        <div class="yy-form-label">
-          <span class="yy-form-span">可提供优惠项：</span>
-          <span class="yy-cus-horn"></span>
-          <span class="yy-cus-label">提供优惠，可提高用户成单率!</span>
-        </div>
-        <div>
-          <ul class="yy-customer-tags">
-            <li value="1" class="li">赠送婚房</li>
-            <li value="2" class="li">餐标免费升级</li>
-            <li value="3" class="li">免费服务</li>
-            <li value="4" class="li">有柱子</li>
-            <li value="5" class="li">有柱子</li>
-            <li value="6" class="li">有柱子</li>
-            <li value="7" class="li-lg">免费提供新娘化妆间</li>
-          </ul>
-          <div class="yy-textarea">
-            <input name="tags" class="tags" id="yy-tags" />
-            <span class="yy-textarea-placeholder">点击优惠项标签或者直接输入</span>
-            <span class="yy-textarea-alert">还可以添加
-            <span class="yy-textarea-tags"><span class="yy-textarea-number">5</span>个标签</span>
-            <span class="yy-textarea-text"><span class="yy-textarea-number">50</span>个字</span>
-            </span>
-          </div>
-          <div class="yy-com-btn">
-            <button class="gettheorder-btn" id="submit-theorder">提交</button>
-          </div>
+      <!-- 2 -->
+      <div class="yy-com-ordered">
+        <div class="yy-com-ordered-label">
+          您已经接单了，请耐心等待
         </div>
       </div>
     </div>
-    <!-- 2 -->
-    <div class="yy-com-order">
+    <!-- 3 -->
+    <div class="yy-com-order" style="display: none;">
       <div class="yy-com-warming">
         <div class="warming-chirld">
           <img src="./images/yy-cus-order.png">
@@ -147,12 +153,6 @@
         <div class="yy-com-warming-label">
           您来晚了,错过了一个好大的订单！下次继续努力！
         </div>
-      </div>
-    </div>
-    <!-- 3 -->
-    <div class="yy-com-ordered">
-      <div class="yy-com-ordered-label">
-        您已经接单了，请耐心等待
       </div>
     </div>
   </div>
