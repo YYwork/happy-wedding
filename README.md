@@ -3,7 +3,7 @@
 - old-version 旧版本
 
 - 新版本
-
+```
   images
   script
     |-js
@@ -15,6 +15,6 @@
     |
     |-jade
      -html
-
+```
 
     

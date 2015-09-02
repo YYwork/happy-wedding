@@ -2,25 +2,33 @@
 
 var gulp = require('gulp');
 var path = require('path');
+
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var compass = require('gulp-compass');
+var coffee = require('gulp-coffee');
 
-var jadesassDir = './layout',
-  htmlcssDir = './layout';
+var gutil = require('gulp-util');
+
+var jadesassDir = './',
+  jscoffeeDir = './',
+  htmlcssDir = './';
 
 var source = {
   sassDir: path.join(jadesassDir, 'style/sass'),
   jadeDir: path.join(jadesassDir, 'templates/jade'),
+  coffeeDir: path.join(jscoffeeDir, 'script/coffee'),
   imagesDir: path.join(jadesassDir, 'images'),
 
   sassFileDir: path.join(jadesassDir, 'style/sass/*.scss'),
+  coffeeFileDir: path.join(jscoffeeDir, 'script/coffee/*.coffee'),
   jadeFileDir: path.join(jadesassDir, 'templates/jade/*.jade')
 }
 
 var output = {
   cssDir: path.join(htmlcssDir, 'style/css'),
-  htmlDir: path.join(htmlcssDir, 'templates/html')
+  htmlDir: path.join(htmlcssDir, 'templates/html'),
+  jsDir: path.join(jscoffeeDir, 'script/js')
 }
 
 
@@ -50,6 +58,14 @@ gulp.task('jade', function() {
 });
 
 
+gulp.task('coffee', function() {
+  gulp.src(source.coffeeFileDir)
+    .pipe(coffee({
+      bare: true
+    }).on('error', gutil.log))
+    .pipe(gulp.dest(output.jsDir))
+});
+
 gulp.task('compass:watch', function() {
   gulp.watch(source.sassFileDir, ['compass']);
 });
@@ -58,7 +74,11 @@ gulp.task('jade:watch', function() {
   gulp.watch(source.jadeFileDir, ['jade']);
 });
 
-gulp.task('build', ['compass', 'jade']);
-gulp.task('watch', ['compass:watch', 'jade:watch']);
+gulp.task('coffee:watch', function() {
+  gulp.watch(source.coffeeFileDir, ['coffee']);
+});
+
+gulp.task('build', ['compass', 'jade', 'coffee']);
+gulp.task('watch', ['compass:watch', 'jade:watch', 'coffee:watch']);
 
 gulp.task('default', ['build', 'watch']);

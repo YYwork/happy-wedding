@@ -8,15 +8,12 @@
     "jade": "~1.11.0",
     "node-sass": "~3.3.2",
 
-    "glob": "~5.0.14",
-    "step": "~0.0.6",
-    "async": "~1.4.2",
-    "object-assign": "~4.0.1",
-    "iconv-lite": "~0.4.11",
-
     "gulp-sass": "~2.0.4",
     "gulp-jade": "~1.1.0",
-    "gulp-compass": "~2.1.0"
+    "gulp-compass": "~2.1.0",
+    "gulp-coffee": "~2.3.1",
+
+    "gulp-util": "~3.0.6"
   },
   "bin": {
 

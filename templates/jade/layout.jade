@@ -1,0 +1,20 @@
+doctype html
+html(lang="zh-cmn-Hans")
+  body
+    head
+      meta(charset="utf-8")
+      title
+        block title
+      block css
+      block js
+      <!--[if lt IE 9]>
+      script(src="../../script/jslib/html5shiv.min.js")
+      script(src="../../script/jslib/respond.min.js")
+      script(src="./../script/jslib/selectivizr.min.js")
+      <![endif]-->
+    body
+      .yy-container
+        block body
+      block bottom_css
+      block bottom_js
+
