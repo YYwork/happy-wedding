@@ -1,13 +1,17 @@
 require 'compass/import-once/activate'
+require 'susy'
+require 'compass-normalize'
+require 'breakpoint'
+
 # require 'compass-normalize'
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
 http_path = "/"  # url 路径 https://uda100.com
-css_dir = "css"
-sass_dir = "sass"
+css_dir = "style/css"
+sass_dir = "style/sass"
 images_dir = "images"
-javascripts_dir = "js"
+javascripts_dir = "script"
 
 # 开发环境还是生产环境
 environment = :production
