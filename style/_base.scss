@@ -3,7 +3,7 @@
 @import "breakpoint";
 @import "normalize";
 @import "compass/utilities/sprites";
-//@import "./prestyle/prestyle.scss";
+//@import "./_prestyle.scss";
 $border-box-sizing: border-box;
 $susy: ( columns: 4, gutters: .25, global-box-sizing: border-box, debug: ( image: show, color: rgba(#66f, .25), output: overlay, toggle: top right, ));
 @include layout($susy float inside);

@@ -14,8 +14,8 @@ body {
   background-color: #ff4d6b;
 }
 
-@import './card-sprites.scss';
-@import './card-pop.scss';
+@import './_card-sprites.scss';
+@import './_card-pop.scss';
 .container {
   width: 100%;
 }

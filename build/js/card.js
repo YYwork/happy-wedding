@@ -5,7 +5,6 @@ log = function(a) {
 };
 
 $(function() {
-  log(lib.flexible.rem);
   $('.input-btn').click(function() {
     return $('.pop-windows').show();
   });

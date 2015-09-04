@@ -2,7 +2,6 @@ log = (a)->
   console.log a
 
 $ ()->
-  log lib.flexible.rem
 
   $('.input-btn').click ()->
     $('.pop-windows').show()
