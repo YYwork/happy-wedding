@@ -1,0 +1,361 @@
+@import './_base.scss';
+@import './_card-var.scss';
+body {
+  background-color: $detail-bg-color;
+}
+
+.yy-container {
+  width: 100%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.get-card {
+  background-color: #ff4d6b;
+}
+
+@import './card-sprites.scss';
+@import './card-pop.scss';
+.container {
+  width: 100%;
+}
+
+.giftpacks {
+  width: 100%;
+  background-color: $base-color-red;
+  padding-bottom: 30rem/$dpr;
+  .content {
+    //position: absolute;
+    background-image: url('../images/card-bg01.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+  }
+  .money {
+    //position: absolute;
+    margin-top: 282rem/$dpr;
+    margin-left: 265rem/$dpr;
+    @include inline-block;
+    font-size: 34rem/$dpr;
+    color: $color-yellow;
+  }
+  .phone-input {
+    //position: absolute;
+    margin-top: 202rem/$dpr;
+    padding-left: 97rem/$dpr;
+    .phone-number {
+      @include box-sizing(border-box);
+      padding: 30rem/$dpr 24rem/$dpr;
+      border: 0;
+      width: 444rem/$dpr;
+      height: 82rem/$dpr;
+      font-size: $input-size;
+      color: $input-color;
+    }
+  }
+  .input-btn {
+    //position: absolute;
+    margin-top: 21rem/$dpr;
+    padding-left: 94rem/$dpr;
+    .input-submit,
+    .input-submit:hover {
+      background-color: #ddd;
+      width: 453rem/$dpr;
+      height: 88rem/$dpr;
+      border: 0;
+      @include opacity(0);
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+  }
+  .active-rules {
+    //position: absolute;
+    margin-top: 85rem/$dpr;
+    padding-left: 25rem/$dpr;
+    color: $color-wihte;
+    .title {
+      font-size: 24rem/$dpr;
+    }
+    .article {
+      margin-top: 13rem/$dpr;
+      font-size: 20rem/$dpr;
+      line-height: 46rem/$dpr;
+    }
+  }
+}
+
+.coupons-list {
+  background-color: $coupons-bg;
+  width: 100%;
+  height: 100%;
+  ul {
+    width: 580rem/$dpr;
+    margin: 0 auto;
+    padding-top: 10rem/$dpr;
+    padding-bottom: 30rem/$dpr;
+  }
+  .iterms {
+    position: relative;
+    @include box-sizing(border-box);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include inline-block;
+    width: 580rem/$dpr;
+    height: 264rem/$dpr;
+    margin-top: 20rem/$dpr;
+    padding-top: 20rem/$dpr;
+    padding-left: 30rem/$dpr;
+    padding-right: 30rem/$dpr;
+    .top {
+      position: relative;
+    }
+    .title {
+      position: absolute;
+      font-size: 36rem/$dpr;
+      color: $color-wihte;
+      font-weight: 900;
+      margin-top: 29rem/$dpr;
+      margin-left: 22rem/$dpr;
+    }
+    .timeout {
+      margin-top: 23rem/$dpr;
+      line-height: 60rem/$dpr;
+    }
+    .name {
+      font-size: 26rem/$dpr;
+    }
+    &.card-shiwu {
+      .name {
+        color: $color-blue;
+      }
+    }
+    &.card-ecard {
+      .name {
+        color: $color-red;
+      }
+    }
+    &.card-overdue {
+      .name {
+        color: $color-gray;
+      }
+    }
+    .deadtime {
+      color: $color-gray;
+      font-size: 24rem/$dpr;
+      float: right;
+      @include clearfix;
+    }
+    .label {
+      text-align: center;
+      color: $color-gray;
+      font-size: 20rem/$dpr;
+      line-height: 48rem/$dpr;
+    }
+    .deadtag {
+      position: absolute;
+      right: 15rem/$dpr;
+      bottom: 15rem/$dpr;
+    }
+  }
+  .card-shiwu {
+    background-image: url('../images/card-shiwu.png');
+  }
+  .card-ecard {
+    background-image: url('../images/card-ecard.png');
+  }
+  .card-overdue {
+    background-image: url('../images/card-overdue.png');
+  }
+}
+
+.rel-card-detail,
+.card-detail {
+  width: 100%;
+  height: 100%;
+  background-color: $detail-bg-color;
+  padding-bottom: 10rem/$dpr;
+  .top-content {
+    background-color: $detail-bg-colorblue;
+    background-image: url('../images/card-bg03-head.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 30rem/$dpr 40rem/$dpr;
+    color: $color-wihte;
+  }
+  .content-action {
+    position: relative;
+    .angle-ico {
+      position: absolute;
+      @include inline-block;
+      width: 26rem/$dpr;
+      height: 26rem/$dpr;
+      background-color: $detail-bg-color;
+    }
+    .l-t-ico {
+      @include border-radius(0 13rem/$dpr 13rem/$dpr 13rem/$dpr);
+      top: -13rem/$dpr;
+      left: -13rem/$dpr;
+    }
+    .r-t-ico {
+      @include border-radius(13rem/$dpr 0 13rem/$dpr 13rem/$dpr);
+      right: -13rem/$dpr;
+      top: -13rem/$dpr;
+    }
+    .l-b-ico {
+      @include border-radius(13rem/$dpr);
+      left: -13rem/$dpr;
+      bottom: -26rem/$dpr;
+    }
+    .r-b-ico {
+      @include border-radius(13rem/$dpr);
+      right: -13rem/$dpr;
+      bottom: -26rem/$dpr;
+    }
+  }
+  .main {
+    @include clearfix;
+    border-bottom: 1rem/$dpr solid $detail-border-color;
+    padding-bottom: 30rem/$dpr;
+  }
+  .detail-log {
+    float: left;
+  }
+  .detail {
+    @include inline-block;
+    width: 406rem/$dpr;
+    margin-left: 29rem/$dpr;
+    float: left;
+  }
+  .detail-title {
+    margin-top: 16rem/$dpr;
+    font-size: $detail-size1;
+  }
+  .detail-description {
+    margin-top: 10rem/$dpr;
+    font-size: $detail-size2;
+  }
+  .detail-pack-up {
+    height: $detail-size2 + 8rem/$dpr;
+    overflow: hidden;
+  }
+  .btn-more {
+    margin-top: 10rem/$dpr;
+    text-align: center;
+  }
+  .prize {
+    border-bottom: 1rem/$dpr solid $detail-border-color;
+    padding: 30rem/$dpr;
+    font-size: $detail-size3;
+    @include clearfix;
+    .prize-logo {
+      @include inline-block;
+      vertical-align: top;
+      float: left;
+      margin-top: 3rem/$dpr;
+    }
+    .prize-detail {
+      @include inline-block;
+      vertical-align: top;
+      margin-left: 40rem/$dpr;
+      float: left;
+      width: 415rem/$dpr;
+    }
+  }
+  .deadtime {
+    border-bottom: 1rem/$dpr solid $detail-border-color;
+    padding: 30rem/$dpr;
+    font-size: $detail-size4;
+    .deadtime-logo {
+      vertical-align: middle;
+    }
+    .deadtime-detail {
+      vertical-align: middle;
+      margin-left: 40rem/$dpr;
+    }
+  }
+  .main-content {
+    background-color: $color-wihte;
+    @include border-radius(10rem/$dpr);
+    border-top: 2px dashed #cdcdcd;
+    margin: 0 13rem/$dpr;
+    //padding: 20rem/$dpr 30rem/$dpr;
+    background-color: $color-wihte;
+    .reminder {
+      padding: 20rem/$dpr 60rem/$dpr;
+    }
+    .reminder-label {
+      text-align: center;
+      font-size: $detail-size5;
+      color: $color-black;
+      background-image: url('../images/bg-slash.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding: 25rem/$dpr 5rem/$dpr;
+    }
+    .use-btn-div {
+      text-align: center;
+    }
+    .use-btn {
+      @include inline-block;
+      @include box-sizing(border-box);
+      width: 212rem/$dpr;
+      height: 80rem/$dpr;
+      background-color: $base-color-red;
+      color: $color-wihte;
+      font-size: $detail-size6;
+      line-height: 78rem/$dpr;
+      @include border-radius(10rem/$dpr);
+      @include box-shadow(#a4a4a4 0rem/$dpr 3rem/$dpr 10rem/$dpr);
+    }
+    .rules {
+      margin: 0 30rem/$dpr;
+      margin-top: 72rem/$dpr;
+      border-top: 2rem/$dpr solid $base-color-red;
+      color: $detail-color;
+      .title {
+        text-align: center;
+        font-size: $detail-size7;
+        margin-top: -20rem/$dpr;
+        span {
+          background-color: $color-wihte;
+          @include inline-block;
+          padding: 0 12rem/$dpr;
+          color: $base-color-red;
+        }
+      }
+    }
+    .rules-list {
+      padding: 0rem 30rem/$dpr 30rem/$dpr;
+      margin-top: 15rem/$dpr;
+      color: $detail-color;
+      font-size: $detail-size8;
+      line-height: $detail-size8 + 30rem/$dpr;
+    }
+  }
+  .isdeadtime,
+  .isused {
+    background-color: $color-wihte;
+    width: 100%;
+    height: 260rem/$dpr;
+    text-align: center;
+    span {
+      margin-top: 70rem/$dpr;
+    }
+  }
+  .isused {}
+}
+
+.rel-card-detail {
+  .top-content {
+    background-color: $base-color-red;
+    background-image: url('../images/card-bg02-head.png');
+  }
+  .main {
+    border-bottom: 1rem/$dpr solid $detail-border-color2;
+  }
+  .prize {
+    border-bottom: 1rem/$dpr solid $detail-border-color2;
+  }
+  .deadtime {
+    border-bottom: 1rem/$dpr solid $detail-border-color2;
+  }
+}

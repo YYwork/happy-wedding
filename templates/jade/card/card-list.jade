@@ -1,0 +1,57 @@
+extends ../m-layout.jade
+
+block title
+  title 优惠券列表
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/card.css")
+block js
+  script(src="../../js/card.js")
+block body
+  body.card-list
+    div.yy-container.container
+      div.coupons-list
+        ul.lists
+          //- 蓝色
+          a(href="./ecard-detail.html")
+            li.iterms.card-shiwu
+              div.top
+                span.logo.card-daxiang
+                span.title 兑换大象避孕套10个
+              div.timeout
+                span.name 大象
+                span.deadtime 有效期至：2015-12-14
+              div.label 实物兑换券
+          //- 红色
+          a(href="./real-card-detail.html")
+            li.iterms.card-ecard
+              div.top
+                span.logo.card-logodu
+                span.title 100元代金券
+              div.timeout
+                span.name 嘟嘟美甲
+                span.deadtime 有效期至：2015-12-14
+              div.label 实物兑换券
+          //- 已过期
+          a(href="./ecard-deadtime.html")
+            li.iterms.card-overdue
+              div.top
+                span.logo.card-logodu-dark
+                span.title 100元代金券
+              div.timeout
+                span.name 大象
+                span.deadtime
+              div.label 实物兑换券
+              div.deadtag.card-usedred
+          //- 已使用
+          a(href="./ecard-used.html")
+            li.iterms.card-overdue
+              div.top
+                span.logo.card-logodu-dark
+                span.title 100元代金券
+              div.timeout
+                span.name 大象
+                span.deadtime
+              div.label 实物兑换券
+              div.deadtag.card-endred
+

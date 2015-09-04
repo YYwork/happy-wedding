@@ -1,0 +1,57 @@
+.pop-windows {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.pop-windows .pop-content {
+  position: absolute;
+  width: 8.90625rem;
+  height: 4.6875rem;
+  top: 50%;
+  left: 50%;
+  margin-left: -4.45313rem;
+  margin-top: -2.34375rem;
+  background-color: #fff;
+  -moz-border-radius: 0.23438rem;
+  -webkit-border-radius: 0.23438rem;
+  border-radius: 0.23438rem;
+  text-align: center;
+  color: #ff4d6b;
+  font-size: 0.5rem;
+}
+.pop-windows .pop-text {
+  margin-top: 2.03125rem;
+}
+.pop-windows .pop-x {
+  position: absolute;
+  right: 0;
+  margin-top: -0.46875rem;
+  margin-right: -0.46875rem;
+}
+.pop-windows .pop-line {
+  margin-top: 1.17188rem;
+}
+.pop-windows .btn-group {
+  margin-top: 1.09375rem;
+}
+.pop-windows .pop-btn {
+  margin: 0 0.23438rem;
+  width: 3.51563rem;
+  height: 1.28125rem;
+  -moz-border-radius: 0.15625rem;
+  -webkit-border-radius: 0.15625rem;
+  border-radius: 0.15625rem;
+  background-color: #ff4d6b;
+  color: #fff;
+  border: 0;
+  -moz-box-shadow: #a4a4a4 0rem 0.04688rem 0.15625rem;
+  -webkit-box-shadow: #a4a4a4 0rem 0.04688rem 0.15625rem;
+  box-shadow: #a4a4a4 0rem 0.04688rem 0.15625rem;
+}
+.pop-windows .pop-text2 {
+  margin-top: 0.9375rem;
+}

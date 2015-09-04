@@ -1,0 +1,24 @@
+@import "compass";
+@import "susy";
+@import "breakpoint";
+@import "normalize";
+@import "compass/utilities/sprites";
+//@import "./prestyle/prestyle.scss";
+$border-box-sizing: border-box;
+$susy: ( columns: 4, gutters: .25, global-box-sizing: border-box, debug: ( image: show, color: rgba(#66f, .25), output: overlay, toggle: top right, ));
+@include layout($susy float inside);
+@import '_variables.scss';
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: "Microsoft YaHei", "Arial Black", "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", sans-serif;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

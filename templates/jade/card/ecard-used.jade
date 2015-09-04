@@ -1,0 +1,31 @@
+extends ../m-layout.jade
+
+block title
+  title 优惠券列表
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/card.css")
+block js
+  script(src="../../js/card.js")
+block body
+  body.card-detail
+    div.yy-container.container
+      div.rel-card-detail
+        div.top-content
+          div.main
+            div.detail-log.card-du
+            div.detail
+              div.detail-title 嘟嘟美甲
+              div.detail-description.detail-pack-up
+                |嘟嘟美甲嘟嘟美甲，嘟嘟美甲，嘟嘟美甲，嘟嘟美甲，嘟嘟美甲，嘟嘟美甲
+              div.btn-more
+                span.btn-ico.card-down-up.card-down
+          div.prize
+            span.prize-logo.card-ico01
+            span.prize-detail 粉红诱惑亮甲套装1套
+          div.deadtime
+            span.deadtime-logo.card-ico02
+            span.deadtime-detail 有效期2015/4/15—2015/12/2
+        //- 已过期
+        div.isdeadtime
+          span.card-used

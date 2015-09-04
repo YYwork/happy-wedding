@@ -1,0 +1,55 @@
+@import "compass";
+@import "compass/utilities/sprites";
+@import "./variables.scss";
+$dpr:64;
+.pop-windows {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba($color-black, 0.7);
+  .pop-content {
+    position: absolute;
+    width: 570rem/$dpr;
+    height: 300rem/$dpr;
+    top: 50%;
+    left: 50%;
+    margin-left: -285rem/$dpr;
+    margin-top: -150rem/$dpr;
+    background-color: $color-wihte;
+    @include border-radius(15rem/$dpr);
+    text-align: center;
+    color: $base-color-red;
+    font-size: 32rem/$dpr;
+  }
+  .pop-text {
+    margin-top: 130rem/$dpr;
+  }
+  .pop-x {
+    position: absolute;
+    right: 0;
+    margin-top: -30rem/$dpr;
+    margin-right: -30rem/$dpr;
+  }
+  .pop-line {
+    margin-top: 75rem/$dpr;
+  }
+  .btn-group {
+    margin-top: 70rem/$dpr;
+  }
+  .pop-btn {
+    margin: 0 15rem/$dpr;
+    width: 225rem/$dpr;
+    height: 82rem/$dpr;
+    @include border-radius(10rem/$dpr);
+    background-color: $base-color-red;
+    color: $color-wihte;
+    border: 0;
+    @include box-shadow(#a4a4a4 0rem/$dpr 3rem/$dpr 10rem/$dpr);
+  }
+  .pop-text2 {
+    margin-top: 60rem/$dpr;
+  }
+}

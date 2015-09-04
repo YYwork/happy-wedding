@@ -7,9 +7,9 @@ require 'breakpoint'
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "/"  # url 路径 https://uda100.com
-css_dir = "style/css"
-sass_dir = "style/sass"
+http_path = "/"
+css_dir = "css"
+sass_dir = "style"
 images_dir = "images"
 javascripts_dir = "script"
 

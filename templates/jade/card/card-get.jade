@@ -1,0 +1,31 @@
+extends ../m-layout.jade
+
+block title
+  title 看店大礼包
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/card.css")
+block js
+  script(src="../../js/card.js")
+block body
+  body.get-card
+    div.yy-container.container
+      div.giftpacks
+        div.content
+          div.money 6000元
+          div.phone-input
+            input.phone-number(placeholder="请输入手机号码")
+          div.input-btn
+            button.input-submit
+          div.active-rules
+            .title 活动规则
+            ul.article
+              li 1 请输入在喜事网预留的手机号码
+              li 2 此礼包只能领取1次
+              li 3 本活动最终解释权贵喜事网所有
+    div.pop-windows
+      div.pop-content
+        div.pop-x.card-x
+        div.pop-text 请输入在喜事网预留的手机号码
+        div.pop-line
+          span.card-line

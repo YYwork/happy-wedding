@@ -1,0 +1,62 @@
+extends ../m-layout.jade
+
+block title
+  title 优惠券列表
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/card.css")
+block js
+  script(src="../../js/card.js")
+block body
+  body.card-detail
+    div.yy-container.container
+      div.card-detail
+        div.top-content
+          div.main
+            div.detail-log.card-xiang
+            div.detail
+              div.detail-title 大象
+              div.detail-description.detail-pack-up
+                |嘟嘟美甲嘟嘟美甲，嘟嘟美甲，嘟嘟美甲，嘟嘟美甲，嘟嘟美甲，嘟嘟美甲
+              div.btn-more
+                span.btn-ico.card-down-up.card-down
+          div.prize
+            span.prize-logo.card-ico01
+            span.prize-detail 粉红诱惑亮甲套装1套
+          div.deadtime
+            span.deadtime-logo.card-ico02
+            span.deadtime-detail 有效期2015/4/15—2015/12/2
+        //- 可以使用
+        div.main-content
+          div.content-action
+            span.angle-ico.l-t-ico
+            span.angle-ico.r-t-ico
+            span.angle-ico.l-b-ico
+            span.angle-ico.r-b-ico
+            div.reminder
+              div.reminder-label 优惠码：DDMKJ56258
+            div.use-btn-div
+              span.use-btn 消券
+          div.rules
+            div.title
+              span 使用规则
+            div.rules-list
+              ul
+                li 1  成功领取后显示电子码
+                li 2  成功领取后显示电子码
+                li 3  成功领取后显示电子码
+                li 4  成功领取后显示电子码
+                li 5  成功领取后显示电子
+
+        //- 已过期
+        //- div.isdeadtime
+        //-   span.card-end
+        //- //- 已使用
+        //- div.isused
+        //-   span.card-used
+    div.pop-windows
+      div.pop-content
+        div.pop-text2 提示：请确认当场使用时再进行消券
+        div.btn-group
+          button.pop-btn.btn-yes 确认
+          button.pop-btn.btn-no 取消

@@ -19,12 +19,12 @@ var inputDir = './',
   outputDir = './build';
 
 var source = {
-  sassDir: path.join(inputDir, 'style'),
+  sassDir: path.join(inputDir, 'style/sass'),
   jadeDir: path.join(inputDir, 'templates/jade'),
   coffeeDir: path.join(inputDir, 'script/coffee'),
   imagesDir: path.join(inputDir, 'images'),
 
-  sassFileDir: path.join(inputDir, 'style/**/*.scss'),
+  sassFileDir: path.join(inputDir, 'style/sass/**/*.scss'),
   coffeeFileDir: path.join(inputDir, 'script/coffee/*.coffee'),
   jadeFileDir: path.join(inputDir, 'templates/jade/**/*.jade'),
 

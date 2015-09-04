@@ -1,5 +1,0 @@
-@import '_base.scss';
-$dpr: 64;
-.yy-container {
-  @include container(1000rem/$dpr)
-}
