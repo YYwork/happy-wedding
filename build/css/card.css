@@ -1,5 +1,8 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+
 article,
 aside,
 details,
@@ -33,7 +36,9 @@ template {
   display: none;
 }
 
+
 /*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -44,7 +49,9 @@ body {
   margin: 0;
 }
 
+
 /*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+
 a {
   background: transparent;
 }
@@ -54,7 +61,9 @@ a:hover {
   outline: 0;
 }
 
+
 /*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -98,7 +107,9 @@ sub {
   bottom: -0.25em;
 }
 
+
 /*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+
 img {
   border: 0;
 }
@@ -107,7 +118,9 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+
 /*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+
 figure {
   margin: 1em 40px;
 }
@@ -130,7 +143,9 @@ samp {
   font-size: 1em;
 }
 
+
 /*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+
 button,
 input,
 optgroup,
@@ -215,7 +230,9 @@ optgroup {
   font-weight: bold;
 }
 
+
 /*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -255,8 +272,18 @@ body {
   background-color: #ff4d6b;
 }
 
-.card-sprite, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x {
-  background-image: url('../../images/card-sebc77be963.png');
+.card-sprite,
+.card-down-up,
+.card-down,
+.card-end,
+.card-endred,
+.card-ico01,
+.card-ico02,
+.card-line,
+.card-used,
+.card-usedred,
+.card-x {
+  background-image: url('../images/card-sebc77be963.png');
   background-repeat: no-repeat;
 }
 
@@ -320,7 +347,17 @@ body {
   width: 65px;
 }
 
-.card-sprite, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x {
+.card-sprite,
+.card-down-up,
+.card-down,
+.card-end,
+.card-endred,
+.card-ico01,
+.card-ico02,
+.card-line,
+.card-used,
+.card-usedred,
+.card-x {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -329,8 +366,28 @@ body {
   background-size: 4.625rem 7.32813rem;
 }
 
-.card-sprite, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x {
-  background-image: url("../../images/card-sebc77be963.png");
+.card-sprite,
+.card-down-up,
+.card-down,
+.card-end,
+.card-endred,
+.card-ico01,
+.card-ico02,
+.card-line,
+.card-used,
+.card-usedred,
+.card-x,
+.card-down-up,
+.card-down,
+.card-end,
+.card-endred,
+.card-ico01,
+.card-ico02,
+.card-line,
+.card-used,
+.card-usedred,
+.card-x {
+  background-image: url("../images/card-sebc77be963.png");
   background-repeat: no-repeat;
 }
 
@@ -403,6 +460,7 @@ body {
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 .pop-windows .pop-content {
   position: absolute;
   width: 8.90625rem;
@@ -419,21 +477,26 @@ body {
   color: #ff4d6b;
   font-size: 0.5rem;
 }
+
 .pop-windows .pop-text {
   margin-top: 2.03125rem;
 }
+
 .pop-windows .pop-x {
   position: absolute;
   right: 0;
   margin-top: -0.46875rem;
   margin-right: -0.46875rem;
 }
+
 .pop-windows .pop-line {
   margin-top: 1.17188rem;
 }
+
 .pop-windows .btn-group {
   margin-top: 1.09375rem;
 }
+
 .pop-windows .pop-btn {
   margin: 0 0.23438rem;
   width: 3.51563rem;
@@ -448,6 +511,7 @@ body {
   -webkit-box-shadow: #a4a4a4 0rem 0.04688rem 0.15625rem;
   box-shadow: #a4a4a4 0rem 0.04688rem 0.15625rem;
 }
+
 .pop-windows .pop-text2 {
   margin-top: 0.9375rem;
 }
@@ -461,12 +525,14 @@ body {
   background-color: #ff4d6b;
   padding-bottom: 0.46875rem;
 }
+
 .giftpacks .content {
   background-image: url("../images/card-bg001.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
 }
+
 .giftpacks .money {
   margin-top: 4.40625rem;
   margin-left: 4.14063rem;
@@ -478,10 +544,12 @@ body {
   font-size: 0.53125rem;
   color: #ffdd41;
 }
+
 .giftpacks .phone-input {
   margin-top: 3.15625rem;
   padding-left: 1.51563rem;
 }
+
 .giftpacks .phone-input .phone-number {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -493,29 +561,34 @@ body {
   font-size: 0.375rem;
   color: #808080;
 }
+
 .giftpacks .input-btn {
   margin-top: 0.32813rem;
   padding-left: 1.46875rem;
   -webkit-tap-highlight-color: transparent;
 }
+
 .giftpacks .input-btn .input-submit,
 .giftpacks .input-btn .input-submit:hover {
   background-color: #ddd;
   width: 7.07813rem;
   height: 1.375rem;
   border: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-tap-highlight-color: transparent;
 }
+
 .giftpacks .active-rules {
   margin-top: 1.32813rem;
   padding-left: 0.39063rem;
   color: #fff;
 }
+
 .giftpacks .active-rules .title {
   font-size: 0.375rem;
 }
+
 .giftpacks .active-rules .article {
   margin-top: 0.20313rem;
   font-size: 0.3125rem;
@@ -527,12 +600,14 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .coupons-list ul {
   width: 9.0625rem;
   margin: 0 auto;
   padding-top: 0.15625rem;
   padding-bottom: 0.46875rem;
 }
+
 .coupons-list .iterms {
   position: relative;
   -moz-box-sizing: border-box;
@@ -552,9 +627,11 @@ body {
   padding-left: 0.46875rem;
   padding-right: 0.46875rem;
 }
+
 .coupons-list .iterms .top {
   position: relative;
 }
+
 .coupons-list .iterms .top .logo {
   display: inline-block;
   vertical-align: middle;
@@ -564,10 +641,12 @@ body {
   height: 1.6875rem;
   width: 1.6875rem;
 }
+
 .coupons-list .iterms .top .logo img {
   height: 1.6875rem;
   width: 1.6875rem;
 }
+
 .coupons-list .iterms .top .gray-logo {
   display: inline-block;
   vertical-align: middle;
@@ -577,6 +656,7 @@ body {
   height: 1.6875rem;
   width: 1.6875rem;
 }
+
 .coupons-list .iterms .top .gray-logo img {
   height: 1.6875rem;
   width: 1.6875rem;
@@ -588,6 +668,7 @@ body {
   filter: grayscale(100%);
   filter: gray;
 }
+
 .coupons-list .iterms .title {
   position: absolute;
   font-size: 0.5625rem;
@@ -597,22 +678,28 @@ body {
   font-family: "Arial black", "Microsoft YaHei";
   font-weight: bold;
 }
+
 .coupons-list .iterms .timeout {
   margin-top: 0.35938rem;
   line-height: 0.9375rem;
 }
+
 .coupons-list .iterms .name {
   font-size: 0.40625rem;
 }
+
 .coupons-list .iterms.card-shiwu .name {
   color: #0193e6;
 }
+
 .coupons-list .iterms.card-ecard .name {
   color: #ff4d6b;
 }
+
 .coupons-list .iterms.card-overdue .name {
   color: #666;
 }
+
 .coupons-list .iterms .deadtime {
   color: #666;
   font-size: 0.375rem;
@@ -620,23 +707,28 @@ body {
   overflow: hidden;
   *zoom: 1;
 }
+
 .coupons-list .iterms .label {
   text-align: center;
   color: #666;
   font-size: 0.3125rem;
   line-height: 0.75rem;
 }
+
 .coupons-list .iterms .deadtag {
   position: absolute;
   right: 0.23438rem;
   bottom: 0.23438rem;
 }
+
 .coupons-list .card-shiwu {
   background-image: url("../images/card-shiwu.png");
 }
+
 .coupons-list .card-ecard {
   background-image: url("../images/card-ecard.png");
 }
+
 .coupons-list .card-overdue {
   background-image: url("../images/card-overdue.png");
 }
@@ -648,6 +740,7 @@ body {
   background-color: #999;
   padding-bottom: 0.15625rem;
 }
+
 .rel-card-detail .top-content,
 .card-detail .top-content {
   background-color: #0193e6;
@@ -657,10 +750,12 @@ body {
   padding: 0.46875rem 0.625rem;
   color: #fff;
 }
+
 .rel-card-detail .content-action,
 .card-detail .content-action {
   position: relative;
 }
+
 .rel-card-detail .content-action .angle-ico,
 .card-detail .content-action .angle-ico {
   position: absolute;
@@ -673,6 +768,7 @@ body {
   height: 0.40625rem;
   background-color: #999;
 }
+
 .rel-card-detail .content-action .l-t-ico,
 .card-detail .content-action .l-t-ico {
   -moz-border-radius: 0 0.20313rem 0.20313rem 0.20313rem;
@@ -681,6 +777,7 @@ body {
   top: -0.20313rem;
   left: -0.20313rem;
 }
+
 .rel-card-detail .content-action .r-t-ico,
 .card-detail .content-action .r-t-ico {
   -moz-border-radius: 0.20313rem 0 0.20313rem 0.20313rem;
@@ -689,6 +786,7 @@ body {
   right: -0.20313rem;
   top: -0.20313rem;
 }
+
 .rel-card-detail .content-action .l-b-ico,
 .card-detail .content-action .l-b-ico {
   -moz-border-radius: 0.20313rem;
@@ -697,6 +795,7 @@ body {
   left: -0.20313rem;
   bottom: -0.40625rem;
 }
+
 .rel-card-detail .content-action .r-b-ico,
 .card-detail .content-action .r-b-ico {
   -moz-border-radius: 0.20313rem;
@@ -705,6 +804,7 @@ body {
   right: -0.20313rem;
   bottom: -0.40625rem;
 }
+
 .rel-card-detail .main,
 .card-detail .main {
   overflow: hidden;
@@ -712,15 +812,18 @@ body {
   border-bottom: 0.01563rem solid #4db2e5;
   padding-bottom: 0.46875rem;
 }
+
 .rel-card-detail .detail-log,
 .card-detail .detail-log {
   float: left;
 }
+
 .rel-card-detail .detail-log img,
 .card-detail .detail-log img {
   height: 1.875rem;
   width: 1.875rem;
 }
+
 .rel-card-detail .detail,
 .card-detail .detail {
   display: inline-block;
@@ -732,28 +835,33 @@ body {
   margin-left: 0.45313rem;
   float: left;
 }
+
 .rel-card-detail .detail-title,
 .card-detail .detail-title {
   margin-top: 0.25rem;
   font-size: 0.46875rem;
   font-weight: bold;
 }
+
 .rel-card-detail .detail-description,
 .card-detail .detail-description {
   margin-top: 0.15625rem;
   font-size: 0.3125rem;
 }
+
 .rel-card-detail .detail-pack-up,
 .card-detail .detail-pack-up {
   height: 0.375rem;
   overflow: hidden;
 }
+
 .rel-card-detail .btn-more,
 .card-detail .btn-more {
   margin-top: 0.15625rem;
   text-align: center;
   -webkit-tap-highlight-color: transparent;
 }
+
 .rel-card-detail .prize,
 .card-detail .prize {
   border-bottom: 0.01563rem solid #4db2e5;
@@ -762,6 +870,7 @@ body {
   overflow: hidden;
   *zoom: 1;
 }
+
 .rel-card-detail .prize .prize-logo,
 .card-detail .prize .prize-logo {
   display: inline-block;
@@ -773,6 +882,7 @@ body {
   float: left;
   margin-top: 0.04688rem;
 }
+
 .rel-card-detail .prize .prize-detail,
 .card-detail .prize .prize-detail {
   display: inline-block;
@@ -787,21 +897,25 @@ body {
   font-family: "Arial black", "Microsoft YaHei";
   font-weight: bold;
 }
+
 .rel-card-detail .deadtime,
 .card-detail .deadtime {
   border-bottom: 0.01563rem solid #4db2e5;
   padding: 0.46875rem;
   font-size: 0.375rem;
 }
+
 .rel-card-detail .deadtime .deadtime-logo,
 .card-detail .deadtime .deadtime-logo {
   vertical-align: middle;
 }
+
 .rel-card-detail .deadtime .deadtime-detail,
 .card-detail .deadtime .deadtime-detail {
   vertical-align: middle;
   margin-left: 0.625rem;
 }
+
 .rel-card-detail .main-content,
 .card-detail .main-content {
   background-color: #fff;
@@ -812,10 +926,12 @@ body {
   margin: 0 0.20313rem;
   background-color: #fff;
 }
+
 .rel-card-detail .main-content .reminder,
 .card-detail .main-content .reminder {
   padding: 0.3125rem 0.9375rem;
 }
+
 .rel-card-detail .main-content .reminder-label,
 .card-detail .main-content .reminder-label {
   text-align: center;
@@ -827,10 +943,12 @@ body {
   padding: 0.39063rem 0.07813rem;
   font-weight: bold;
 }
+
 .rel-card-detail .main-content .use-btn-div,
 .card-detail .main-content .use-btn-div {
   text-align: center;
 }
+
 .rel-card-detail .main-content .use-btn,
 .card-detail .main-content .use-btn {
   display: inline-block;
@@ -856,6 +974,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   font-weight: bold;
 }
+
 .rel-card-detail .main-content .rules,
 .card-detail .main-content .rules {
   margin: 0 0.46875rem;
@@ -863,12 +982,14 @@ body {
   border-top: 0.03125rem solid #ff4d6b;
   color: #343434;
 }
+
 .rel-card-detail .main-content .rules .title,
 .card-detail .main-content .rules .title {
   text-align: center;
   font-size: 0.375rem;
   margin-top: -0.3125rem;
 }
+
 .rel-card-detail .main-content .rules .title span,
 .card-detail .main-content .rules .title span {
   background-color: #fff;
@@ -880,6 +1001,7 @@ body {
   padding: 0 0.1875rem;
   color: #ff4d6b;
 }
+
 .rel-card-detail .main-content .rules-list,
 .card-detail .main-content .rules-list {
   padding: 0rem 0.46875rem 0.46875rem;
@@ -888,6 +1010,7 @@ body {
   font-size: 0.34375rem;
   line-height: 0.8125rem;
 }
+
 .rel-card-detail .isdeadtime,
 .rel-card-detail .isused,
 .card-detail .isdeadtime,
@@ -897,6 +1020,7 @@ body {
   height: 4.0625rem;
   text-align: center;
 }
+
 .rel-card-detail .isdeadtime span,
 .rel-card-detail .isused span,
 .card-detail .isdeadtime span,
@@ -908,12 +1032,15 @@ body {
   background-color: #ff4d6b;
   background-image: url("../images/card-bg02-head.png");
 }
+
 .rel-card-detail .main {
   border-bottom: 0.01563rem solid #fe8290;
 }
+
 .rel-card-detail .prize {
   border-bottom: 0.01563rem solid #fe8290;
 }
+
 .rel-card-detail .deadtime {
   border-bottom: 0.01563rem solid #fe8290;
 }
