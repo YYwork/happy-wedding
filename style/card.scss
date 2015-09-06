@@ -138,9 +138,10 @@ body {
       position: absolute;
       font-size: 36rem/$dpr;
       color: $color-wihte;
-      font-weight: 900;
       margin-top: 29rem/$dpr;
       margin-left: 22rem/$dpr;
+      font-family: "Arial black", "Microsoft YaHei";
+      font-weight: bold;
     }
     .timeout {
       margin-top: 23rem/$dpr;
@@ -258,6 +259,7 @@ body {
   .detail-title {
     margin-top: 16rem/$dpr;
     font-size: $detail-size1;
+    font-weight: bold;
   }
   .detail-description {
     margin-top: 10rem/$dpr;
@@ -289,6 +291,8 @@ body {
       margin-left: 40rem/$dpr;
       float: left;
       width: 415rem/$dpr;
+      font-family: "Arial black", "Microsoft YaHei";
+      font-weight: bold;
     }
   }
   .deadtime {
@@ -321,6 +325,7 @@ body {
       background-repeat: no-repeat;
       background-size: 100%;
       padding: 25rem/$dpr 5rem/$dpr;
+      font-weight: bold;
     }
     .use-btn-div {
       text-align: center;
@@ -337,6 +342,7 @@ body {
       @include border-radius(10rem/$dpr);
       @include box-shadow(#a4a4a4 0rem/$dpr 3rem/$dpr 10rem/$dpr);
       -webkit-tap-highlight-color: transparent;
+      font-weight: bold;
     }
     .rules {
       margin: 0 30rem/$dpr;
