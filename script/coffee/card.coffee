@@ -22,3 +22,5 @@ $ ()->
   $('.btn-yes').click ()->
     log '确认消券'
     $('.pop-windows').hide()
+
+  # grayscale($('.logo img'))

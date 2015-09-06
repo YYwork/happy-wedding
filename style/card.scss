@@ -26,7 +26,7 @@ body {
   padding-bottom: 30rem/$dpr;
   .content {
     //position: absolute;
-    background-image: url('../images/card-bg01.png');
+    background-image: url('../images/card-bg001.png');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100%;
@@ -46,7 +46,7 @@ body {
     .phone-number {
       @include box-sizing(border-box);
       padding: 30rem/$dpr 24rem/$dpr;
-      border: 0;
+      border: 1rem/$dpr solid $input-color;
       width: 444rem/$dpr;
       height: 82rem/$dpr;
       font-size: $input-size;
@@ -57,6 +57,7 @@ body {
     //position: absolute;
     margin-top: 21rem/$dpr;
     padding-left: 94rem/$dpr;
+    -webkit-tap-highlight-color: transparent;
     .input-submit,
     .input-submit:hover {
       background-color: #ddd;
@@ -107,6 +108,31 @@ body {
     padding-right: 30rem/$dpr;
     .top {
       position: relative;
+      .logo {
+        @include inline-block;
+        height: 108rem/$dpr;
+        width: 108rem/$dpr;
+        img {
+          height: 108rem/$dpr;
+          width: 108rem/$dpr;
+        }
+      }
+      .gray-logo {
+        @include inline-block;
+        height: 108rem/$dpr;
+        width: 108rem/$dpr;
+        img {
+          height: 108rem/$dpr;
+          width: 108rem/$dpr;
+          filter: unquote("progid: DXImageTransform.Microsoft.BasicImage(grayscale=1)");
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          filter: grayscale(100%);
+          filter: gray;
+        }
+      }
     }
     .title {
       position: absolute;
@@ -218,6 +244,10 @@ body {
   }
   .detail-log {
     float: left;
+    img {
+      height: 120rem/$dpr;
+      width: 120rem/$dpr;
+    }
   }
   .detail {
     @include inline-block;
@@ -234,12 +264,13 @@ body {
     font-size: $detail-size2;
   }
   .detail-pack-up {
-    height: $detail-size2 + 8rem/$dpr;
+    height: $detail-size2 + 4rem/$dpr;
     overflow: hidden;
   }
   .btn-more {
     margin-top: 10rem/$dpr;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
   }
   .prize {
     border-bottom: 1rem/$dpr solid $detail-border-color;
@@ -305,6 +336,7 @@ body {
       line-height: 78rem/$dpr;
       @include border-radius(10rem/$dpr);
       @include box-shadow(#a4a4a4 0rem/$dpr 3rem/$dpr 10rem/$dpr);
+      -webkit-tap-highlight-color: transparent;
     }
     .rules {
       margin: 0 30rem/$dpr;

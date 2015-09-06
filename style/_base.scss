@@ -4,6 +4,7 @@
 @import "normalize";
 @import "compass/utilities/sprites";
 //@import "./_prestyle.scss";
+$browser-minimum-versions: ("chrome": "10", "firefox": "3", "ie": "9", "safari": "4", "opera": "11");
 $border-box-sizing: border-box;
 $susy: ( columns: 4, gutters: .25, global-box-sizing: border-box, debug: ( image: show, color: rgba(#66f, .25), output: overlay, toggle: top right, ));
 @include layout($susy float inside);

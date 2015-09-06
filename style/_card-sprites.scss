@@ -7,123 +7,71 @@ $card-layout:smart;
 $dpr: 64;
 .card-sprite {
   @include inline-block;
-  background-size: 296rem/$dpr 620rem/$dpr;
+  background-size: 296rem/$dpr 469rem/$dpr;
 }
 
 //===============rem=========
-.card-sprite,
-.card-daxiang,
-.card-down-up,
-.card-down,
-.card-end,
-.card-endred,
-.card-ico01,
-.card-ico02,
-.card-line,
-.card-logodu-dark,
-.card-logodu,
-.card-used,
-.card-usedred,
-.card-x {
-  background-image: url('../../images/card-s62afa3f204.png');
+.card-sprite, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x {
+  background-image: url('../../images/card-sebc77be963.png');
   background-repeat: no-repeat;
 }
 
-.card-daxiang {
-  background-position: -173rem/$dpr 0;
-  height: 108rem/$dpr;
-  width: 108rem/$dpr;
-}
-
 .card-down-up {
-  background-position: 0 -108rem/$dpr;
+  background-position: -191rem/$dpr -65rem/$dpr;
   height: 19rem/$dpr;
   width: 37rem/$dpr;
 }
 
 .card-down {
-  background-position: -37rem/$dpr -108rem/$dpr;
+  background-position: -228rem/$dpr -65rem/$dpr;
   height: 19rem/$dpr;
   width: 37rem/$dpr;
 }
 
 .card-end {
-  background-position: 0 -311rem/$dpr;
+  background-position: 0 -254rem/$dpr;
   height: 106rem/$dpr;
   width: 291rem/$dpr;
 }
 
 .card-endred {
-  background-position: -84rem/$dpr -417rem/$dpr;
+  background-position: 0 -65rem/$dpr;
   height: 94rem/$dpr;
   width: 191rem/$dpr;
 }
 
 .card-ico01 {
-  background-position: -42rem/$dpr -417rem/$dpr;
+  background-position: 0 0;
   height: 42rem/$dpr;
   width: 42rem/$dpr;
 }
 
 .card-ico02 {
-  background-position: 0 -417rem/$dpr;
+  background-position: -42rem/$dpr 0;
   height: 42rem/$dpr;
   width: 42rem/$dpr;
 }
 
 .card-line {
-  background-position: 0 -203rem/$dpr;
+  background-position: -191rem/$dpr -159rem/$dpr;
   height: 11rem/$dpr;
   width: 75rem/$dpr;
 }
 
-.card-logodu-dark {
-  background-position: -75rem/$dpr -203rem/$dpr;
-  height: 108rem/$dpr;
-  width: 108rem/$dpr;
-}
-
-.card-logodu {
-  background-position: -65rem/$dpr 0;
-  height: 108rem/$dpr;
-  width: 108rem/$dpr;
-}
-
 .card-used {
-  background-position: 0 -511rem/$dpr;
+  background-position: 0 -360rem/$dpr;
   height: 109rem/$dpr;
   width: 296rem/$dpr;
 }
 
 .card-usedred {
-  background-position: -74rem/$dpr -108rem/$dpr;
+  background-position: 0 -159rem/$dpr;
   height: 95rem/$dpr;
   width: 191rem/$dpr;
 }
 
 .card-x {
-  background-position: 0 0;
+  background-position: -84rem/$dpr 0;
   height: 65rem/$dpr;
   width: 65rem/$dpr;
-}
-
-// 108 - 120
-.card-du {
-  background-image: url('../../images/card-s62afa3f204.png');
-  background-repeat: no-repeat;
-  @include inline-block;
-  background-size: 296rem*120/108/$dpr 620rem*120/108/$dpr;
-  background-position: -65rem*120/108/$dpr 0;
-  height: 108rem*120/108/$dpr;
-  width: 108rem*120/108/$dpr;
-}
-
-.card-xiang {
-  background-image: url('../../images/card-s62afa3f204.png');
-  background-repeat: no-repeat;
-  @include inline-block;
-  background-size: 296rem*120/108/$dpr 620rem*120/108/$dpr;
-  background-position: -173rem*120/108/$dpr 0;
-  height: 108rem*120/108/$dpr;
-  width: 108rem*120/108/$dpr;
 }
