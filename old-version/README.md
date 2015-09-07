@@ -42,3 +42,5 @@
 
 (5 完成)task6: 商户页面 wap commercial_customer.html
 
+## 8月份:
+(3*4 完成)task7: 优惠券 wap build/teplates/card/*.html
