@@ -28,7 +28,7 @@ var source = {
   coffeeFileDir: path.join(inputDir, 'script/coffee/*.coffee'),
   jadeFileDir: path.join(inputDir, 'templates/jade/**/*.jade'),
 
-  imagesFileDir: path.join(inputDir, 'images/**/*.png'),
+  imagesFileDir: path.join(inputDir, 'images/**/*.*'),
   jslibFileDir: path.join(inputDir, 'script/jslib/*.js')
 }
 

@@ -1,0 +1,49 @@
+extends ../m-layout.jade
+
+block title
+  title 看店大礼包
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/order.css")
+block body
+  body
+    div.orders.order-bg01
+      div.header.header-bg
+        div.title
+          span.title-name 用户需求
+          span.title-num 编号001234146
+        div.description
+         div
+          label 婚期 ：
+          |2016-10-01（周五）午宴
+         div
+          label 位置 ：
+          |东三环，
+         div
+          label 桌数 ：
+          |20-22桌
+         div
+          label 餐标 ：
+          |3000-4000/桌
+         div
+          label 其他 ：
+          |客人要求无柱宴会厅
+      div.to-get-order
+        div.clock.clock-bg
+        div.clock-circle-text
+          div.clock-time 剩余接单时间
+          div.clock-time-number 18
+          div.clock-time 分钟
+        div.circle-watch
+          div.clock-circle-change.clock-circle
+        div.get-order-btn
+          a(href="./get-order.html")
+            button.btn-bg01 有档期，我要接
+      div.geted-order
+        div.content
+          span.ico.order-dui3
+          span.text 您已经接单了！请耐心等待
+      div.you-are-late
+        div.cartoon
+          img(src="../../images/order-cartoon.png")
+        div.text 您来晚了，错过了一个好大的订单！下次继续努力！

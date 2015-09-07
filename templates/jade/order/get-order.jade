@@ -1,0 +1,69 @@
+extends ../m-layout.jade
+
+block title
+  title 看店大礼包
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/order.css")
+block js
+  script(src="../../js/jquery.min.js")
+  script(src="../../js/jQuery.tagsinput.js")
+  script(src="../../js/order.js")
+block body
+  body
+    div.get-order
+      header.header.order-bg02
+        div.header-title 婚礼管家提醒您，该用户希望：
+        div.customer-label-group
+          div.customer-label
+            span.cus-coin.order-dui
+            |赠送婚房
+          div.customer-label
+            span.cus-coin.order-dui
+            |赠送婚房
+          div.customer-label
+            span.cus-coin.order-dui
+            |赠送婚房
+
+      div.yy-customer-form
+        div.yy-form-span 可提供优惠项：
+        div.yy-form-label
+          span.yy-cus-horn.order-voice
+          span.yy-cus-label 提供优惠，可提高用户成单率!
+
+        div
+          ul.yy-customer-tags
+            li.li
+              |赠送婚房
+              span.order-ico.order-jia
+            li.li
+              |餐标免费升级
+              span.order-ico.order-jia
+            li.li
+              |免费服务
+              span.order-ico.order-jia
+            li.li
+              |免费停车
+              span.order-ico.order-jia
+            li.li
+              |有柱子
+              span.order-ico.order-jia
+            li.li
+              |无柱子
+              span.order-ico.order-jia
+            li.li
+              |免费提供新娘化妆间
+              span.order-ico.order-jia
+          div.yy-textarea
+            input(name="tags" class="tags" id="yy-tags")
+            span.yy-textarea-placeholder 点击优惠项标签或者直接输入
+            span.yy-textarea-alert
+              |还可以添加
+              span.yy-textarea-tags
+                span.yy-textarea-number 5
+                |个标签
+              span.yy-textarea-text
+                span.yy-textarea-number 50
+                |个字
+      div.yy-com-btn
+        button.btn-bg02#submit-theorder 提交

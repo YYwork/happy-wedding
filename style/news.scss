@@ -1,0 +1,50 @@
+@import "compass";
+@import "susy";
+@import "breakpoint";
+@import "normalize";
+@import "compass/utilities/sprites";
+$dpr: 64;
+.news {
+  width: 100%;
+  height: 100%;
+}
+
+.news-article {
+  display: block;
+  height: 100%;
+  padding: 20rem/$dpr 20rem/$dpr;
+  color: #555;
+}
+
+.news-title {
+  overflow: hidden;
+  display: block;
+  font-size: 40rem/$dpr;
+}
+
+.news-origins {
+  font-size: 36rem/$dpr;
+  color: #999;
+  padding: 24rem/$dpr 0;
+  line-height: 36rem/$dpr;
+}
+
+.news-origin {}
+
+.news-time {
+  @include inline-block;
+  padding: 0 20rem/$dpr;
+}
+
+.ads,
+.news-content {
+  font-size: 35rem/$dpr;
+  color: #555;
+  line-height: 48rem/$dpr;
+  img {
+    margin-top: 40rem/$dpr;
+    margin-bottom: 40rem/$dpr;
+    max-width: 100%;
+    display: block;
+  }
+}
