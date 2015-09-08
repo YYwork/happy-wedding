@@ -121,3 +121,14 @@ body {
     margin-top: 60rem/$dpr;
   }
 }
+
+.form-group {
+  position: relative;
+}
+
+label.error {
+  position: absolute;
+  right: 24px;
+  color: red;
+  background-color: #fff;
+}

@@ -6,37 +6,42 @@ block title
 block css
   link(rel="stylesheet" type="text/css" href="../../css/order.css")
   link(rel="stylesheet" type="text/css" href="../../css/center.css")
+block js
+  script(src="../../js/jquery.min.js")
+  script(src="../../js/jquery.validate.js")
+  script(src="../../js/center.js")
+
 block body
   body
-    div.cus-center.order-bg01
+    form.cus-center.order-bg01(method="post" onsubmit="return false;")
       div.header.center-header-bg
         div.title
           span.title-name 填写用户需求
         div.center-form
          div.form-group
           label 姓名 ：
-          input(type="text" placeholder="喜多多")
+          input(type="text" name="name" placeholder="喜多多")
          div.form-group
           label 电话 ：
-          input(type="text" placeholder="12345678900")
+          input(type="text" name="phone" placeholder="12345678900")
          div.form-group
           label 婚期 ：
-          input(type="text" placeholder="2016-10-01（周五）午宴")
+          input(type="text" name="date" placeholder="2016-10-01（周五）午宴")
          div.form-group
           label 商圈 ：
-          input(type="button" value="东三环")
+          input(type="button" name="address" value="东三环")
           span.center-down.order-center-down
          div.form-group
           label 桌数 ：
-          input(type="button" value="20-22桌")
+          input(type="button" name="deskes" value="20-22桌")
           span.center-down.order-center-down
          div.form-group
           label 餐标 ：
-          input(type="button" value="3000-4000桌")
+          input(type="button" name="meal" value="3000-4000桌")
           span.center-down.order-center-down
          div.form-group
           label 其他 ：
-          input(type="text" placeholder="客人要求无柱宴会厅")
+          input(type="text" name="other" placeholder="客人要求无柱宴会厅")
       div.center-bg2
         div.center-description
           div.content
@@ -44,4 +49,4 @@ block body
             |用户完成签约则会联系您发放补贴奖励，您<br/>
             |还可以拨打1010-1314查询用户订单状态。
       div.center-btn-group
-        button.btn-bg01 点击提交
+        button#cus-submit.btn-bg01(type="submit") 点击提交

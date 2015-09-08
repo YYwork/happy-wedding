@@ -12,39 +12,42 @@
     <link rel="stylesheet" type="text/css" href="../../css/order.css">
     <link rel="stylesheet" type="text/css" href="../../css/center.css">
     <script src="../../js/flexible.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.validate.js"></script>
+    <script src="../../js/center.js"></script>
   </head>
   <body>
-    <div class="cus-center order-bg01">
+    <form method="post" onsubmit="return false;" class="cus-center order-bg01">
       <div class="header center-header-bg">
         <div class="title"><span class="title-name">填写用户需求</span></div>
         <div class="center-form">
           <div class="form-group">
             <label>姓名 ：</label>
-            <input type="text" placeholder="喜多多">
+            <input type="text" name="name" placeholder="喜多多">
           </div>
           <div class="form-group">
             <label>电话 ：</label>
-            <input type="text" placeholder="12345678900">
+            <input type="text" name="phone" placeholder="12345678900">
           </div>
           <div class="form-group">
             <label>婚期 ：</label>
-            <input type="text" placeholder="2016-10-01（周五）午宴">
+            <input type="text" name="date" placeholder="2016-10-01（周五）午宴">
           </div>
           <div class="form-group">
             <label>商圈 ：</label>
-            <input type="button" value="东三环"><span class="center-down order-center-down"></span>
+            <input type="button" name="address" value="东三环"><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>桌数 ：</label>
-            <input type="button" value="20-22桌"><span class="center-down order-center-down"></span>
+            <input type="button" name="deskes" value="20-22桌"><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>餐标 ：</label>
-            <input type="button" value="3000-4000桌"><span class="center-down order-center-down"></span>
+            <input type="button" name="meal" value="3000-4000桌"><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>其他 ：</label>
-            <input type="text" placeholder="客人要求无柱宴会厅">
+            <input type="text" name="other" placeholder="客人要求无柱宴会厅">
           </div>
         </div>
       </div>
@@ -58,8 +61,8 @@
         </div>
       </div>
       <div class="center-btn-group">
-        <button class="btn-bg01">点击提交</button>
+        <button id="cus-submit" type="submit" class="btn-bg01">点击提交</button>
       </div>
-    </div>
+    </form>
   </body>
 </html>

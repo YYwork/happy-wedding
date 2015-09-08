@@ -1,8 +1,8 @@
-## 6月份:
+## 6月份（5）:
 
 (5 完成)task1: 一站式组合版本弹窗  web-hotel.html
 
-## 7月份:
+## 7月份（22）:
 
 (6 完成)task2: 黄道吉日wap版页面2个  wap-lucky-day.html wap-lucky-day2.html
 
@@ -36,15 +36,17 @@
         ＊images-1.fw.png
         ＊mn-tel.fw.png
 
-## 8月份:
+## 8月份（10）:
 
 (5 完成)task6: sem着陆页PC版一个 sem.html
 
 (5 完成)task6: 商户页面 wap commercial_customer.html
 
-## 8月份:
-(3*4 完成)task7: 优惠券 wap build/templates/card/*.html
+## 9月份（24）:
+(3 \* 4 完成)task7: 优惠券 wap build/templates/card/*.html
 
-(3*2 )task8: 商户接单 wap build/templates/order/*.html
+(3 \* 2 )task8: 商户接单 wap build/templates/order/*.html
 
 -(3) other: 新闻页 warp build/templates/new/index.html
+
+(3)task9: 商户表单 wap build/templates/center/*.html
