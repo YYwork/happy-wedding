@@ -160,10 +160,8 @@ $padding: 14rem/$dpr;
   }
 }
 
-.orders {
-  width: 100%;
-  margin: 0 auto;
-  min-height: 100%;
+.orders,
+.cus-center {
   .header {
     .title {
       padding-top: 45rem/$dpr;
@@ -181,6 +179,22 @@ $padding: 14rem/$dpr;
       *display: inline;
       width: 49%;
     }
+    .center-form,
+    .description {
+      padding-left: 90rem/$dpr;
+      line-height: 65rem/$dpr;
+      margin-top: 26rem/$dpr;
+      font-size: 26rem/$dpr;
+      color: #777;
+    }
+  }
+}
+
+.orders {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  .header {
     .title-num {
       font-size: 20rem/$dpr;
       line-height: 28rem/$dpr;

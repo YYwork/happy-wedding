@@ -259,46 +259,70 @@ li {
 }
 
 .order-sprite,
+.order-center-down,
+.order-center-right,
+.order-center-x,
 .order-dui,
 .order-dui1,
 .order-dui3,
 .order-jia,
 .order-voice {
-  background-image: url('../images/order-s1c7e8c89a4.png');
+  background-image: url('../images/order-sfaea10c4f9.png');
   background-repeat: no-repeat;
 }
 
+.order-center-down {
+  background-position: -45px -97px;
+  height: 9px;
+  width: 14px;
+}
+
+.order-center-right {
+  background-position: 0 -56px;
+  height: 41px;
+  width: 61px;
+}
+
+.order-center-x {
+  background-position: -29px -24px;
+  height: 32px;
+  width: 32px;
+}
+
 .order-dui {
-  background-position: 0 -51px;
+  background-position: 0 -97px;
   height: 45px;
   width: 45px;
 }
 
 .order-dui1 {
-  background-position: 0 -27px;
+  background-position: 0 0;
   height: 19px;
   width: 25px;
 }
 
 .order-dui3 {
-  background-position: 0 -96px;
+  background-position: 0 -142px;
   height: 63px;
   width: 65px;
 }
 
 .order-jia {
-  background-position: -25px -27px;
+  background-position: -25px 0;
   height: 24px;
   width: 25px;
 }
 
 .order-voice {
-  background-position: 0 0;
+  background-position: 0 -24px;
   height: 27px;
   width: 29px;
 }
 
 .order-sprite,
+.order-center-down,
+.order-center-right,
+.order-center-x,
 .order-dui,
 .order-dui1,
 .order-dui3,
@@ -510,19 +534,15 @@ li {
   padding-bottom: 0.46875rem;
 }
 
-.orders {
-  width: 100%;
-  margin: 0 auto;
-  min-height: 100%;
-}
-
-.orders .header .title {
+.orders .header .title,
+.cus-center .header .title {
   padding-top: 0.70313rem;
   padding-left: 0.46875rem;
   padding-right: 0.46875rem;
 }
 
-.orders .header .title-name {
+.orders .header .title-name,
+.cus-center .header .title-name {
   font-size: 0.4375rem;
   color: #ff4d6b;
   margin-top: -0.15625rem;
@@ -532,6 +552,23 @@ li {
   *zoom: 1;
   *display: inline;
   width: 49%;
+}
+
+.orders .header .center-form,
+.orders .header .description,
+.cus-center .header .center-form,
+.cus-center .header .description {
+  padding-left: 1.40625rem;
+  line-height: 1.01563rem;
+  margin-top: 0.40625rem;
+  font-size: 0.40625rem;
+  color: #777;
+}
+
+.orders {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
 }
 
 .orders .header .title-num {
