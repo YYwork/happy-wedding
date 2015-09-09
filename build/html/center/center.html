@@ -18,8 +18,19 @@
   <body>
     <div class="pop-windows pop-cover">
       <div class="pop-container">
-        <div class="pop-x"><span class="order-center-x"></span></div>
         <div class="pop-text"><span class="content"><span class="order-center-right"></span><span class="text">提交成功</span></span></div>
+        <div class="pop-description"><span>提交手机号方便婚礼管家联系您</span></div>
+        <div class="pop-form">
+          <div class="pop-form-group">
+            <input type="text" placeholder="姓名">
+          </div>
+          <div class="pop-form-group">
+            <input type="text" placeholder="手机号">
+          </div>
+          <div class="pop-form-group">
+            <button>确定</button>
+          </div>
+        </div>
       </div>
     </div>
     <form method="post" onsubmit="return false;" class="cus-center order-bg01">
@@ -28,34 +39,43 @@
         <div class="center-form">
           <div class="form-group">
             <label>姓名 ：</label>
-            <input type="text" name="name" placeholder="喜多多" class="name">
+            <input type="text" name="name" class="name">
           </div>
           <div class="form-group">
             <label>电话 ：</label>
-            <input type="text" name="phone" placeholder="12345678900" class="phone">
+            <input type="text" name="phone" class="phone">
           </div>
           <div class="form-group">
             <label>婚期 ：</label>
-            <input type="text" name="date" placeholder="2016-10-01（周五）午宴" class="date">
+            <input type="text" name="date" class="date">
           </div>
           <div class="form-group">
             <label>商圈 ：</label>
-            <input type="input" name="address" value="1" style="display: none" class="address">
-            <input type="button" value="东三环" class="btn-address"><span class="center-down order-center-down"></span>
+            <select name="address" class="address">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select><span class="down-cover"></span><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>桌数 ：</label>
-            <input type="button" name="deskes" value="1" style="display: none" class="deskes">
-            <input type="button" value="20-22桌" class="btn-deskes"><span class="center-down order-center-down"></span>
+            <select name="deskes" class="deskes">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select><span class="down-cover"></span><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>餐标 ：</label>
-            <input type="button" name="meal" value="1" style="display: none" class="meal">
-            <input type="button" value="3000-4000桌" class="btn-meal"><span class="center-down order-center-down"></span>
+            <select name="meal" class="meal">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select><span class="down-cover"></span><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>其他 ：</label>
-            <input type="text" name="other" placeholder="客人要求无柱宴会厅" class="other">
+            <input type="text" name="other" class="other">
           </div>
         </div>
       </div>

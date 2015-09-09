@@ -14,12 +14,20 @@ block body
   body
     div.pop-windows.pop-cover
       div.pop-container
-        div.pop-x
-          span.order-center-x
         div.pop-text
           span.content
             span.order-center-right
             span.text 提交成功
+        div.pop-description
+          span 提交手机号方便婚礼管家联系您
+        div.pop-form
+          div.pop-form-group
+            input(type="text" placeholder="姓名")
+          div.pop-form-group
+            input(type="text" placeholder="手机号")
+          div.pop-form-group
+            button 确定
+
     form.cus-center.order-bg01(method="post" onsubmit="return false;")
       div.header.center-header-bg
         div.title
@@ -27,31 +35,40 @@ block body
         div.center-form
          div.form-group
           label 姓名 ：
-          input.name(type="text" name="name" placeholder="喜多多")
+          input.name(type="text" name="name")
          div.form-group
           label 电话 ：
-          input.phone(type="text" name="phone" placeholder="12345678900")
+          input.phone(type="text" name="phone")
          div.form-group
           label 婚期 ：
-          input.date(type="text" name="date" placeholder="2016-10-01（周五）午宴")
+          input.date(type="text" name="date")
          div.form-group
           label 商圈 ：
-          input.address(type="input" name="address" value="1" style="display: none")
-          input.btn-address(type="button" value="东三环")
+          select.address(name="address")
+            option(value="0") 0
+            option(value="1") 1
+            option(value="2") 2
+          span.down-cover
           span.center-down.order-center-down
          div.form-group
           label 桌数 ：
-          input.deskes(type="button" name="deskes" value="1" style="display: none")
-          input.btn-deskes(type="button" value="20-22桌")
+          select.deskes(name="deskes")
+            option(value="0") 0
+            option(value="1") 1
+            option(value="2") 2
+          span.down-cover
           span.center-down.order-center-down
          div.form-group
           label 餐标 ：
-          input.meal(type="button" name="meal" value="1" style="display: none")
-          input.btn-meal(type="button" value="3000-4000桌")
+          select.meal(name="meal")
+            option(value="0") 0
+            option(value="1") 1
+            option(value="2") 2
+          span.down-cover
           span.center-down.order-center-down
          div.form-group
           label 其他 ：
-          input.other(type="text" name="other" placeholder="客人要求无柱宴会厅")
+          input.other(type="text" name="other")
       div.center-bg2
         div.center-description
           div.content
