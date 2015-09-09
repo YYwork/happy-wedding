@@ -43,10 +43,33 @@
 (5 完成)task6: 商户页面 wap commercial_customer.html
 
 ## 9月份（24）:
-(3 \* 4 完成)task7: 优惠券 wap build/templates/card/*.html
+(3 \* 4 完成)task7: 优惠券 wap
 
-(3 \* 2 )task8: 商户接单 wap build/templates/order/*.html
+``` 
+  build/templates/card/*.html
+  build/css/card.css
+  build/js/card.js
+```
 
--(3) other: 新闻页 warp build/templates/new/index.html
+(3 \* 2 )task8: 商户接单 wap
 
-(3)task9: 商户表单 wap build/templates/center/*.html
+``` 
+  build/templates/order/*.html
+  build/css/order.css
+  build/js/order.js
+```
+
+-(3) other: 新闻页 warp 
+
+```
+  build/templates/new/index.html
+```
+
+(3)task9: 商户表单 wap 
+
+```
+  build/templates/center.html
+  build/css/order.css
+  build/css/center.css
+  build/js/center.js
+```

@@ -13,41 +13,49 @@
     <link rel="stylesheet" type="text/css" href="../../css/center.css">
     <script src="../../js/flexible.js"></script>
     <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/jquery.validate.js"></script>
     <script src="../../js/center.js"></script>
   </head>
   <body>
+    <div class="pop-windows pop-cover">
+      <div class="pop-container">
+        <div class="pop-x"><span class="order-center-x"></span></div>
+        <div class="pop-text"><span class="content"><span class="order-center-right"></span><span class="text">提交成功</span></span></div>
+      </div>
+    </div>
     <form method="post" onsubmit="return false;" class="cus-center order-bg01">
       <div class="header center-header-bg">
         <div class="title"><span class="title-name">填写用户需求</span></div>
         <div class="center-form">
           <div class="form-group">
             <label>姓名 ：</label>
-            <input type="text" name="name" placeholder="喜多多">
+            <input type="text" name="name" placeholder="喜多多" class="name">
           </div>
           <div class="form-group">
             <label>电话 ：</label>
-            <input type="text" name="phone" placeholder="12345678900">
+            <input type="text" name="phone" placeholder="12345678900" class="phone">
           </div>
           <div class="form-group">
             <label>婚期 ：</label>
-            <input type="text" name="date" placeholder="2016-10-01（周五）午宴">
+            <input type="text" name="date" placeholder="2016-10-01（周五）午宴" class="date">
           </div>
           <div class="form-group">
             <label>商圈 ：</label>
-            <input type="button" name="address" value="东三环"><span class="center-down order-center-down"></span>
+            <input type="input" name="address" value="1" style="display: none" class="address">
+            <input type="button" value="东三环" class="btn-address"><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>桌数 ：</label>
-            <input type="button" name="deskes" value="20-22桌"><span class="center-down order-center-down"></span>
+            <input type="button" name="deskes" value="1" style="display: none" class="deskes">
+            <input type="button" value="20-22桌" class="btn-deskes"><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>餐标 ：</label>
-            <input type="button" name="meal" value="3000-4000桌"><span class="center-down order-center-down"></span>
+            <input type="button" name="meal" value="1" style="display: none" class="meal">
+            <input type="button" value="3000-4000桌" class="btn-meal"><span class="center-down order-center-down"></span>
           </div>
           <div class="form-group">
             <label>其他 ：</label>
-            <input type="text" name="other" placeholder="客人要求无柱宴会厅">
+            <input type="text" name="other" placeholder="客人要求无柱宴会厅" class="other">
           </div>
         </div>
       </div>

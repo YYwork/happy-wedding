@@ -1,75 +1,58 @@
 $(function() {
-  var validate;
+  var checkForm, getFormData;
   $('.pop-x').click(function() {
-    return $('.pop-windows').hide();
+    $('.pop-windows').hide();
+    return location.href = '../order/order.html';
   });
-  return validate = $("form.cus-center").validate({
-    rules: {
-      name: {
-        required: true
-      },
-      phone: {
-        required: true
-      },
-      date: {
-        required: true
-      },
-      address: {
-        required: true
-      },
-      deskes: {
-        required: true
-      },
-      meal: {
-        required: true
-      },
-      other: {
-        required: true
-      }
-    },
-    messages: {
-      name: {
-        required: "请输入姓名"
-      },
-      phone: {
-        required: "请输入手机号"
-      },
-      date: {
-        required: "请输入婚期"
-      },
-      address: {
-        required: "请选择商圈"
-      },
-      deskes: {
-        required: "请选择桌数"
-      },
-      meal: {
-        required: "请选择餐标"
-      },
-      other: {
-        required: "请输入其他"
-      }
-    },
-    submitHandler: function(form) {
-      var formData;
-      formData = $(form).serializeArray();
-      return $.ajax({
-        url: "/account/register",
-        type: "post",
-        dataType: "json",
-        data: formData,
-        success: function(data) {
-          if (data.code !== 0) {
-
-          } else {
-
-          }
-        },
-        error: function() {}
-      });
-    },
-    invalidHandler: function(form, validator) {
+  getFormData = function() {
+    var data;
+    return data = {
+      name: $('.name').val(),
+      phone: $('.phone').val(),
+      date: $('.date').val(),
+      address: $('.address').val(),
+      deskes: $('.deskes').val(),
+      meal: $('.meal').val(),
+      other: $('.other').val()
+    };
+  };
+  checkForm = function(data) {
+    if (data.name === '') {
+      alert("请输入姓名");
       return false;
+    }
+    if (data.phone === '') {
+      alert("请输入手机号");
+      return false;
+    }
+    if (data.date === '') {
+      alert("请输入婚期");
+      return false;
+    }
+    if (data.address === '') {
+      alert("请选择商圈");
+      return false;
+    }
+    if (data.deskes === '') {
+      alert("请选择桌数");
+      return false;
+    }
+    if (data.meal === '') {
+      alert("请选择餐标");
+      return false;
+    }
+    if (data.other === '') {
+      alert("请输入其他");
+      return false;
+    }
+    return true;
+  };
+  return $('#cus-submit').click(function() {
+    var data;
+    data = getFormData();
+    if (checkForm(data)) {
+      console.log(1);
+      return $('.pop-windows').show();
     }
   });
 });

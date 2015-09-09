@@ -8,11 +8,18 @@ block css
   link(rel="stylesheet" type="text/css" href="../../css/center.css")
 block js
   script(src="../../js/jquery.min.js")
-  script(src="../../js/jquery.validate.js")
   script(src="../../js/center.js")
 
 block body
   body
+    div.pop-windows.pop-cover
+      div.pop-container
+        div.pop-x
+          span.order-center-x
+        div.pop-text
+          span.content
+            span.order-center-right
+            span.text 提交成功
     form.cus-center.order-bg01(method="post" onsubmit="return false;")
       div.header.center-header-bg
         div.title
@@ -20,28 +27,31 @@ block body
         div.center-form
          div.form-group
           label 姓名 ：
-          input(type="text" name="name" placeholder="喜多多")
+          input.name(type="text" name="name" placeholder="喜多多")
          div.form-group
           label 电话 ：
-          input(type="text" name="phone" placeholder="12345678900")
+          input.phone(type="text" name="phone" placeholder="12345678900")
          div.form-group
           label 婚期 ：
-          input(type="text" name="date" placeholder="2016-10-01（周五）午宴")
+          input.date(type="text" name="date" placeholder="2016-10-01（周五）午宴")
          div.form-group
           label 商圈 ：
-          input(type="button" name="address" value="东三环")
+          input.address(type="input" name="address" value="1" style="display: none")
+          input.btn-address(type="button" value="东三环")
           span.center-down.order-center-down
          div.form-group
           label 桌数 ：
-          input(type="button" name="deskes" value="20-22桌")
+          input.deskes(type="button" name="deskes" value="1" style="display: none")
+          input.btn-deskes(type="button" value="20-22桌")
           span.center-down.order-center-down
          div.form-group
           label 餐标 ：
-          input(type="button" name="meal" value="3000-4000桌")
+          input.meal(type="button" name="meal" value="1" style="display: none")
+          input.btn-meal(type="button" value="3000-4000桌")
           span.center-down.order-center-down
          div.form-group
           label 其他 ：
-          input(type="text" name="other" placeholder="客人要求无柱宴会厅")
+          input.other(type="text" name="other" placeholder="客人要求无柱宴会厅")
       div.center-bg2
         div.center-description
           div.content
