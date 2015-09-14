@@ -390,10 +390,10 @@ body {
 .cus-center .center-form .center-down {
   position: absolute;
   margin-left: -0.3125rem;
-  padding: 0.23438rem;
   top: 0.34375rem;
   z-index: 999;
   background-color: #fff;
+  border: 0;
 }
 .cus-center .center-btn-group {
   text-align: center;

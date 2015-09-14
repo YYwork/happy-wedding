@@ -460,3 +460,61 @@ div.tagsinput div {
   margin-top: 30rem/$dpr;
   padding: 0;
 }
+
+.order-sprite, .order-center-down, .order-center-right, .order-center-x, .order-dui, .order-dui1, .order-dui3, .order-jia, .order-voice {
+  background-image: url('../images/order-sfaea10c4f9.png');
+  background-repeat: no-repeat;
+}
+
+.order-sprite {
+  @include inline-block;
+  background-size: 65rem/$dpr 205rem/$dpr;
+}
+.order-center-down {
+  background-position: -45rem/$dpr -97rem/$dpr;
+  height: 9rem/$dpr;
+  width: 14rem/$dpr;
+}
+
+.order-center-right {
+  background-position: 0 -56rem/$dpr;
+  height: 41rem/$dpr;
+  width: 61rem/$dpr;
+}
+
+.order-center-x {
+  background-position: -29rem/$dpr -24rem/$dpr;
+  height: 32rem/$dpr;
+  width: 32rem/$dpr;
+}
+
+.order-dui {
+  background-position: 0 -97rem/$dpr;
+  height: 45rem/$dpr;
+  width: 45rem/$dpr;
+}
+
+.order-dui1 {
+  background-position: 0 0;
+  height: 19rem/$dpr;
+  width: 25rem/$dpr;
+}
+
+.order-dui3 {
+  background-position: 0 -142rem/$dpr;
+  height: 63rem/$dpr;
+  width: 65rem/$dpr;
+}
+
+.order-jia {
+  background-position: -25rem/$dpr 0;
+  height: 24rem/$dpr;
+  width: 25rem/$dpr;
+}
+
+.order-voice {
+  background-position: 0 -24rem/$dpr;
+  height: 27rem/$dpr;
+  width: 29rem/$dpr;
+}
+

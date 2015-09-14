@@ -65,7 +65,7 @@
   build/templates/new/index.html
 ```
 
-(3)task9: 商户表单 wap 
+(5)task9: 商户表单 wap 
 
 ```
   build/templates/center.html

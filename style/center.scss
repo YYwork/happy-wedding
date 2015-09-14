@@ -158,10 +158,11 @@ body {
     .center-down {
       position: absolute;
       margin-left: -20rem/$dpr;
-      padding: 15rem/$dpr;
+      padding: 10rem/$dpr 5rem/$dpr;
       top: 22rem/$dpr;
       z-index: 999;
       background-color: #fff;
+      border: 0;
     }
   }
   .center-btn-group {
