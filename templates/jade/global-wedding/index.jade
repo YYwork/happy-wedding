@@ -1,0 +1,129 @@
+extends ../_layout.jade
+
+block title
+  title 全球婚礼
+//- http://www.jq22.com/demo/jquery-pbl-150519204337/lightbox.html
+//- http://dimsemenov.com/plugins/magnific-popup/documentation.html
+block css
+  link(rel="stylesheet" type="text/css" href="../../../css/common.css")
+  link(rel="stylesheet" type="text/css" href="../../../css/header_h.css")
+  link(rel="stylesheet" type="text/css" href="../../css/global-wedding.css")
+block bottom_js
+  script(src="../../js/jquery.min.js")
+  //- script(src="../../js/masonry.pkgd.js")
+  //- script(src="../../js/jquery.infinitescroll.js")
+  script(src="../../js/wookmark.js")
+  script(src="../../js/imagesloaded.pkgd.min.js")
+  script(src="../../js/jquery.magnific-popup.min.js")
+  script(src="../../js/global-wedding.js")
+block body
+  div#cover(style="display:none")
+    div.cover-title-url
+      span.mfp-source
+      span.mfp-cover-tile 百度搜索
+      | -
+      span.mfp-cover-url http://baidu.com
+    div.cover-share
+      span.mfp-share
+      span.mfp-share-text 分享
+      div.pop-qcore
+        div.pop-triangle
+        div.pop-qrcore
+          img(src="../../images/mfp/qcore.png")
+        div.pop-weixin
+          img(src="../../images/mfp/weixin.png")
+  div#tag-list(style="display:none")
+    .tag-lsit
+      div.tag-wedding
+        .tag-wedding-title
+          span.mfp-circle-point
+          span 白色婚礼
+        .tag-wedding-content
+          ul.grid#cover-grid
+      div.tag-preview
+        .tag-preview-tilte
+          span.mfp-pic-ico
+          span 曾经浏览
+        .tag-preview-content
+          ul.grid#preview-cover-grid
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+            li.grid-item
+              a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+                img(class="img-cover" src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+
+  div.global-wedding
+    div.gw-main
+      //- include ./choice.jade
+      div.gw-container
+        ul.grid#grid
+          li.grid-item
+            a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_1.jpg")
+              img(src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_1.jpg")
+              div.grid-item-cover.cover-bottom
+                div.cover-title 白色婚礼-花艺
+
+          li.grid-item
+            a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_2.jpg")
+              img(src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_2.jpg")
+              div.grid-item-cover.cover-all
+                div.cover-center
+                  div.cover-center-span
+                    div.cover-span
+                      div.cover-icon.global-wedding-imgtag
+                      div.cover-title 奥斯丁酒店
+                      div.cover-text 提供简单舒适，令入住者心情愉悦的空间，提供简单舒适，令入住者心情愉悦的空间，提供简单舒适，令入住者心情愉悦的空间。
+          li.grid-item
+            a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+              img(src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+          li.grid-item
+            a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+              img(src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+          li.grid-item
+            a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+              img(src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+          li.grid-item
+            a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+              img(src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+          li.grid-item
+            a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+              img(src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_3.jpg")
+          li.grid-item
+            a(href="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+              img(src="http://www.jq22.com/demo/jquery-pbl-150519204337/img/image_4.jpg")
+        .grid-more#grid-more
+          div.loading
+            span.global-wedding-loading
+            span.loading-text 正在加载...
+          div.no-more
+            div.no-more-text
+              div.no-more-label 没有更多了
+              div.no-more-border
+
+      #navigation
+        a(href='../../../json/page.json?page=1')
+
+  div.mfp-to-top.to-top
+

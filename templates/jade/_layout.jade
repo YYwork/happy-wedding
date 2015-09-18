@@ -3,15 +3,18 @@ html(lang="zh-cmn-Hans")
   head
     meta(charset="utf-8")
     block title
-    link(rel="stylesheet" type="text/css" href="../../../style/css/card/card.css")
+    block css
+    block js
     <!--[if lt IE 9]>
     script(src="../../../script/jslib/html5shiv.min.js")
     script(src="../../../script/jslib/respond.min.js")
     script(src="./../../script/jslib/selectivizr.min.js")
     <![endif]-->
-  body
+  body#gw-scroll
+    //- include ./header.jade
     .yy-container
       block body
     block bottom_css
     block bottom_js
+    //- include ./footer.jade
 

@@ -1,0 +1,1274 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+
+ol,
+ul,
+li {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none
+}
+
+:focus {
+  outline: 0
+}
+
+del {
+  text-decoration: line-through
+}
+
+table {
+  border-spacing: 0
+}
+
+address,
+cite,
+code,
+dfn,
+em,
+var,
+i {
+  font-style: normal
+}
+
+input[type=button],
+input[type=submit],
+button {
+  cursor: pointer
+}
+
+.vm,
+input,
+select {
+  vertical-align: middle
+}
+
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden
+}
+
+* html .clearfix {
+  zoom: 1
+}
+
+*+html .clearfix {
+  zoom: 1
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 arial, helvetica, clean, sans-serif
+}
+
+a {
+  text-decoration: none;
+  color: #009bd8;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #e0002a
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+body {
+  background: #FFF;
+  color: #333
+}
+
+.pos-r {
+  position: relative
+}
+
+.pos-f {
+  position: fixed
+}
+
+.pos-a {
+  position: absolute
+}
+
+.ft12 {
+  font-size: 12px
+}
+
+.ft14 {
+  font-size: 14px
+}
+
+.mt-10 {
+  margin-top: 10px
+}
+
+.mb-10 {
+  margin-bottom: 10px
+}
+
+.ml-10 {
+  margin-left: 10px
+}
+
+.mr-10 {
+  margin-right: 10px
+}
+
+.pt-10 {
+  padding-top: 10px
+}
+
+.pb-10 {
+  padding-bottom: 10px
+}
+
+.pl-10 {
+  padding-left: 10px
+}
+
+.pr-10 {
+  padding-right: 10px
+}
+
+.mt-20 {
+  margin-top: 20px
+}
+
+.mb-20 {
+  margin-bottom: 20px
+}
+
+.ml-20 {
+  margin-left: 20px
+}
+
+.mr-20 {
+  margin-right: 20px
+}
+
+.pt-20 {
+  padding-top: 20px
+}
+
+.pb-20 {
+  padding-bottom: 20px
+}
+
+.pl-20 {
+  padding-left: 20px
+}
+
+.pr-20 {
+  padding-right: 20px
+}
+
+.bg-eee {
+  background: #eee
+}
+
+.hide {
+  display: none
+}
+
+.show {
+  display: block
+}
+
+.red {
+  color: #da0000
+}
+
+.text-c {
+  text-align: center;
+}
+
+.text-l {
+  text-align: left
+}
+
+.text-r {
+  text-align: right
+}
+
+body {
+  color: #333
+}
+
+
+/* font color */
+
+.f12 {
+  font-size: 12px
+}
+
+.f14 {
+  font-size: 14px
+}
+
+.f16 {
+  font-size: 16px
+}
+
+.f18 {
+  font-size: 18px
+}
+
+.fc-6 {
+  color: #666
+}
+
+.fc-3 {
+  color: #333
+}
+
+.fc-9 {
+  color: #999
+}
+
+.fc-red {
+  color: #e0002a
+}
+
+.fc-orange {
+  color: #ff6600
+}
+
+.yahei {
+  font-family: microsoft yahei
+}
+
+
+/* head */
+
+.xswHead {
+  width: 100%;
+  border-bottom: 3px solid #e0002a;
+  background: #fff
+}
+
+.wrap1000 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.wrap100p {
+  width: 100%
+}
+
+.xswHeadindex .topCon {
+  border-bottom: 3px solid #e0002a;
+}
+
+.xswtopBar {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #d5d5d5;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1000
+}
+
+.topRt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1
+}
+
+.xswTopline1 {
+  height: 12px;
+  width: 1px;
+  overflow: hidden;
+  border-left: 1px solid #e3e3e3;
+  display: inline-block;
+}
+
+.topRt a {
+  padding: 0 10px;
+  display: inline-block;
+  color: #999
+}
+
+.topRt a.bgPhone,
+.clsCity,
+.xswNav a.hover,
+.iconser1,
+.iconser2,
+.iconser3,
+.icoSo,
+.iconser4,
+.xswTopTel,
+.navYh em {
+  background-image: url(http://www.xishiwang.com/images/new201310/icons/icons.png);
+  background-repeat: no-repeat;
+  _background-color: transparent;
+}
+
+.topRt a.bgPhone {
+  padding-left: 30px;
+  background-position: -263px -162px;
+}
+
+.xswTopTel {
+  display: inline-block;
+  padding-left: 30px;
+  background-position: -263px -209px;
+  font-size: 18px;
+  color: #e0002a
+}
+
+.topRt em,
+.topRt span,
+.topRt a,
+.xswNav a,
+.xswNav span {
+  vertical-align: middle;
+}
+
+.xswLogo {
+  display: inline-block;
+  background: url(http://www.xishiwang.com/images/new201310/util/logo-xsw.png);
+  width: 283px;
+  height: 47px
+}
+
+.topCon {
+  padding: 20px 0;
+  position: relative;
+  height: 52px;
+}
+
+.xswNav {
+  position: absolute;
+  right: 0;
+  padding-top: 30px;
+  top: 0;
+  width: 700px
+}
+
+.xswNav a {
+  font: 20px/1.5 microsoft yahei;
+  color: #555;
+  padding: 0 10px;
+  height: 36px;
+  float: right;
+  background-color: none
+}
+
+.xswNav a:hover {
+  color: #dc0029;
+  text-decoration: none
+}
+
+.xswNav a.hover,
+.xswNav a.hover:hover {
+  background-position: 6px -295px;
+  color: #fff
+}
+
+.xswNav nav-3.hover {
+  background-position: 7px -345px
+}
+
+.xswNav nav-4.hover {
+  background-position: 8px -394px
+}
+
+.navYh {
+  position: relative;
+}
+
+.navYh em {
+  position: absolute;
+  width: 9px;
+  height: 11px;
+  background-position: -274px -268px;
+  top: 0;
+  left: 57px
+}
+
+.navYhn em {
+  position: absolute;
+  width: 58px;
+  height: 22px;
+  background: url(http://www.xishiwang.com/images/new201310/bg/xqz.png) no-repeat;
+  top: 10px;
+  left: 270px;
+}
+
+.xswNav a.xswTopGift {
+  padding: 0 16px;
+  height: 68px;
+  width: 48px;
+  margin-top: -28px;
+  background: url(http://www.xishiwang.com/images/new201310/bg/bg-head.png) no-repeat 5px -114px;
+}
+
+.xswNav span.xswTopline2 {
+  float: right;
+  margin-top: 6px;
+  height: 18px;
+  width: 1px;
+  overflow: hidden;
+  border-left: 1px dotted #c4c4c4;
+}
+
+.topDrop1 {
+  height: 24px;
+  line-height: 18px;
+  position: relative;
+  margin-bottom: -3px;
+  display: inline-block;
+  width: 83px;
+  border: 1px solid #f9f9f9;
+  border-bottom: 0 none;
+  margin-right: 4px
+}
+
+.topDrop1 a {
+  padding: 0 10px;
+  width: 63px;
+  text-align: center;
+  color: #e0002a
+}
+
+.topDrop1 li a,
+.topDrop1 li a:visited {
+  color: #555;
+  text-align: right;
+  padding-right: 17px;
+  width: 56px
+}
+
+.topDrop1 li a:hover {
+  color: #fff;
+  background-color: #eb5874;
+  text-decoration: none
+}
+
+.topDrop1.hover {
+  background-color: #fff;
+  border-color: #d6d6d6;
+  margin-bottom: -2px;
+  line-height: 20px
+}
+
+.topDrop1 ul {
+  position: absolute;
+  display: none;
+  border: 1px solid #d6d6d6;
+  left: -1px;
+  top: 24px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.topDrop1.hover ul {
+  display: block;
+}
+
+.titCity0 {
+  font: bold 12px/20px simsun;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 11px
+}
+
+.topCityLst {
+  display: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 100;
+  width: 303px;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+}
+
+.cityBox {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  position: relative;
+}
+
+.topLstCitys em {
+  width: 25px;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  display: block;
+}
+
+.topLstCitys .cityNames {
+  width: 260px;
+  float: left;
+}
+
+.topLstCitys li {
+  margin-bottom: 4px;
+  overflow: hidden;
+  zoom: 1;
+  line-height: 18px
+}
+
+.topLstCitys .cityNames a {
+  color: #666;
+  margin-right: 25px;
+  display: inline-block;
+  _margin-right: 20px;
+}
+
+.xswtopBar strong,
+.citybox {
+  vertical-align: top
+}
+
+.clsCity {
+  float: right;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  background-position: -99px -169px
+}
+
+.topCityLst a.fc-6,
+.topLstCitys .cityNames a {
+  margin-right: 15px;
+  float: left;
+  line-height: 18px;
+  padding: 1px 5px
+}
+
+.topCityLst a.fc-6:hover,
+.topLstCitys .cityNames a:hover,
+.topCityLst a.fc-6.hover,
+.topLstCitys .cityNames a.hover {
+  background-color: #dc0029;
+  color: #fff;
+  text-decoration: none
+}
+
+.lh20 {
+  line-height: 20px
+}
+
+.cityCha {
+  height: 27px;
+  line-height: 24px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  z-index: 101;
+  width: 70px;
+  text-align: center;
+  background: none;
+  border-left: 1px solid #f9f9f9;
+  border-right: 1px solid #f9f9f9;
+}
+
+.cityBox.hover .topCityLst {
+  display: block;
+}
+
+.cityBox.hover .cityCha {
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-bottom: 0 none;
+  line-height: 22px;
+}
+
+
+/* footer */
+
+.xswFoot {
+  background-color: #f8f8f8;
+  font: 14px/1.8 microsoft yahei;
+}
+
+.xswFootCon li {
+  float: left;
+  border-right: 1px dotted #c1c1c1;
+  line-height: 27px
+}
+
+.xswFootCon li.bd0 {
+  border: 0 none;
+}
+
+.xswFootCon li strong,
+.xswFootCon li a {
+  display: block;
+}
+
+.xswFootCon li strong {
+  padding-bottom: 5px;
+  color: #333
+}
+
+.xswFootCon li a {
+  color: #555
+}
+
+.xswFootCon li a:hover {
+  color: #e0002a;
+  text-decoration: none
+}
+
+.xstFootInf1 {
+  padding-right: 50px
+}
+
+.xstFootInf2 {
+  padding: 0 43px
+}
+
+.footRedTel {
+  color: #e0002a
+}
+
+.xstFootInf3 {
+  padding-left: 30px;
+  margin-top: -10px
+}
+
+.botTel .footRedTel {
+  font: 28px/1.5 Arial;
+}
+
+.xswTopTel .f16 {
+  font-size: 12px;
+  margin-left: 3px
+}
+
+.xswTopTel span {
+  vertical-align: middle;
+}
+
+.phone span {
+  color: ##FF6600;
+  vertical-align: middle;
+}
+
+.phone span.f16 {
+  font-size: 12px;
+  margin: 0 3px;
+}
+
+.footTelSub {
+  padding: 10px 0 10px 38px;
+  background: url(http://www.xishiwang.com/images/new201310/bg/bg-head.png) no-repeat 0 10px;
+  line-height: 22px
+}
+
+.bd-red {
+  border: 1px solid #e0002a
+}
+
+.footTelSub .bd-red {
+  height: 29px;
+  overflow: hidden;
+  width: 245px
+}
+
+.btnFootRed {
+  border: 0 none;
+  height: 30px;
+  float: left;
+  width: 59px;
+  float: right;
+  background: #e0002a;
+  color: #fff
+}
+
+.btnFootText {
+  float: left;
+  height: 27px;
+  width: 180px;
+  border: 0 none;
+  padding-left: 5px;
+  line-height: 28px
+}
+
+.xswFootBot {
+  text-align: center;
+  font: 12px/1.8 arial;
+  padding-bottom: 30px;
+  color: #999
+}
+
+.xswHomeSerH1 span,
+.xswHomeSerH1 em {
+  vertical-align: middle;
+}
+
+.xswXsm {
+  float: right;
+  margin-top: -5px;
+  width: 79px;
+  height: 78px;
+}
+
+#shareBot {
+  width: 330px;
+  position: relative;
+}
+
+#shareBot #bdshare {
+  position: absolute;
+  width: 320px;
+  top: 0;
+  line-height: 1
+}
+
+
+/* btns */
+
+.btnSearch308,
+.btnRed100,
+.btnLyel117,
+.btnRed220,
+.btnSearch120,
+.btnLred117,
+.nextBtn120 {
+  background-image: url(http://www.xishiwang.com/images/new201310/bg/btns.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.btnSearch308 {
+  width: 308px;
+  height: 40px;
+  border: 0 none;
+  font: bold 14px/40px simsun;
+  color: #fff
+}
+
+.nextBtn308 {
+  background-position: 0 -51px
+}
+
+.btnRed100 {
+  width: 100px;
+  height: 37px;
+  font: 15px/35px microsoft yahei;
+  background-position: 0 -100px;
+  text-shadow: 1px 1px 1px #cb1515;
+  text-align: center;
+  color: #fff;
+}
+
+a.btnRed100:hover {
+  background-position: 0 -143px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btnLyel117,
+.btnLred117 {
+  width: 117px;
+  height: 46px;
+  font: 18px/44px microsoft yahei;
+  background-position: 0 -200px;
+  text-shadow: 1px 1px 1px #f3e0c2;
+  text-align: center;
+  color: #fd812f
+}
+
+a.btnLyel117:hover {
+  text-decoration: none;
+  background-position: 0 -545px;
+  color: #fd812f
+}
+
+.btnRed220 {
+  width: 220px;
+  height: 48px;
+  font: 22px/44px microsoft yahei;
+  background-position: 0 -353px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #cb1515;
+  color: #fff
+}
+
+a.btnRed220:hover {
+  text-decoration: none;
+  color: #fff;
+  background-position: 0 -407px
+}
+
+a.btnLyel117:active {
+  background-position: 0 -597px
+}
+
+.btnSearch120 {
+  width: 120px;
+  height: 32px;
+  border: 0 none;
+  font: 15px/28px microsoft yahei;
+  color: #fff;
+  background-position: 0 -275px;
+  text-indent: 15px;
+  text-shadow: 1px 1px 1px #e68622;
+}
+
+a.btnSearch120:hover,
+.nextBtn120 {
+  color: #fff;
+  background-position: 0 -314px;
+  text-decoration: none;
+}
+
+.btnLred117 {
+  background-position: -145px -200px;
+  color: #f7494c
+}
+
+a.btnLred117:hover {
+  text-decoration: none;
+  background-position: -145px -545px;
+  color: #f7494c
+}
+
+a.btnLred117:active {
+  background-position: -145px -597px
+}
+
+.xswtext {
+  border: 1px solid #d8d8d8;
+  font-size: 14px;
+  height: 18px;
+  line-height: 18px;
+  color: #333;
+  padding: 5px;
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #eee inset
+}
+
+
+/* xswBreadcrumb */
+
+.xswBreadcrumb {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 13px 0
+}
+
+.xswBreadcrumb a {
+  color: #333
+}
+
+.xswBreadcrumb span {
+  font-family: simsun;
+  padding: 0 10px;
+  color: #999
+}
+
+
+/* star-degree  */
+
+.starBig,
+.starSmall {
+  background-image: url(http://www.xishiwang.com/images/new201310/icons/icons.png);
+  display: inline-block;
+  overflow: hidden;
+  _zoom: 1;
+}
+
+.starBig {
+  width: 105px;
+  height: 16px;
+  background-position: -105px -207px;
+}
+
+.starBig a {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  float: left;
+}
+
+.starBig .degree-five,
+.starSmall .degree-five {
+  margin-right: 0;
+}
+
+.starBig1 {
+  background-position: -84px -207px;
+}
+
+.starBig2 {
+  background-position: -63px -207px;
+}
+
+.starBig3 {
+  background-position: -42px -207px;
+}
+
+.starBig4 {
+  background-position: -21px -207px;
+}
+
+.starBig5 {
+  background-position: 0px -207px;
+}
+
+.starSmall {
+  width: 65px;
+  height: 10px;
+  background-position: -65px -250px;
+}
+
+.starSmall a {
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  float: left;
+}
+
+.starSmall1 {
+  background-position: -52px -250px;
+}
+
+.starSmall2 {
+  background-position: -39px -250px;
+}
+
+.starSmall3 {
+  background-position: -26px -250px;
+}
+
+.starSmall4 {
+  background-position: -13px -250px;
+}
+
+.starSmall5 {
+  background-position: 0px -250px;
+}
+
+
+/* pages */
+
+.xswPages {
+  text-align: center;
+  height: 50px
+}
+
+.xswPages a {
+  display: inline-block;
+  padding: 3px 7px;
+  height: 14px;
+  line-height: 14px;
+  border: 1px solid #d4d4d4;
+  margin-right: 5px;
+  color: #333;
+  cursor: pointer;
+  vertical-align: top
+}
+
+.xswPages a:hover,
+.xswPages a.hover {
+  text-decoration: none;
+  background: #de1a1a;
+  color: #fff;
+  border: 1px solid #de1a1a
+}
+
+.xswPages span {
+  display: inline-block;
+  padding: 3px 10px;
+  height: 20px;
+  vertical-align: top;
+}
+
+
+/* remen */
+
+.siteRow {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 17px 0;
+  border-top: 1px solid #e5e5e5
+}
+
+.box b {
+  display: block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.box b a {
+  color: #666;
+}
+
+.box a {
+  color: #8e8e8e;
+  display: inline-block;
+  width: 96px;
+  _width: 93px;
+  +width: 93px;
+  line-height: 20px;
+}
+
+.len {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis
+}
+
+#xswDate {
+  z-index: 10000!important
+}
+
+.xstFootInf3 .botTel span {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 32px;
+}
+
+.xstFootInf3 .botTel span.f16 {
+  color: #666
+}
+
+
+/* map */
+
+.mapPop {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 245px;
+  height: 239px
+}
+
+.inMapop {
+  float: right;
+  width: 235px;
+  height: 235px;
+  border: 1px solid #b3b3b3;
+  padding: 1px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #ccc
+}
+
+.mapLst1 {
+  width: 235px;
+  height: 235px;
+  background: #222
+}
+
+.mapPopArr {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 8px;
+  height: 13px;
+  overflow: hidden;
+  background: url(http://www.xishiwang.com/images/new201310/icons/icons.png) no-repeat 0 -820px;
+}
+
+
+/* search drop */
+
+.idSearlst2 {
+  position: relative;
+}
+
+.recBox {
+  display: none;
+  border: 1px solid #e6e6e6;
+  padding: 7px 10px 0 10px;
+  width: 298px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10001
+}
+
+.recBox dl {
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px
+}
+
+.recBox dt {
+  font: bold 14px/2 simsun;
+  color: #555;
+}
+
+.recBox dd a {
+  cursor: pointer;
+  display: inline-block;
+  color: #888;
+  margin-right: 10px;
+  line-height: 24px
+}
+
+.recBox dd a:hover {
+  color: #e0002a;
+  text-decoration: none
+}
+
+.recBox dl.last {
+  border: 0 none;
+  margin-bottom: 0
+}
+
+.icoSo {
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  background-position: -40px -717px;
+  position: absolute;
+  top: 7px;
+  right: 9px
+}
+
+.dropSrBox {
+  display: none;
+  border: 1px solid #e6e6e6;
+  width: 318px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10001
+}
+
+.dropSrBox li a,
+.dropSrBox li a:hover {
+  cursor: pointer;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 20px;
+  color: #888;
+  width: 298px;
+  border-bottom: 1px dotted #eee
+}
+
+.dropSrBox li a.hover {
+  background-color: #eb5874;
+  color: #fff;
+}
+
+.listKeyWord {
+  position: relative;
+  height: 30px;
+  width: 426px;
+  _display: inline-block;
+}
+
+.listKeyWord .icoSo {
+  top: 1px;
+  +top: 7px;
+  _top: 7px;
+}
+
+.lstBody .recBox {
+  width: 440px
+}
+
+.lstBody .dropSrBox {
+  width: 460px
+}
+
+.lstBody .dropSrBox li a,
+.lstBody .dropSrBox li a:hover {
+  width: 440px
+}

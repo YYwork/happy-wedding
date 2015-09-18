@@ -1,0 +1,10 @@
+@import "compass";
+@import "compass/utilities/sprites";
+//global-wedding
+$mfp-sprite-dimensions:true;
+$mfp-layout:smart;
+@import "mfp/*.png";
+@include all-mfp-sprites();
+.mfp-sprite {
+  @include inline-block;
+}

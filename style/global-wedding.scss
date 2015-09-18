@@ -1,0 +1,433 @@
+@import "compass";
+@import "compass/utilities/sprites";
+@import "susy";
+@import "breakpoint";
+@import "normalize";
+@import "pop.scss";
+@import "global-wedding-cover.scss";
+//global-wedding
+$global-wedding-sprite-dimensions:true;
+$global-wedding-layout:smart;
+@import "global-wedding/*.png";
+@include all-global-wedding-sprites();
+$dpr: 64;
+.global-wedding-sprite {
+  @include inline-block;
+}
+
+$bg-color: #e9eaeb;
+$border-color: #d3d5d7;
+$main-width: 1000px;
+$base-color-red: #ff4d6b;
+.global-wedding {
+  background-color: $bg-color;
+  width: 100%;
+}
+
+.no-more {
+  display: none;
+}
+
+.show {
+  display: inherit;
+}
+
+.img-cover {
+  @include opacity(0.5);
+}
+
+.gw-main {
+  width: $main-width;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.gw-header {
+  .gw-wedding-options {
+    background-color: #fff;
+    margin-right: 10px;
+    @include border-radius(3px);
+    border: 1px solid $border-color;
+    @include box-sizing(border-box);
+    width: 100px;
+    float: left;
+    height: 140px;
+  }
+  .wedding-scene {
+    width: 214px;
+  }
+  .wedding-color {
+    width: 420px;
+  }
+  .wedding-goods {
+    width: 340px;
+    margin-right: 0;
+  }
+  .wedding-icon {
+    float: left;
+    margin-right: 15px;
+    height: 100%;
+  }
+  .wedding-header-title {
+    font-size: 16px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+  .wedding-color,
+  .wedding-scene {
+    .wedding-header-title {
+      padding-bottom: 14px;
+    }
+  }
+  .wedding-header-container {
+    font-size: 12px;
+  }
+  .wedding-scene-ul {
+    vertical-align: top;
+    li {
+      padding-bottom: 6px;
+      padding-right: 20px;
+      padding-left: 0;
+      @include inline-block;
+      &:hover {
+        color: $base-color-red;
+      }
+      cursor: pointer;
+    }
+  }
+  .wedding-color-ul {
+    vertical-align: top;
+    li {
+      padding-bottom: 2px;
+      vertical-align: middle;
+      width: 66px;
+      @include inline-block;
+      &:hover {
+        color: $base-color-red;
+      }
+      cursor: pointer;
+      .text {
+        vertical-align: middle;
+        @include inline-block;
+        padding-left: 2px;
+        padding-top: 2px;
+      }
+    }
+  }
+  .wedding-goods-ul {
+    vertical-align: top;
+    li {
+      padding-bottom: 6px;
+      vertical-align: middle;
+      width: 64px;
+      @include inline-block;
+      overflow: hidden;
+    }
+  }
+}
+
+.gw-wedding-options {
+  padding: 15px 30px;
+  padding-right: 0;
+}
+
+.gw-container {}
+
+// circle-color
+.circle-color {
+  @include inline-block;
+  width: 10px;
+  height: 10px;
+  @include border-radius(5px);
+}
+
+// circle-color
+.red-circle {
+  background-color: red;
+}
+
+.white-circle {
+  @include box-sizing(border-box);
+  border: 1px solid $border-color;
+  background-color: white;
+}
+
+.roses-circle {
+  background-color: #e51373;
+}
+
+.peach-circle {
+  background-color: peach;
+}
+
+.dark-blue-circle {
+  background-color: #036eb7;
+}
+
+.pink-circle {
+  background-color: pink;
+}
+
+.orange-circle {
+  background-color: #f29600;
+}
+
+.yellow-circle {
+  background-color: yellow;
+}
+
+.light-yellow-circle {
+  background-color: #f9f3aa;
+}
+
+.lavender-circle {
+  background-color: #9d82c4;
+}
+
+.grass-circle {
+  background-color: #95ce89;
+}
+
+.dark-green-circle {
+  background-color: #00913a;
+}
+
+.light-blue {
+  background-color: #08bfff;
+}
+
+.sky-blue {
+  background-color: #9dd9ed;
+}
+
+.eggplant-circle {
+  background-color: #8c316e;
+}
+
+// grid
+.gw-container {
+  @include clearfix;
+  /* ---- grid ---- */
+  #grid {
+    position: relative;
+    margin: 14px auto;
+    padding: 0;
+    list-style-type: none;
+    display: none;
+    /* clearfix */
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    /* ---- grid-item ---- */
+    .grid-item {
+      width: 238px;
+      //height: 120px;
+      float: left;
+      border: 1px solid #333;
+      border-color: hsla(0, 0%, 0%, 0.5);
+      border-radius: 5px;
+      display: block;
+      opacity: 1;
+      text-align: center;
+      list-style-type: none;
+      background-color: #fff;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      //margin-right: 14px;
+      margin-bottom: 14px;
+      @include border-radius(3px);
+      overflow: hidden;
+      &.wookmark-inactive {
+        visibility: hidden;
+        opacity: 0;
+      }
+      img {
+        width: 238px;
+        //   &:hover {
+        //   width: 246px;
+        //   margin-left: -4px;
+        //   margin-right: -4px;
+        //   margin-top: -4px;
+        //   margin-bottom: -4px;
+        // }
+      }
+    }
+  }
+}
+
+.grid-more {
+  font-size: 20px;
+  color: #3f3f3f;
+  text-align: center;
+  .loading-text {
+    @include inline-block;
+    margin-left: 2px;
+  }
+  .no-more-text {
+    @include inline-block;
+    height: 50px;
+    overflow: hidden;
+    width: 226px;
+    .no-more-border {
+      border-bottom: 1px solid #3f3f3f;
+    }
+    .no-more-label {
+      padding-left: 10px;
+      padding-right: 10px;
+      @include inline-block;
+      margin-bottom: -26px;
+      background-color: $bg-color;
+    }
+  }
+}
+
+#preview-cover-grid,
+#cover-grid {
+  margin-top: 12px;
+  position: relative;
+  @include clearfix;
+  max-height: 430px;
+  overflow-y: auto;
+  .grid-item {
+    width: 47px;
+    //height: 120px;
+    float: left;
+    display: block;
+    opacity: 1;
+    text-align: center;
+    list-style-type: none;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    @include border-radius(1px);
+    overflow: hidden;
+    &.wookmark-inactive {
+      visibility: hidden;
+      opacity: 0;
+    }
+    img {
+      width: 47px;
+    }
+  }
+}
+
+#preview-cover-grid {
+  .grid-item {
+    width: 60px;
+    height: 60px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+/**
+ * Placerholder css
+ */
+
+.wookmark-placeholder {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  z-index: -1;
+}
+
+// cover
+.grid-item-cover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(#000, 0.5);
+  color: #fff;
+}
+
+.cover-all {
+  height: 100%;
+  position: absolute;
+  .cover-icon {}
+  .cover-title {}
+}
+
+.cover-center {
+  display: table;
+  height: 100%;
+}
+
+.cover-center-span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  //针对ie6的hack
+  _position: absolute;
+  _top: 50%;
+}
+
+.cover-span {
+  @include inline-block;
+  padding: 0;
+  //针对ie6的hack
+  _position: relative;
+  _top: -50%;
+}
+
+.cover-icon {
+  float: left;
+}
+
+.cover-title {
+  float: left;
+  margin-left: 8px;
+  font-size: 14px;
+  margin-top: -4px;
+}
+
+.cover-text {
+  float: left;
+  margin-left: 8px + 51px;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-right: 26px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.cover-bottom {
+  height: 35px;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.to-top:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
