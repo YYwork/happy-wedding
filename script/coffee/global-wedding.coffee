@@ -8,19 +8,19 @@ $ ->
     $('html,body').animate({scrollTop:0},'slow')
   )
   $('.grid-item').mouseenter( () ->
-    $that = $(this).find('img')
-    $width = $that.width()
-    $height = $that.height()
-    $that.css(
-      "width": $width * 1.02,
-      "height": $height * 1.02,
-      "margin-top": - $width * 0.01,
-      "margin-left": - $height * 0.01
-    )
-    $that.parent('.grid-item').css(
-      "width": $width,
-      "height": $height
-    )
+    # $that = $(this).find('img')
+    # $width = $that.width()
+    # $height = $that.height()
+    # $that.css(
+    #   "width": $width * 1.06,
+    #   "height": $height * 1.06,
+    #   "margin-top": - $width * 0.03,
+    #   "margin-left": - $height * 0.03
+    # )
+    # $that.parents('.grid-item').css(
+    #   "width": $width,
+    #   "height": $height
+    # )
 
     $(this).find('.grid-item-cover').show();
   )
@@ -28,15 +28,15 @@ $ ->
 
 
   $('.grid-item').mouseleave( () ->
-    $that = $(this).find('img')
-    $width = $that.width()
-    $height = $that.height()
-    $that.css(
-      "width": $width / 1.02,
-      "height": $height / 1.02,
-      "margin-top": 0,
-      "margin-left": 0
-    )
+    # $that = $(this).find('img')
+    # $width = $that.width()
+    # $height = $that.height()
+    # $that.css(
+    #   "width": $width / 1.06,
+    #   "height": $height / 1.06,
+    #   "margin-top": 0,
+    #   "margin-left": 0
+    # )
     $(this).find('.grid-item-cover').hide()
   )
 

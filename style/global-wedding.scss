@@ -19,6 +19,11 @@ $bg-color: #e9eaeb;
 $border-color: #d3d5d7;
 $main-width: 1000px;
 $base-color-red: #ff4d6b;
+.mfp-wrap,
+.yy-container {
+  font-family: 'Microsoft YaHei', arial, helvetica, clean, sans-serif;
+}
+
 .global-wedding {
   background-color: $bg-color;
   width: 100%;
@@ -114,7 +119,7 @@ $base-color-red: #ff4d6b;
         vertical-align: middle;
         @include inline-block;
         padding-left: 2px;
-        padding-top: 2px;
+        // padding-top: 2px;
       }
     }
   }
@@ -126,6 +131,10 @@ $base-color-red: #ff4d6b;
       width: 64px;
       @include inline-block;
       overflow: hidden;
+      cursor: pointer;
+      &:hover {
+        color: $base-color-red;
+      }
     }
   }
 }
@@ -196,11 +205,11 @@ $base-color-red: #ff4d6b;
   background-color: #00913a;
 }
 
-.light-blue {
+.light-blue-circle {
   background-color: #08bfff;
 }
 
-.sky-blue {
+.sky-blue-circle {
   background-color: #9dd9ed;
 }
 
@@ -243,22 +252,21 @@ $base-color-red: #ff4d6b;
       -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
       //margin-right: 14px;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
       @include border-radius(3px);
       overflow: hidden;
+      &:hover {
+        img {
+          @include transform(scale(1.05));
+        }
+      }
       &.wookmark-inactive {
         visibility: hidden;
         opacity: 0;
       }
       img {
         width: 238px;
-        //   &:hover {
-        //   width: 246px;
-        //   margin-left: -4px;
-        //   margin-right: -4px;
-        //   margin-top: -4px;
-        //   margin-bottom: -4px;
-        // }
+        @include transform(transform 0.3s ease 0s);
       }
     }
   }
@@ -360,7 +368,7 @@ $base-color-red: #ff4d6b;
   bottom: 0;
   left: 0;
   background-color: rgba(#000, 0.5);
-  color: #fff;
+  color: #efefef;
 }
 
 .cover-all {
@@ -415,7 +423,6 @@ $base-color-red: #ff4d6b;
 }
 
 .cover-bottom {
-  height: 35px;
   font-size: 14px;
   line-height: 35px;
 }

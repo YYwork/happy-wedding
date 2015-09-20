@@ -5,33 +5,9 @@ $(function() {
     }, 'slow');
   });
   $('.grid-item').mouseenter(function() {
-    var $height, $that, $width;
-    $that = $(this).find('img');
-    $width = $that.width();
-    $height = $that.height();
-    $that.css({
-      "width": $width * 1.02,
-      "height": $height * 1.02,
-      "margin-top": -$width * 0.01,
-      "margin-left": -$height * 0.01
-    });
-    $that.parent('.grid-item').css({
-      "width": $width,
-      "height": $height
-    });
     return $(this).find('.grid-item-cover').show();
   });
   return $('.grid-item').mouseleave(function() {
-    var $height, $that, $width;
-    $that = $(this).find('img');
-    $width = $that.width();
-    $height = $that.height();
-    $that.css({
-      "width": $width / 1.02,
-      "height": $height / 1.02,
-      "margin-top": 0,
-      "margin-left": 0
-    });
     return $(this).find('.grid-item-cover').hide();
   });
 });
