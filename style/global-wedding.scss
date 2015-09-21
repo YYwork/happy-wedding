@@ -63,13 +63,13 @@ $base-color-red: #ff4d6b;
     height: 140px;
   }
   .wedding-scene {
-    width: 214px;
+    width: 219px;
   }
   .wedding-color {
     width: 420px;
   }
   .wedding-goods {
-    width: 340px;
+    width: 341px;
     margin-right: 0;
   }
   .wedding-icon {
@@ -79,13 +79,13 @@ $base-color-red: #ff4d6b;
   }
   .wedding-header-title {
     font-size: 16px;
-    padding-top: 6px;
+    padding-top: 4px;
     padding-bottom: 10px;
   }
   .wedding-color,
   .wedding-scene {
     .wedding-header-title {
-      padding-bottom: 14px;
+      padding-bottom: 13px;
     }
   }
   .wedding-header-container {
@@ -235,7 +235,8 @@ $base-color-red: #ff4d6b;
     }
     /* ---- grid-item ---- */
     .grid-item {
-      width: 238px;
+      //width: 238px;
+      width: 242px;
       //height: 120px;
       float: left;
       border: 1px solid #333;
@@ -265,7 +266,7 @@ $base-color-red: #ff4d6b;
         opacity: 0;
       }
       img {
-        width: 238px;
+        width: 242px;
         @include transform(transform 0.3s ease 0s);
       }
     }
@@ -437,4 +438,16 @@ $base-color-red: #ff4d6b;
 .to-top:hover {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+.mfp-arrow-left,
+.mfp-arrow-right {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.mfp-arrow-left:hover,
+.mfp-arrow-right:hover {
+  width: 40px;
+  height: 40px;
 }

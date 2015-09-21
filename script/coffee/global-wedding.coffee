@@ -134,7 +134,7 @@ $ ->
         $($itemsList[item.index]).addClass('nocover')
   )
 
-  $('body').delegate('.mfp-share-text', 'click', ()->
+  $('body').delegate('.cover-share', 'click', ()->
     $('.pop-qcore').toggleClass('show');
   )
 
@@ -186,8 +186,8 @@ $ ->
   $document = $(document)
   imagesLoaded container, ->
     wookmark = new Wookmark(container,
-      offset: 10
-      itemWidth: 238
+      offset: 11
+      itemWidth: 240
     )
 
 

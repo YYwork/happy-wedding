@@ -65,7 +65,7 @@ $(function() {
       }
     }
   });
-  $('body').delegate('.mfp-share-text', 'click', function() {
+  $('body').delegate('.cover-share', 'click', function() {
     return $('.pop-qcore').toggleClass('show');
   });
   onScroll = function() {
@@ -113,8 +113,8 @@ $(function() {
   $document = $(document);
   imagesLoaded(container, function() {
     return wookmark = new Wookmark(container, {
-      offset: 10,
-      itemWidth: 238
+      offset: 11,
+      itemWidth: 240
     });
   });
   return $window.bind("scroll.wookmark", onScroll);

@@ -1,6 +1,7 @@
 .mfp-sprite,
 .mfp-arrow-left,
 .mfp-arrow-right,
+.mfp-circle-point,
 .mfp-close,
 .mfp-pic-ico,
 .mfp-pic-tag,
@@ -9,20 +10,36 @@
 .mfp-source,
 .mfp-to-top,
 .mfp-weixin {
-  background-image: url('../images/mfp-se7a92d9b39.png');
+  background-image: url('../images/mfp-scbd0bfc414.png');
   background-repeat: no-repeat;
 }
 
 .mfp-arrow-left {
-  background-position: -39px -75px;
-  height: 40px;
-  width: 40px;
+  background-position: -41px -75px;
+  height: 20px;
+  width: 20px;
+}
+
+.mfp-arrow-left:hover,
+.mfp-arrow-left.arrow-left-hover {
+  background-position: -81px 0;
 }
 
 .mfp-arrow-right {
-  background-position: -41px 0;
-  height: 40px;
-  width: 40px;
+  background-position: -61px -75px;
+  height: 20px;
+  width: 20px;
+}
+
+.mfp-arrow-right:hover,
+.mfp-arrow-right.arrow-right-hover {
+  background-position: -97px -75px;
+}
+
+.mfp-circle-point {
+  background-position: -23px -75px;
+  height: 17px;
+  width: 18px;
 }
 
 .mfp-close {
@@ -56,13 +73,13 @@
 }
 
 .mfp-source {
-  background-position: -23px -75px;
+  background-position: -81px -75px;
   height: 20px;
   width: 16px;
 }
 
 .mfp-to-top {
-  background-position: -81px 0;
+  background-position: -41px 0;
   height: 40px;
   width: 40px;
 }
@@ -76,6 +93,7 @@
 .mfp-sprite,
 .mfp-arrow-left,
 .mfp-arrow-right,
+.mfp-circle-point,
 .mfp-close,
 .mfp-pic-ico,
 .mfp-pic-tag,
