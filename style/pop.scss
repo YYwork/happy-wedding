@@ -62,29 +62,29 @@
 .mfp-inline-holder .mfp-content,
 .mfp-ajax-holder .mfp-content {
   width: 100%;
-  cursor: auto;
+  // cursor: auto;
 }
 
 .mfp-ajax-cur {
-  cursor: progress;
+  // cursor: progress;
 }
 
 .mfp-zoom-out-cur,
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: -moz-zoom-out;
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out;
+  // cursor: -moz-zoom-out;
+  // cursor: -webkit-zoom-out;
+  // cursor: zoom-out;
 }
 
 .mfp-zoom {
-  cursor: pointer;
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
-  cursor: zoom-in;
+  // cursor: pointer;
+  // cursor: -webkit-zoom-in;
+  // cursor: -moz-zoom-in;
+  // cursor: zoom-in;
 }
 
 .mfp-auto-cursor .mfp-content {
-  cursor: auto;
+  // cursor: auto;
 }
 
 .mfp-close,
@@ -372,7 +372,7 @@ img.mfp-img {
   top: 100%;
   left: 0;
   width: 100%;
-  cursor: auto;
+  // cursor: auto;
 }
 
 .mfp-title {
@@ -388,7 +388,7 @@ img.mfp-img {
 }
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape),
@@ -531,6 +531,7 @@ screen and (max-height: 300px) {
   }
   .cover-share {
     float: right;
+    cursor: pointer;
     .mfp-share {
       margin-right: 10px;
     }

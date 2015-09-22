@@ -76,6 +76,14 @@ $ ->
   #   $newElems = $(newElems)
   #   $('#grid').masonry 'appended', $newElems
   #   return
+  #
+  downloadToTopHeight = $('.xswHeadindex').height()
+  $(document).scroll( ()->
+    if ($(document).scrollTop() >= downloadToTopHeight)
+      $('.gw-main-header').addClass('fixed');
+    else
+      $('.gw-main-header').removeClass('fixed');
+  )
 
 (($) ->
 

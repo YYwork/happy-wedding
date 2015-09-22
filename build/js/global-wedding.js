@@ -1,4 +1,5 @@
 $(function() {
+  var downloadToTopHeight;
   $('.to-top').click(function() {
     return $('html,body').animate({
       scrollTop: 0
@@ -7,8 +8,16 @@ $(function() {
   $('.grid-item').mouseenter(function() {
     return $(this).find('.grid-item-cover').show();
   });
-  return $('.grid-item').mouseleave(function() {
+  $('.grid-item').mouseleave(function() {
     return $(this).find('.grid-item-cover').hide();
+  });
+  downloadToTopHeight = $('.xswHeadindex').height();
+  return $(document).scroll(function() {
+    if ($(document).scrollTop() >= downloadToTopHeight) {
+      return $('.gw-main-header').addClass('fixed');
+    } else {
+      return $('.gw-main-header').removeClass('fixed');
+    }
   });
 });
 
