@@ -25,7 +25,7 @@ $(function() {
   var $container, $document, $itemsList, $window, container, html, onScroll, wookmark, wookmark2;
   html = '<div class="mfp-figure">' + '  <div class="mfp-close"></div>' + '  <div class="mfp-cover-content">' + '    <div class="mfp-cover-left">' + '      <div class="mfp-cover-header">' + '      </div>' + '      <div class="mfp-img"></div>' + '    </div>' + '    <div class="mfp-cover-right"></div>' + '  </div>' + '</div>';
   $itemsList = $("li", $('#grid'));
-  $('#grid, #cover-grid').magnificPopup({
+  $('#grid, #cover-grid, #preview-cover-grid').magnificPopup({
     type: 'image',
     image: {
       markup: html,
@@ -59,9 +59,16 @@ $(function() {
           }
         });
         $('#cover-grid').append($item);
-        return imagesLoaded('#cover-grid', function() {
+        imagesLoaded('#cover-grid', function() {
           var wookmark2;
           return wookmark2 = new Wookmark('#cover-grid', {
+            offset: 2,
+            itemWidth: 47
+          });
+        });
+        return imagesLoaded('#preview-cover-grid', function() {
+          var wookmark3;
+          return wookmark3 = new Wookmark('#preview-cover-grid', {
             offset: 2,
             itemWidth: 47
           });
@@ -70,7 +77,8 @@ $(function() {
       markupParse: function(template, values, item) {
         $itemsList = $("li", $('#grid'));
         $itemsList.removeClass('nocover');
-        return $($itemsList[item.index]).addClass('nocover');
+        $($itemsList[item.index]).addClass('nocover');
+        return console.log($itemsList);
       }
     }
   });
@@ -122,8 +130,8 @@ $(function() {
   $document = $(document);
   imagesLoaded(container, function() {
     return wookmark = new Wookmark(container, {
-      offset: 11,
-      itemWidth: 240
+      offset: 13,
+      itemWidth: 239
     });
   });
   return $window.bind("scroll.wookmark", onScroll);

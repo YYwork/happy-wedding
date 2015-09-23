@@ -99,7 +99,7 @@ $ ->
         +'  </div>'\
         +'</div>'
   $itemsList = $("li", $('#grid'))
-  $('#grid, #cover-grid').magnificPopup(
+  $('#grid, #cover-grid, #preview-cover-grid').magnificPopup(
     type: 'image',
     image:
       markup: html,
@@ -136,10 +136,18 @@ $ ->
             offset: 2
             itemWidth: 47
           )
+
+        #preview-cover-grid
+        imagesLoaded '#preview-cover-grid', ->
+          wookmark3 = new Wookmark('#preview-cover-grid',
+            offset: 2
+            itemWidth: 47
+          )
       markupParse: (template, values, item)->
         $itemsList = $("li", $('#grid'))
         $itemsList.removeClass('nocover')
         $($itemsList[item.index]).addClass('nocover')
+        console.log($itemsList)
   )
 
   $('body').delegate('.cover-share', 'click', ()->
@@ -194,8 +202,8 @@ $ ->
   $document = $(document)
   imagesLoaded container, ->
     wookmark = new Wookmark(container,
-      offset: 11
-      itemWidth: 240
+      offset: 13,
+      itemWidth: 239
     )
 
 

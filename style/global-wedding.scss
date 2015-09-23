@@ -39,6 +39,9 @@ $base-color-red: #ff4d6b;
 
 .img-cover {
   @include opacity(0.5);
+  &:hover {
+    @include opacity(1);
+  }
 }
 
 .gw-main {
@@ -70,7 +73,7 @@ $base-color-red: #ff4d6b;
 .gw-header {
   .gw-wedding-options {
     background-color: #fff;
-    margin-right: 10px;
+    margin-right: 8px;
     @include border-radius(3px);
     border: 1px solid $border-color;
     @include box-sizing(border-box);
@@ -79,13 +82,13 @@ $base-color-red: #ff4d6b;
     height: 140px;
   }
   .wedding-scene {
-    width: 219px;
+    width: 218px;
   }
   .wedding-color {
-    width: 420px;
+    width: 424px;
   }
   .wedding-goods {
-    width: 341px;
+    width: 342px;
     margin-right: 0;
   }
   .wedding-icon {
@@ -252,7 +255,8 @@ $base-color-red: #ff4d6b;
     /* ---- grid-item ---- */
     .grid-item {
       //width: 238px;
-      width: 242px;
+      @include box-sizing(border-box);
+      width: 241px;
       //height: 120px;
       float: left;
       border: 1px solid #d3d5d7;
@@ -281,7 +285,7 @@ $base-color-red: #ff4d6b;
         opacity: 0;
       }
       img {
-        width: 242px;
+        width: 239px;
         @include transform(transform 0.3s ease 0s);
       }
     }
@@ -350,16 +354,17 @@ $base-color-red: #ff4d6b;
 }
 
 #preview-cover-grid {
-  .grid-item {
-    width: 60px;
-    height: 60px;
-    margin-right: 6px;
-    margin-bottom: 6px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
+  max-height: 198px;
+  // .grid-item {
+  //   width: 60px;
+  //   height: 60px;
+  //   margin-right: 6px;
+  //   margin-bottom: 6px;
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+  // }
 }
 
 
@@ -462,11 +467,11 @@ $base-color-red: #ff4d6b;
 // }
 
 
-.mfp-arrow-left:hover,
-.mfp-arrow-right:hover {
-  width: 40px;
-  height: 40px;
-}
+// .mfp-arrow-left:hover,
+// .mfp-arrow-right:hover {
+//   width: 40px;
+//   height: 40px;
+// }
 
 .fixed {
   position: fixed;

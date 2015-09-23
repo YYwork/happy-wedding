@@ -1,8 +1,5 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-
-
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
-
 article,
 aside,
 details,
@@ -36,9 +33,7 @@ template {
   display: none;
 }
 
-
 /*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -49,9 +44,7 @@ body {
   margin: 0;
 }
 
-
 /*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
-
 a {
   background: transparent;
 }
@@ -61,9 +54,7 @@ a:hover {
   outline: 0;
 }
 
-
 /*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
-
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -107,9 +98,7 @@ sub {
   bottom: -0.25em;
 }
 
-
 /*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
-
 img {
   border: 0;
 }
@@ -118,9 +107,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-
 /*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
-
 figure {
   margin: 1em 40px;
 }
@@ -143,9 +130,7 @@ samp {
   font-size: 1em;
 }
 
-
 /*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
-
 button,
 input,
 optgroup,
@@ -230,9 +215,7 @@ optgroup {
   font-weight: bold;
 }
 
-
 /*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -243,9 +226,7 @@ th {
   padding: 0;
 }
 
-
 /* Magnific Popup CSS */
-
 .mfp-bg {
   top: 0;
   left: 0;
@@ -533,9 +514,7 @@ button::-moz-focus-inner {
   height: 100%;
 }
 
-
 /* Main image in popup */
-
 img.mfp-img {
   width: auto;
   max-width: 620px;
@@ -549,9 +528,7 @@ img.mfp-img {
   margin: 0 auto;
 }
 
-
 /* The shadow behind the image */
-
 .mfp-figure {
   line-height: 0;
 }
@@ -600,8 +577,7 @@ img.mfp-img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape),
-screen and (max-height: 300px) {
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
   /**
        * Remove all paddings around the image on small screen
        */
@@ -609,17 +585,21 @@ screen and (max-height: 300px) {
     padding-left: 0;
     padding-right: 0;
   }
+
   .mfp-img-mobile img.mfp-img {
     padding: 0;
   }
+
   .mfp-img-mobile .mfp-figure:after {
     top: 0;
     bottom: 0;
   }
+
   .mfp-img-mobile .mfp-figure small {
     display: inline;
     margin-left: 5px;
   }
+
   .mfp-img-mobile .mfp-bottom-bar {
     background: rgba(0, 0, 0, 0.6);
     bottom: 0;
@@ -631,13 +611,16 @@ screen and (max-height: 300px) {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+
   .mfp-img-mobile .mfp-bottom-bar:empty {
     padding: 0;
   }
+
   .mfp-img-mobile .mfp-counter {
     right: 5px;
     top: 3px;
   }
+
   .mfp-img-mobile .mfp-close {
     top: 0;
     right: 0;
@@ -650,26 +633,27 @@ screen and (max-height: 300px) {
     padding: 0;
   }
 }
-
 @media all and (max-width: 900px) {
   .mfp-arrow {
     -webkit-transform: scale(0.75);
     transform: scale(0.75);
   }
+
   .mfp-arrow-left {
     -webkit-transform-origin: 0;
     transform-origin: 0;
   }
+
   .mfp-arrow-right {
     -webkit-transform-origin: 100%;
     transform-origin: 100%;
   }
+
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px;
   }
 }
-
 .mfp-ie7 .mfp-img {
   padding: 0;
 }
@@ -730,27 +714,22 @@ screen and (max-height: 300px) {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
-
 .mfp-cover-header .cover-title-url {
   float: left;
 }
-
 .mfp-cover-header .cover-title-url .mfp-source {
   margin-right: 10px;
 }
-
 .mfp-cover-header .mfp-cover-tile,
 .mfp-cover-header .mfp-cover-url,
 .mfp-cover-header .mfp-share-text {
   line-height: 20px;
   vertical-align: middle;
 }
-
 .mfp-cover-header .cover-share {
   float: right;
   cursor: pointer;
 }
-
 .mfp-cover-header .cover-share .mfp-share {
   margin-right: 10px;
 }
@@ -767,7 +746,6 @@ screen and (max-height: 300px) {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .pop-qcore .pop-triangle {
   width: 0;
   height: 0;
@@ -778,13 +756,11 @@ screen and (max-height: 300px) {
   border-right: 16px solid transparent;
   border-bottom: 16px solid #e9eaeb;
 }
-
 .pop-qcore .pop-qrcore {
   float: left;
   margin-top: 33px;
   margin-left: 23px;
 }
-
 .pop-qcore .pop-weixin {
   float: right;
   margin-top: 23px;
@@ -803,7 +779,6 @@ screen and (max-height: 300px) {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .tag-wedding .tag-wedding-title {
   display: inline-block;
   vertical-align: middle;
@@ -812,11 +787,9 @@ screen and (max-height: 300px) {
   *display: inline;
   font-size: 16px;
 }
-
 .tag-wedding .tag-wedding-title .mfp-circle-point {
   margin-right: 11px;
 }
-
 .tag-wedding .tag-wedding-title span {
   vertical-align: middle;
 }
@@ -834,7 +807,6 @@ screen and (max-height: 300px) {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .tag-preview .tag-preview-tilte {
   display: inline-block;
   vertical-align: middle;
@@ -843,51 +815,28 @@ screen and (max-height: 300px) {
   *display: inline;
   font-size: 16px;
 }
-
 .tag-preview .tag-preview-tilte .mfp-pic-ico {
   margin-right: 11px;
 }
-
 .tag-preview .tag-preview-tilte span {
   vertical-align: middle;
 }
 
-.mfp-sprite,
-.mfp-arrow-left,
-.mfp-arrow-right,
-.mfp-circle-point,
-.mfp-close,
-.mfp-pic-ico,
-.mfp-pic-tag,
-.mfp-qcore,
-.mfp-share,
-.mfp-source,
-.mfp-to-top,
-.mfp-weixin {
-  background-image: url('../images/mfp-scbd0bfc414.png');
+.mfp-sprite, .mfp-arrow-left, .mfp-arrow-right, .mfp-circle-point, .mfp-close, .mfp-pic-ico, .mfp-pic-tag, .mfp-qcore, .mfp-share, .mfp-source, .mfp-to-top, .mfp-weixin {
+  background-image: url('../images/mfp-sdf5b8d1009.png');
   background-repeat: no-repeat;
 }
 
 .mfp-arrow-left {
-  background-position: -41px -75px;
-  height: 20px;
-  width: 20px;
-}
-
-.mfp-arrow-left:hover,
-.mfp-arrow-left.arrow-left-hover {
-  background-position: -81px 0;
+  background-position: -41px 0;
+  height: 40px;
+  width: 40px;
 }
 
 .mfp-arrow-right {
-  background-position: -61px -75px;
-  height: 20px;
-  width: 20px;
-}
-
-.mfp-arrow-right:hover,
-.mfp-arrow-right.arrow-right-hover {
-  background-position: -97px -75px;
+  background-position: -57px -75px;
+  height: 40px;
+  width: 40px;
 }
 
 .mfp-circle-point {
@@ -927,13 +876,13 @@ screen and (max-height: 300px) {
 }
 
 .mfp-source {
-  background-position: -81px -75px;
+  background-position: -41px -75px;
   height: 20px;
   width: 16px;
 }
 
 .mfp-to-top {
-  background-position: -41px 0;
+  background-position: -81px 0;
   height: 40px;
   width: 40px;
 }
@@ -944,18 +893,7 @@ screen and (max-height: 300px) {
   width: 147px;
 }
 
-.mfp-sprite,
-.mfp-arrow-left,
-.mfp-arrow-right,
-.mfp-circle-point,
-.mfp-close,
-.mfp-pic-ico,
-.mfp-pic-tag,
-.mfp-qcore,
-.mfp-share,
-.mfp-source,
-.mfp-to-top,
-.mfp-weixin {
+.mfp-sprite, .mfp-arrow-left, .mfp-arrow-right, .mfp-circle-point, .mfp-close, .mfp-pic-ico, .mfp-pic-tag, .mfp-qcore, .mfp-share, .mfp-source, .mfp-to-top, .mfp-weixin {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -963,12 +901,7 @@ screen and (max-height: 300px) {
   *display: inline;
 }
 
-.global-wedding-sprite,
-.global-wedding-color,
-.global-wedding-goods,
-.global-wedding-imgtag,
-.global-wedding-loading,
-.global-wedding-scene {
+.global-wedding-sprite, .global-wedding-color, .global-wedding-goods, .global-wedding-imgtag, .global-wedding-loading, .global-wedding-scene {
   background-image: url('../images/global-wedding-s7b65140581.png');
   background-repeat: no-repeat;
 }
@@ -1003,12 +936,7 @@ screen and (max-height: 300px) {
   width: 25px;
 }
 
-.global-wedding-sprite,
-.global-wedding-color,
-.global-wedding-goods,
-.global-wedding-imgtag,
-.global-wedding-loading,
-.global-wedding-scene {
+.global-wedding-sprite, .global-wedding-color, .global-wedding-goods, .global-wedding-imgtag, .global-wedding-loading, .global-wedding-scene {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -1035,8 +963,12 @@ screen and (max-height: 300px) {
 }
 
 .img-cover {
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+}
+.img-cover:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
 }
 
 .gw-main {
@@ -1067,7 +999,7 @@ screen and (max-height: 300px) {
 
 .gw-header .gw-wedding-options {
   background-color: #fff;
-  margin-right: 10px;
+  margin-right: 8px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -1079,45 +1011,36 @@ screen and (max-height: 300px) {
   float: left;
   height: 140px;
 }
-
 .gw-header .wedding-scene {
-  width: 219px;
+  width: 218px;
 }
-
 .gw-header .wedding-color {
-  width: 420px;
+  width: 424px;
 }
-
 .gw-header .wedding-goods {
-  width: 341px;
+  width: 342px;
   margin-right: 0;
 }
-
 .gw-header .wedding-icon {
   float: left;
   margin-right: 15px;
   height: 100%;
 }
-
 .gw-header .wedding-header-title {
   font-size: 16px;
   padding-top: 4px;
   padding-bottom: 10px;
 }
-
 .gw-header .wedding-color .wedding-header-title,
 .gw-header .wedding-scene .wedding-header-title {
   padding-bottom: 13px;
 }
-
 .gw-header .wedding-header-container {
   font-size: 12px;
 }
-
 .gw-header .wedding-scene-ul {
   vertical-align: top;
 }
-
 .gw-header .wedding-scene-ul li {
   padding-bottom: 6px;
   padding-right: 20px;
@@ -1129,15 +1052,12 @@ screen and (max-height: 300px) {
   *display: inline;
   cursor: pointer;
 }
-
 .gw-header .wedding-scene-ul li:hover {
   color: #ff4d6b;
 }
-
 .gw-header .wedding-color-ul {
   vertical-align: top;
 }
-
 .gw-header .wedding-color-ul li {
   padding-bottom: 2px;
   vertical-align: middle;
@@ -1149,11 +1069,9 @@ screen and (max-height: 300px) {
   *display: inline;
   cursor: pointer;
 }
-
 .gw-header .wedding-color-ul li:hover {
   color: #ff4d6b;
 }
-
 .gw-header .wedding-color-ul li .text {
   vertical-align: middle;
   display: inline-block;
@@ -1163,11 +1081,9 @@ screen and (max-height: 300px) {
   *display: inline;
   padding-left: 2px;
 }
-
 .gw-header .wedding-goods-ul {
   vertical-align: top;
 }
-
 .gw-header .wedding-goods-ul li {
   padding-bottom: 6px;
   vertical-align: middle;
@@ -1180,7 +1096,6 @@ screen and (max-height: 300px) {
   overflow: hidden;
   cursor: pointer;
 }
-
 .gw-header .wedding-goods-ul li:hover {
   color: #ff4d6b;
 }
@@ -1272,7 +1187,6 @@ screen and (max-height: 300px) {
   *zoom: 1;
   /* ---- grid ---- */
 }
-
 .gw-container #grid {
   position: relative;
   margin: 14px auto;
@@ -1282,15 +1196,16 @@ screen and (max-height: 300px) {
   /* clearfix */
   /* ---- grid-item ---- */
 }
-
 .gw-container #grid .grid:after {
   content: '';
   display: block;
   clear: both;
 }
-
 .gw-container #grid .grid-item {
-  width: 242px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 241px;
   float: left;
   border: 1px solid #d3d5d7;
   border-radius: 5px;
@@ -1310,21 +1225,18 @@ screen and (max-height: 300px) {
   border-radius: 3px;
   overflow: hidden;
 }
-
 .gw-container #grid .grid-item:hover img {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
-
 .gw-container #grid .grid-item.wookmark-inactive {
   visibility: hidden;
   opacity: 0;
 }
-
 .gw-container #grid .grid-item img {
-  width: 242px;
+  width: 239px;
   -moz-transform: transform 0.3s ease 0s;
   -ms-transform: transform 0.3s ease 0s;
   -webkit-transform: transform 0.3s ease 0s;
@@ -1336,7 +1248,6 @@ screen and (max-height: 300px) {
   color: #3f3f3f;
   text-align: center;
 }
-
 .grid-more .loading-text {
   display: inline-block;
   vertical-align: middle;
@@ -1345,7 +1256,6 @@ screen and (max-height: 300px) {
   *display: inline;
   margin-left: 2px;
 }
-
 .grid-more .no-more-text {
   display: inline-block;
   vertical-align: middle;
@@ -1356,11 +1266,9 @@ screen and (max-height: 300px) {
   overflow: hidden;
   width: 226px;
 }
-
 .grid-more .no-more-text .no-more-border {
   border-bottom: 1px solid #3f3f3f;
 }
-
 .grid-more .no-more-text .no-more-label {
   padding-left: 10px;
   padding-right: 10px;
@@ -1382,7 +1290,6 @@ screen and (max-height: 300px) {
   max-height: 430px;
   overflow-y: auto;
 }
-
 #preview-cover-grid .grid-item,
 #cover-grid .grid-item {
   width: 47px;
@@ -1404,35 +1311,23 @@ screen and (max-height: 300px) {
   border-radius: 1px;
   overflow: hidden;
 }
-
 #preview-cover-grid .grid-item.wookmark-inactive,
 #cover-grid .grid-item.wookmark-inactive {
   visibility: hidden;
   opacity: 0;
 }
-
 #preview-cover-grid .grid-item img,
 #cover-grid .grid-item img {
   width: 47px;
 }
 
-#preview-cover-grid .grid-item {
-  width: 60px;
-  height: 60px;
-  margin-right: 6px;
-  margin-bottom: 6px;
+#preview-cover-grid {
+  max-height: 198px;
 }
-
-#preview-cover-grid .grid-item img {
-  width: 100%;
-  height: 100%;
-}
-
 
 /**
  * Placerholder css
  */
-
 .wookmark-placeholder {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1518,12 +1413,6 @@ screen and (max-height: 300px) {
 .to-top:hover {
   opacity: 1;
   filter: alpha(opacity=100);
-}
-
-.mfp-arrow-left:hover,
-.mfp-arrow-right:hover {
-  width: 40px;
-  height: 40px;
 }
 
 .fixed {
