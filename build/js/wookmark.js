@@ -672,10 +672,10 @@
           top: shortest + 'px'
         }
       };
-      itemBulkCSS[i].css[this.direction] = sideOffset + 'px';
+      itemBulkCSS[i].css[this.direction] = sideOffset - 1 + 'px';
 
       // Update column height and store item in shortest column
-      heights[shortestIndex] += getData(item, 'height', true) + this.verticalOffset;
+      heights[shortestIndex] += getData(item, 'height', true) + this.verticalOffset - 2;
       this.columns[shortestIndex].push(item);
       i++;
     }

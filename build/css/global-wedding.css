@@ -1029,7 +1029,7 @@ img.mfp-img {
 .gw-header .wedding-header-title {
   font-size: 16px;
   padding-top: 4px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 }
 .gw-header .wedding-color .wedding-header-title,
 .gw-header .wedding-scene .wedding-header-title {
@@ -1189,7 +1189,7 @@ img.mfp-img {
 }
 .gw-container #grid {
   position: relative;
-  margin: 14px auto;
+  margin: 12px auto;
   padding: 0;
   list-style-type: none;
   display: none;
@@ -1237,10 +1237,11 @@ img.mfp-img {
 }
 .gw-container #grid .grid-item img {
   width: 239px;
-  -moz-transform: transform 0.3s ease 0s;
-  -ms-transform: transform 0.3s ease 0s;
-  -webkit-transform: transform 0.3s ease 0s;
-  transform: transform 0.3s ease 0s;
+  -moz-transition: -moz-transform 0.3s ease 0s;
+  -o-transition: -o-transform 0.3s ease 0s;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -webkit-transition-delay: 0s;
+  transition: transform 0.3s ease 0s;
 }
 
 .grid-more {

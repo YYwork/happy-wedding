@@ -477,7 +477,7 @@
         placeholder.style.display = 'none';
       } else {
         lastColumnItem = column[column.length - 1];
-        top = getData(lastColumnItem, 'top', true) + getData(lastColumnItem, 'height', true) + this.verticalOffset;
+        top = getData(lastColumnItem, 'top', true) + getData(lastColumnItem, 'height', true) + this.verticalOffset - 2;
         height = Math.max(0, containerHeight - top - innerOffset);
 
         setCSS(placeholder, {
@@ -672,7 +672,7 @@
           top: shortest + 'px'
         }
       };
-      itemBulkCSS[i].css[this.direction] = sideOffset + 'px';
+      itemBulkCSS[i].css[this.direction] = sideOffset - 1 + 'px';
 
       // Update column height and store item in shortest column
       heights[shortestIndex] += getData(item, 'height', true) + this.verticalOffset;

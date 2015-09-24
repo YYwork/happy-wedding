@@ -52,11 +52,7 @@ $(function() {
         $items.each(function(index) {
           var src;
           src = $(this).find('img').attr('src');
-          if ($(this).hasClass('nocover')) {
-            return $item += '<li class="grid-item"><img src="' + src + '"></li>';
-          } else {
-            return $item += '<li class="grid-item"><img src="' + src + '" class="img-cover"></li>';
-          }
+          return $item += '<li class="grid-item"><img src="' + src + '" class="img-cover"></li>';
         });
         $('#cover-grid').append($item);
         imagesLoaded('#cover-grid', function() {
@@ -75,10 +71,7 @@ $(function() {
         });
       },
       markupParse: function(template, values, item) {
-        $itemsList = $("li", $('#grid'));
-        $itemsList.removeClass('nocover');
-        $($itemsList[item.index]).addClass('nocover');
-        return console.log($itemsList);
+        return $itemsList = $("li", $('#grid'));
       }
     }
   });
@@ -130,7 +123,7 @@ $(function() {
   $document = $(document);
   imagesLoaded(container, function() {
     return wookmark = new Wookmark(container, {
-      offset: 13,
+      offset: 14,
       itemWidth: 239
     });
   });

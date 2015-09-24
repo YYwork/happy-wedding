@@ -99,7 +99,7 @@ $base-color-red: #ff4d6b;
   .wedding-header-title {
     font-size: 16px;
     padding-top: 4px;
-    padding-bottom: 10px;
+    padding-bottom: 13px;
   }
   .wedding-color,
   .wedding-scene {
@@ -242,7 +242,7 @@ $base-color-red: #ff4d6b;
   /* ---- grid ---- */
   #grid {
     position: relative;
-    margin: 14px auto;
+    margin: 12px auto;
     padding: 0;
     list-style-type: none;
     display: none;
@@ -286,7 +286,7 @@ $base-color-red: #ff4d6b;
       }
       img {
         width: 239px;
-        @include transform(transform 0.3s ease 0s);
+        @include transition(transform 0.3s ease 0s);
       }
     }
   }

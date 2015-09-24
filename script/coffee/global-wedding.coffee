@@ -123,10 +123,10 @@ $ ->
         $item = ''
         $items.each((index) ->
           src = $(this).find('img').attr('src')
-          if $(this).hasClass('nocover')
-            $item += '<li class="grid-item"><img src="' + src + '"></li>'
-          else
-            $item += '<li class="grid-item"><img src="' + src + '" class="img-cover"></li>'
+          # if $(this).hasClass('nocover')
+          #   $item += '<li class="grid-item"><img src="' + src + '"></li>'
+          # else
+          $item += '<li class="grid-item"><img src="' + src + '" class="img-cover"></li>'
         )
 
         $('#cover-grid').append $item
@@ -145,9 +145,9 @@ $ ->
           )
       markupParse: (template, values, item)->
         $itemsList = $("li", $('#grid'))
-        $itemsList.removeClass('nocover')
-        $($itemsList[item.index]).addClass('nocover')
-        console.log($itemsList)
+        # $itemsList.removeClass('nocover')
+        # $($itemsList[item.index]).addClass('nocover')
+        # console.log($itemsList)
   )
 
   $('body').delegate('.cover-share', 'click', ()->
@@ -202,7 +202,7 @@ $ ->
   $document = $(document)
   imagesLoaded container, ->
     wookmark = new Wookmark(container,
-      offset: 13,
+      offset: 14,
       itemWidth: 239
     )
 
