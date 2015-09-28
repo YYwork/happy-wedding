@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="flexible" content="initial-dpr=2,maximum-dpr=2">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>看店大礼包</title>
+    <link rel="stylesheet" type="text/css" href="../../css/order.css">
+    <script src="../../js/flexible.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jQuery.tagsinput.js"></script>
+    <script src="../../js/order.js"></script>
+  </head>
+  <body>
+    <div class="get-order orders">
+      <div class="header header-bg02">
+        <div class="title"><span class="title-name">请选择原因</span></div>
+        <div class="description-form">
+          <div class="input-item">
+            <input type="checkbox" class="no-schedule input-item-check">
+            <label>没有档期</label><span class="icon order-not-circle-no"></span>
+          </div>
+          <div class="input-item">
+            <input type="checkbox" class="table-little input-item-check">
+            <label>桌数太少</label><span class="icon order-not-circle-no"></span>
+          </div>
+          <div class="input-item">
+            <input type="checkbox" class="standard-low input-item-check">
+            <label>餐标太低</label><span class="icon order-not-circle-no"></span>
+          </div>
+          <div class="input-item">
+            <textarea placeholder="其他原因" class="other-reason"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="yy-com-btn">
+        <button id="submit-notorder" class="btn-bg02">提交</button>
+      </div>
+    </div>
+  </body>
+</html>

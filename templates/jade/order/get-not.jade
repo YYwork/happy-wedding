@@ -1,0 +1,34 @@
+extends ../m-layout.jade
+
+block title
+  title 看店大礼包
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/order.css")
+block js
+  script(src="../../js/jquery.min.js")
+  script(src="../../js/jQuery.tagsinput.js")
+  script(src="../../js/order.js")
+block body
+  body
+    div.get-order.orders
+      div.header.header-bg02
+        div.title
+          span.title-name 请选择原因
+        div.description-form
+         div.input-item
+          input.no-schedule.input-item-check(type="checkbox")
+          label 没有档期
+          span.icon.order-not-circle-no
+         div.input-item
+          input.table-little.input-item-check(type="checkbox")
+          label 桌数太少
+          span.icon.order-not-circle-no
+         div.input-item
+          input.standard-low.input-item-check(type="checkbox")
+          label 餐标太低
+          span.icon.order-not-circle-no
+         div.input-item
+          textarea.other-reason(placeholder="其他原因")
+      div.yy-com-btn
+        button.btn-bg02#submit-notorder 提交

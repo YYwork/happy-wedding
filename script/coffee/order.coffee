@@ -58,3 +58,15 @@ $ ($) ->
     $('#yy-tags_tag').css border: '0px dashed #777'
     $('.yy-textarea-placeholder').show()  if $('span.tag').length is 0
 
+  $('.input-item-check').click ->
+    $(this).siblings('.icon').toggleClass('order-not-circle-yes')
+
+
+  $('#submit-notorder').click ->
+    count = 0
+    $('.input-item').find(':checkbox').each ()->
+      if $(this).is(':checked')
+        count++
+    if count == 0 && $.trim($('.other-reason').val()) == ''
+      alert '原因不能为空～'
+    return

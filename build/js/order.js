@@ -57,12 +57,27 @@ $(function($) {
       border: '1px dashed #777'
     });
   });
-  return $('.yy-customer-form').delegate('#yy-tags_tag', 'blur', function() {
+  $('.yy-customer-form').delegate('#yy-tags_tag', 'blur', function() {
     $('#yy-tags_tag').css({
       border: '0px dashed #777'
     });
     if ($('span.tag').length === 0) {
       return $('.yy-textarea-placeholder').show();
+    }
+  });
+  $('.input-item-check').click(function() {
+    return $(this).siblings('.icon').toggleClass('order-not-circle-yes');
+  });
+  return $('#submit-notorder').click(function() {
+    var count;
+    count = 0;
+    $('.input-item').find(':checkbox').each(function() {
+      if ($(this).is(':checked')) {
+        return count++;
+      }
+    });
+    if (count === 0 && $.trim($('.other-reason').val()) === '') {
+      alert('原因不能为空～');
     }
   });
 });
