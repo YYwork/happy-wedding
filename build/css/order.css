@@ -1,10 +1,6 @@
 @charset "UTF-8";
-
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-
-
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
-
 article,
 aside,
 details,
@@ -38,9 +34,7 @@ template {
   display: none;
 }
 
-
 /*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -51,9 +45,7 @@ body {
   margin: 0;
 }
 
-
 /*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
-
 a {
   background: transparent;
 }
@@ -63,9 +55,7 @@ a:hover {
   outline: 0;
 }
 
-
 /*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
-
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -109,9 +99,7 @@ sub {
   bottom: -0.25em;
 }
 
-
 /*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
-
 img {
   border: 0;
 }
@@ -120,9 +108,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-
 /*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
-
 figure {
   margin: 1em 40px;
 }
@@ -145,9 +131,7 @@ samp {
   font-size: 1em;
 }
 
-
 /*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
-
 button,
 input,
 optgroup,
@@ -232,9 +216,7 @@ optgroup {
   font-weight: bold;
 }
 
-
 /*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -264,22 +246,11 @@ input {
   border: 0;
 }
 
-input,
-button {
+input, button {
   outline: none;
 }
 
-.order-sprite,
-.order-center-down,
-.order-center-right,
-.order-center-x,
-.order-dui,
-.order-dui1,
-.order-dui3,
-.order-jia,
-.order-not-circle-no,
-.order-not-circle-yes,
-.order-voice {
+.order-sprite, .order-center-down, .order-center-right, .order-center-x, .order-dui, .order-dui1, .order-dui3, .order-jia, .order-not-circle-no, .order-not-circle-yes, .order-voice {
   background-image: url('../images/order-s4c7ac533c3.png');
   background-repeat: no-repeat;
 }
@@ -344,17 +315,7 @@ button {
   width: 29px;
 }
 
-.order-sprite,
-.order-center-down,
-.order-center-right,
-.order-center-x,
-.order-dui,
-.order-dui1,
-.order-dui3,
-.order-jia,
-.order-not-circle-no,
-.order-not-circle-yes,
-.order-voice {
+.order-sprite, .order-center-down, .order-center-right, .order-center-x, .order-dui, .order-dui1, .order-dui3, .order-jia, .order-not-circle-no, .order-not-circle-yes, .order-voice {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -366,7 +327,6 @@ button {
   font-family: "Hua Kang";
   src: url('../fonts/HuakangGoldW8.ttf?1018439400') format('truetype');
 }
-
 .geted-order-number {
   text-align: center;
   font-size: 0.375rem;
@@ -374,7 +334,6 @@ button {
   font-family: '微软雅黑';
   margin-top: -0.85938rem;
 }
-
 .geted-order-number span {
   color: #ffdd41;
 }
@@ -385,18 +344,15 @@ button {
   min-height: 100%;
   background-color: #ffe6ff;
 }
-
 .get-order .header.order-bg02 {
   height: 2.84375rem;
 }
-
 .get-order .header {
   width: 9.65625rem;
   margin: 0 auto;
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
 }
-
 .get-order .header .header-title {
   font-size: 0.4375rem;
   font-weight: bold;
@@ -404,22 +360,18 @@ button {
   padding: 0.45313rem 0.53125rem;
   color: #ff4d6b;
 }
-
 .get-order .header .customer-label-group {
   padding: 0.07813rem 0.53125rem;
 }
-
 .get-order .header .customer-label {
   float: left;
   color: #777;
   font-size: 0.40625rem;
   margin-right: 0.4375rem;
 }
-
 .get-order .header .cus-coin.order-dui {
   margin-right: 0.07813rem;
 }
-
 .get-order .yy-customer-form {
   margin: 0.15625rem 0.40625rem;
   background-color: #fff;
@@ -431,7 +383,6 @@ button {
   -webkit-box-shadow: #baa8ba 0.04688rem 0.04688rem 0.15625rem;
   box-shadow: #baa8ba 0.04688rem 0.04688rem 0.15625rem;
 }
-
 .get-order .yy-form-span {
   text-align: center;
   font-size: 0.53125rem;
@@ -440,21 +391,17 @@ button {
   color: #333;
   line-height: 0.84375rem;
 }
-
 .get-order .yy-form-label {
   font-size: 0.375rem;
   line-height: 0.78125rem;
 }
-
 .get-order .yy-cus-label {
   margin-left: 0.15625rem;
 }
-
 .get-order .yy-customer-tags {
   position: relative;
   overflow: hidden;
 }
-
 .get-order .yy-customer-tags .li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -476,18 +423,15 @@ button {
   padding-right: 0.23438rem;
   cursor: pointer;
 }
-
 .get-order .yy-customer-tags .order-jia,
 .get-order .yy-customer-tags .order-dui1 {
   margin: -0.0625rem 0rem 0rem 0.15625rem;
 }
-
 .get-order .yy-customer-tags .added {
   color: #fff;
   background-color: #ff4d6b;
   border: 0.01563rem solid #ff4d6b;
 }
-
 .get-order .yy-customer-tags .li-lg {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -508,17 +452,14 @@ button {
   padding-left: 0.1875rem;
   padding-right: 0.1875rem;
 }
-
 .get-order .yy-textarea {
   padding: 0.3125rem 0;
   position: relative;
 }
-
 .get-order #yy-tags_tag {
   font-size: 0.34375rem;
   line-height: 0.46875rem;
 }
-
 .get-order #yy-tags_tagsinput,
 .get-order .yy-customer-textarea {
   width: 8.59375rem;
@@ -538,7 +479,6 @@ button {
   box-sizing: border-box;
   overflow: hidden;
 }
-
 .get-order .yy-textarea-placeholder {
   position: absolute;
   top: 0.54688rem;
@@ -546,30 +486,24 @@ button {
   font-size: 0.34375rem;
   z-index: 1;
 }
-
 .get-order .yy-textarea-alert {
   position: absolute;
   right: 0.9375rem;
   bottom: 0.625rem;
   font-size: 0.34375rem;
 }
-
 .get-order .yy-textarea-alert span {
   font-size: 0.34375rem;
 }
-
 .get-order .yy-textarea-alert .yy-textarea-number {
   color: #ff4d6b;
 }
-
 .get-order .yy-textarea-text {
   display: none;
 }
-
 .get-order #yy-tags_addTag {
   z-index: 2;
 }
-
 .get-order .yy-com-btn {
   text-align: center;
   padding-top: 0.46875rem;
@@ -582,7 +516,6 @@ button {
   padding-left: 0.46875rem;
   padding-right: 0.46875rem;
 }
-
 .orders .header .title-name,
 .cus-center .header .title-name {
   font-size: 0.4375rem;
@@ -595,7 +528,6 @@ button {
   *display: inline;
   width: 49%;
 }
-
 .orders .header .center-form,
 .orders .header .description,
 .cus-center .header .center-form,
@@ -606,7 +538,6 @@ button {
   font-size: 0.40625rem;
   color: #777;
 }
-
 .orders .header .description-form,
 .cus-center .header .description-form {
   padding-left: 0.46875rem;
@@ -615,28 +546,31 @@ button {
   color: #777;
   border-top: 1px solid #e4e4e4;
 }
-
 .orders .header .description-form .input-item,
 .cus-center .header .description-form .input-item {
   border-top: 1px solid #e4e4e4;
   position: relative;
   width: 95%;
   font-family: '微软雅黑';
+  height: 1.01563rem;
+  overflow: hidden;
 }
-
 .orders .header .description-form .input-item:nth-child(1),
 .cus-center .header .description-form .input-item:nth-child(1) {
   border-top: 0;
 }
-
+.orders .header .description-form .input-item:last-child,
+.cus-center .header .description-form .input-item:last-child {
+  height: 6.25rem;
+}
 .orders .header .description-form input[type="checkbox"],
 .cus-center .header .description-form input[type="checkbox"] {
   width: 100%;
   height: 1.01563rem;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  display: block;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-
 .orders .header .description-form textarea,
 .cus-center .header .description-form textarea {
   border: 0;
@@ -644,7 +578,6 @@ button {
   outline: none;
   height: 6.25rem;
 }
-
 .orders .header .description-form label,
 .orders .header .description-form textarea,
 .cus-center .header .description-form label,
@@ -658,7 +591,6 @@ button {
   top: 0px;
   line-height: 1.01563rem;
 }
-
 .orders .header .description-form .icon,
 .cus-center .header .description-form .icon {
   position: absolute;
@@ -672,7 +604,6 @@ button {
   margin: 0 auto;
   min-height: 100%;
 }
-
 .orders .header .title-num {
   font-size: 0.3125rem;
   line-height: 0.4375rem;
@@ -687,7 +618,6 @@ button {
   vertical-align: bottom;
   color: #777;
 }
-
 .orders .header .description {
   padding-left: 1.40625rem;
   line-height: 1.01563rem;
@@ -695,7 +625,6 @@ button {
   font-size: 0.40625rem;
   color: #777;
 }
-
 .orders .geted-order {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -712,12 +641,10 @@ button {
   bottom: 0;
   width: 100%;
 }
-
 .orders .geted-order .text {
   margin-left: 0.25rem;
   font-family: "Hua Kang";
 }
-
 .orders .you-are-late {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -728,19 +655,16 @@ button {
   padding-top: 0.625rem;
   padding-bottom: 1.25rem;
 }
-
 .orders .you-are-late .text {
   margin-top: 0.46875rem;
   padding: 0;
 }
-
 .orders .to-get-order {
   position: relative;
   text-align: center;
   margin-top: 0.9375rem;
   overflow: hidden;
 }
-
 .orders .to-get-order .clock,
 .orders .to-get-order .clock-circle-change {
   display: inline-block;
@@ -749,11 +673,9 @@ button {
   *zoom: 1;
   *display: inline;
 }
-
 .orders .to-get-order .clock {
   margin-left: 2.75rem;
 }
-
 .orders .to-get-order .get-order-btn a {
   border: 0;
   display: inline-block;
@@ -762,11 +684,9 @@ button {
   *zoom: 1;
   *display: inline;
 }
-
 .orders .to-get-order .get-order-btn a:last-child {
   margin-left: 0.28125rem;
 }
-
 .orders .to-get-order .get-order-btn a button {
   text-align: center;
   font-family: "Hua Kang";
@@ -774,7 +694,6 @@ button {
   color: #000;
   margin-top: 0.39063rem;
 }
-
 .orders .to-get-order .clock-circle-text {
   position: absolute;
   top: 0.07813rem;
@@ -784,16 +703,13 @@ button {
   margin: 0.9375rem auto;
   color: #fff;
 }
-
 .orders .to-get-order .clock-time {
   font-size: 0.375rem;
 }
-
 .orders .to-get-order .clock-time-number {
   font-size: 1.5625rem;
   line-height: 1.71875rem;
 }
-
 .orders .to-get-order .circle-watch {
   position: absolute;
   top: 0.15625rem;
@@ -813,25 +729,21 @@ button {
   -webkit-animation: seconds 10s steps(360, end) 0s infinite;
   animation: seconds 10s steps(360, end) 0s infinite;
 }
-
 @-webkit-keyframes seconds {
   to {
     -webkit-transform: rotate(360deg);
   }
 }
-
 @-moz-keyframes seconds {
   to {
     -moz-transform: rotate(360deg);
   }
 }
-
 @keyframes seconds {
   to {
     transform: rotate(360deg);
   }
 }
-
 .order-bg01 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -952,7 +864,6 @@ div.tagsinput span.tag {
   margin-bottom: 0.23438rem;
   padding: 0.17188rem 0.46875rem;
 }
-
 div.tagsinput span.tag .li-lg {
   width: inherit;
   padding-left: 0.1875rem;
@@ -1022,17 +933,7 @@ div.tagsinput div {
   padding: 0;
 }
 
-.order-sprite,
-.order-center-down,
-.order-center-right,
-.order-center-x,
-.order-dui,
-.order-dui1,
-.order-dui3,
-.order-jia,
-.order-not-circle-no,
-.order-not-circle-yes,
-.order-voice {
+.order-sprite, .order-center-down, .order-center-right, .order-center-x, .order-dui, .order-dui1, .order-dui3, .order-jia, .order-not-circle-no, .order-not-circle-yes, .order-voice {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -1041,17 +942,7 @@ div.tagsinput div {
   background-size: 1.01563rem 3.60938rem;
 }
 
-.order-sprite,
-.order-center-down,
-.order-center-right,
-.order-center-x,
-.order-dui,
-.order-dui1,
-.order-dui3,
-.order-jia,
-.order-not-circle-no,
-.order-not-circle-yes,
-.order-voice,
+.order-sprite, .order-center-down, .order-center-right, .order-center-x, .order-dui, .order-dui1, .order-dui3, .order-jia, .order-not-circle-no, .order-not-circle-yes, .order-voice,
 .order-center-down,
 .order-center-right,
 .order-center-x,
@@ -1109,7 +1000,7 @@ div.tagsinput div {
 }
 
 .order-not-circle-no {
-  background-position: -0.40625rem -0.375rem;
+  background-position: -0.42188rem -0.375rem;
   height: 0.40625rem;
   width: 0.40625rem;
 }
@@ -1126,17 +1017,7 @@ div.tagsinput div {
   width: 0.45313rem;
 }
 
-.order-sprite,
-.order-center-down,
-.order-center-right,
-.order-center-x,
-.order-dui,
-.order-dui1,
-.order-dui3,
-.order-jia,
-.order-not-circle-no,
-.order-not-circle-yes,
-.order-voice,
+.order-sprite, .order-center-down, .order-center-right, .order-center-x, .order-dui, .order-dui1, .order-dui3, .order-jia, .order-not-circle-no, .order-not-circle-yes, .order-voice,
 .order-center-down,
 .order-center-right,
 .order-center-x,
