@@ -6,7 +6,7 @@ $(function() {
     $('.myorder-li-delete').toggleClass('delete-animate');
     return $('.myorder-li-loading').toggleClass('loading-animate');
   });
-  return $('.menu_option').css({
+  $('.menu_option').css({
     'visibility': 'visible'
   });
 });

@@ -1,5 +1,8 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+
 article,
 aside,
 details,
@@ -33,7 +36,9 @@ template {
   display: none;
 }
 
+
 /*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -44,7 +49,9 @@ body {
   margin: 0;
 }
 
+
 /*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+
 a {
   background: transparent;
 }
@@ -54,7 +61,9 @@ a:hover {
   outline: 0;
 }
 
+
 /*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -98,7 +107,9 @@ sub {
   bottom: -0.25em;
 }
 
+
 /*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+
 img {
   border: 0;
 }
@@ -107,7 +118,9 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+
 /*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+
 figure {
   margin: 1em 40px;
 }
@@ -130,7 +143,9 @@ samp {
   font-size: 1em;
 }
 
+
 /*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+
 button,
 input,
 optgroup,
@@ -215,7 +230,9 @@ optgroup {
   font-weight: bold;
 }
 
+
 /*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -256,8 +273,22 @@ button {
   box-sizing: border-box;
 }
 
-.myorder-sprite, .myorder-1, .myorder-2, .myorder-3, .myorder-4, .myorder-5, .myorder-6, .myorder-7, .myorder-8, .myorder-complete, .myorder-delete, .myorder-divloading, .myorder-loading, .myorder-repeat, .myorder-wawa {
-  background-image: url('../../images/myorder-sd5a2cc7999.png');
+.myorder-sprite,
+.myorder-1,
+.myorder-2,
+.myorder-3,
+.myorder-4,
+.myorder-5,
+.myorder-6,
+.myorder-7,
+.myorder-8,
+.myorder-complete,
+.myorder-delete,
+.myorder-divloading,
+.myorder-loading,
+.myorder-repeat,
+.myorder-wawa {
+  background-image: url('../images/myorder-sd5a2cc7999.png');
   background-repeat: no-repeat;
 }
 
@@ -345,7 +376,21 @@ button {
   width: 145px;
 }
 
-.myorder-sprite, .myorder-1, .myorder-2, .myorder-3, .myorder-4, .myorder-5, .myorder-6, .myorder-7, .myorder-8, .myorder-complete, .myorder-delete, .myorder-divloading, .myorder-loading, .myorder-repeat, .myorder-wawa {
+.myorder-sprite,
+.myorder-1,
+.myorder-2,
+.myorder-3,
+.myorder-4,
+.myorder-5,
+.myorder-6,
+.myorder-7,
+.myorder-8,
+.myorder-complete,
+.myorder-delete,
+.myorder-divloading,
+.myorder-loading,
+.myorder-repeat,
+.myorder-wawa {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -375,6 +420,7 @@ body {
   background-color: #fff;
   margin-bottom: 13px;
 }
+
 .myorder .has-abandoned,
 .myorder .has-robbed {
   width: 50%;
@@ -382,6 +428,7 @@ body {
   padding-left: 83px;
   color: #595757;
 }
+
 .myorder .has-abandoned .btn,
 .myorder .has-robbed .btn {
   display: inline-block;
@@ -394,6 +441,7 @@ body {
   line-height: 76px;
   border-bottom: 4px solid #fff;
 }
+
 .myorder .has-abandoned .btn.btn-active,
 .myorder .has-robbed .btn.btn-active {
   color: #ff4d6b;
@@ -411,6 +459,7 @@ body {
   display: block;
   text-decoration: none;
 }
+
 .my-order .item-header {
   overflow: hidden;
   *zoom: 1;
@@ -419,25 +468,30 @@ body {
   font-size: 0.40625rem;
   color: #595757;
 }
+
 .my-order .item-header .icon {
   line-height: 63px;
   float: left;
 }
+
 .my-order .item-header .time {
   margin-left: 24px;
   line-height: 63px;
   float: left;
 }
+
 .my-order .item-header .state {
   line-height: 63px;
   float: right;
   margin-right: 30px;
   color: #ff4d6b;
 }
+
 .my-order .item-content {
   color: #7d7d7d;
   padding: 8px 78px 8px 78px;
 }
+
 .my-order .item-content ul.item-ul li {
   font-size: 0.40625rem;
   line-height: 0.78125rem;
@@ -448,10 +502,12 @@ body {
   padding-bottom: 28px;
   text-align: center;
 }
+
 .div-loading .myorder-divloading {
   width: 30px;
   height: 30px;
 }
+
 .div-loading .textloading {
   color: #3f3f3f;
   font-size: 20px;
@@ -465,6 +521,7 @@ body {
   width: 129px;
   height: 129px;
 }
+
 .nav-circle .nav-span {
   position: absolute;
   z-index: 998;
@@ -484,6 +541,7 @@ body {
   background-color: #bebebe;
   padding: 25px;
 }
+
 .nav-circle .menu_option {
   visibility: hidden;
   position: absolute;
@@ -491,6 +549,7 @@ body {
   margin-top: 0px;
   margin-left: 30px;
 }
+
 .nav-circle .menu_option li {
   background-color: #fff;
   width: 68px;
@@ -506,14 +565,17 @@ body {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
 .nav-circle .menu_option a {
   text-decoration: none;
   color: #fff;
 }
+
 .nav-circle .menu_option .nav-icon {
   margin-top: 22px;
   margin-left: 1px;
 }
+
 .nav-circle .menu_option .nav-text {
   width: 140px;
   margin-top: 24px;
@@ -586,6 +648,7 @@ body {
   *zoom: 1;
   border-bottom: 1px solid #c9caca;
 }
+
 .my-order-list .header-left {
   float: left;
   font-size: 28px;
@@ -593,45 +656,55 @@ body {
   margin-left: 41px;
   color: #fff;
 }
+
 .my-order-list .header-left .time {
   font-size: 22px;
   margin-top: 25px;
 }
+
 .my-order-list .header-right {
   float: right;
   margin-top: 12px;
   margin-right: 65px;
 }
+
 .my-order-list .myorder-list-content {
   padding: 15px 41px;
   border-bottom: 1px solid #c9caca;
   background-color: #fff;
 }
+
 .my-order-list .list-content-ul li {
   line-height: 63px;
   border-bottom: 1px solid #c9caca;
   font-size: 26px;
   color: #777;
 }
+
 .my-order-list .list-content-ul li:last-child {
   border-bottom: 0;
 }
+
 .my-order-list .list-content-ul .list-icon {
   margin-top: -5px;
 }
+
 .my-order-list .list-content-ul .text {
   margin-left: 16px;
 }
+
 .my-order-list div.my-order-sale,
 .my-order-list div.my-order-help {
   padding: 33px 41px;
   background-color: #fff;
   margin-top: 16px;
 }
+
 .my-order-list div.my-order-sale .title,
 .my-order-list div.my-order-help .title {
   color: #ff4d6b;
 }
+
 .my-order-list div.my-order-sale .text,
 .my-order-list div.my-order-help .text {
   color: #777;
