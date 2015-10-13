@@ -245,8 +245,15 @@ input {
   border: 0;
 }
 
-input, button {
+input,
+button {
   outline: none;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -264,7 +271,7 @@ body {
 }
 
 .card-sprite, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x {
-  background-image: url('../images/card-sebc77be963.png');
+  background-image: url('../../images/card-sebc77be963.png');
   background-repeat: no-repeat;
 }
 
@@ -337,8 +344,18 @@ body {
   background-size: 4.625rem 7.32813rem;
 }
 
-.card-sprite, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x {
-  background-image: url("../images/card-sebc77be963.png");
+.card-sprite, .card-down-up, .card-down, .card-end, .card-endred, .card-ico01, .card-ico02, .card-line, .card-used, .card-usedred, .card-x,
+.card-down-up,
+.card-down,
+.card-end,
+.card-endred,
+.card-ico01,
+.card-ico02,
+.card-line,
+.card-used,
+.card-usedred,
+.card-x {
+  background-image: url("../../images/card-sebc77be963.png");
   background-repeat: no-repeat;
 }
 

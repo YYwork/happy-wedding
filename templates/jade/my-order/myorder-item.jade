@@ -1,0 +1,51 @@
+extends ../m-layout.jade
+
+block title
+  title 订单列表
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/myorder.css")
+block js
+  script(src="../../js/jquery.min.js")
+block body
+  body
+    div.my-order-list
+      header.header
+        div.header-left
+          div 奖励已发放
+          .time 2016-10-01 8:25
+        div.header-right
+          span.myorder-wawa
+      div.myorder-list-content
+        ul.list-content-ul
+          li
+            span.list-icon.myorder-1
+            span.text 姓名：喜多多
+          li
+            span.list-icon.myorder-2
+            span.text 电话：12345678900
+          li
+            span.list-icon.myorder-3
+            span.text 婚期：2016-10-01(周五)午宴
+          li
+            span.list-icon.myorder-4
+            span.text 商圈：东三环
+          li
+            span.list-icon.myorder-5
+            span.text 桌数：20-22桌
+          li
+            span.list-icon.myorder-6
+            span.text 餐标：3000-4000/桌
+          li
+            span.list-icon.myorder-7
+            span.text 其他：客人要求无柱宴会厅
+          li
+            span.list-icon.myorder-8
+            span.text 用户希望：赠送婚房，化妆间
+      div.my-order-sale
+        div.title 我提供的优惠：
+        div.text 赠送婚房，免费停车位，免开酒费，赠送婚房，免费停车位，免开酒费
+      div.my-order-help
+        div.title 备注：
+        div.text 已发放20元奖励
+

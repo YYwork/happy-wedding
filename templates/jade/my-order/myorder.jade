@@ -1,0 +1,91 @@
+extends ../m-layout.jade
+
+block title
+  title 我的订单
+
+block css
+  link(rel="stylesheet" type="text/css" href="../../css/myorder.css")
+block js
+  script(src="../../js/jquery.min.js")
+block body
+  body
+    header.myorder
+      a.has-abandoned(href="myorder.html")
+        span.btn.btn-active 已抛订单
+      a.has-robbed(href="myorder2.html")
+        span.btn 已抢订单
+    div.myorder-content
+      a.my-order(href="myorder-list.html")
+        .item-header
+          .icon.myorder-loading
+          .time 2016-10-01 8:25
+          .state 跟进中
+        .item-content
+          ul.item-ul
+            li 姓名：张贤胜
+            li 婚期：2015-5-20
+            li 手机号：18628292929
+            li 商圈：国贸，双井
+      a.my-order(href="myorder-list.html")
+        .item-header
+          .icon.myorder-delete
+          .time 2016-10-01 8:25
+          .state 已取消
+        .item-content
+          ul.item-ul
+            li 姓名：张贤胜
+            li 婚期：2015-5-20
+            li 手机号：18628292929
+            li 商圈：国贸，双井
+      a.my-order(href="myorder-list.html")
+        .item-header
+          .icon.myorder-repeat
+          .time 2016-10-01 8:25
+          .state 重单
+        .item-content
+          ul.item-ul
+            li 姓名：张贤胜
+            li 婚期：2015-5-20
+            li 手机号：18628292929
+            li 商圈：国贸，双井
+      a.my-order(href="myorder-list.html")
+        .item-header
+          .icon.myorder-complete
+          .time 2016-10-01 8:25
+          .state 奖励已发放
+        .item-content
+          ul.item-ul
+            li 姓名：张贤胜
+            li 婚期：2015-5-20
+            li 手机号：18628292929
+            li 商圈：国贸，双井
+      .div-loading
+        span.myorder-divloading
+        span.textloading 努力加在中....
+    div.nav-cover
+    nav#nav-circle.nav-circle
+      input#menu(type='checkbox', name='menu')
+      .nav-cover
+      label.nav-span(for='menu')
+        | 筛选
+        br
+        | 条件
+      ul.menu_option
+        li.myorder-li-complete
+          a(href='myorder-list.html')
+            span.nav-icon.myorder-complete
+            .nav-text 已发放奖励
+        li.myorder-li-repeat
+          a(href='myorder-list.html')
+            span.nav-icon.myorder-repeat
+            .nav-text 重单
+        li.myorder-li-delete
+          a(href='myorder-list.html')
+            span.nav-icon.myorder-delete
+            .nav-text 已取消
+        li.myorder-li-loading
+          a(href='myorder-list.html')
+            span.nav-icon.myorder-loading
+            .nav-text 跟进中
+
+

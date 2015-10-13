@@ -28,6 +28,11 @@ input {
   border: 0;
 }
 
-input, button {
+input,
+button {
   outline: none;
+}
+
+* {
+  @include box-sizing(border-box);
 }

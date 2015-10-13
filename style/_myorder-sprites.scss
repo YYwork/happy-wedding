@@ -1,0 +1,11 @@
+@import 'compass';
+@import "compass/utilities/sprites";
+$myorder-sprite-dimensions:true;
+$myorder-layout:smart;
+@import "myorder/*.png";
+@include all-myorder-sprites();
+$dpr: 64;
+.myorder-sprite {
+  @include inline-block;
+  //background-size: 296rem/$dpr 469rem/$dpr;
+}
