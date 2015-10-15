@@ -17,11 +17,6 @@ $(function($) {
     width: '100%',
     height: '220px',
     onAddTag: function(tag) {
-      if ($('span.tag').length <= 5) {
-        $('.yy-textarea-number').html(5 - $('span.tag').length);
-      } else {
-        $('#yy-tags').removeTag($('span.tag')[5].innerText);
-      }
       return $('.yy-customer-tags li').each(function() {
         if ($(this).text() === tag) {
           return changeTagLiStyle($(this));
@@ -29,7 +24,6 @@ $(function($) {
       });
     },
     onRemoveTag: function(tag) {
-      $('.yy-textarea-number').html(5 - $('span.tag').length);
       return $('.yy-customer-tags li').each(function() {
         if ($(this).text() === tag) {
           return changeTagLiStyle($(this));
@@ -68,7 +62,7 @@ $(function($) {
   $('.input-item-check').click(function() {
     return $(this).siblings('.icon').toggleClass('order-not-circle-yes');
   });
-  return $('#submit-notorder').click(function() {
+  $('#submit-notorder').click(function() {
     var count;
     count = 0;
     $('.input-item').find(':checkbox').each(function() {
@@ -80,4 +74,7 @@ $(function($) {
       alert('原因不能为空～');
     }
   });
+  if ($('.long-text').text().length <= 22) {
+    $('.long-point').hide();
+  }
 });

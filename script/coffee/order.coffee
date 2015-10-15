@@ -14,16 +14,16 @@ $ ($) ->
     width: '100%'
     height: '220px'
     onAddTag: (tag)->
-      if $('span.tag').length <= 5
-        $('.yy-textarea-number').html 5 - $('span.tag').length
-      else
-        $('#yy-tags').removeTag $('span.tag')[5].innerText
+      # if $('span.tag').length <= 5
+      #   $('.yy-textarea-number').html 5 - $('span.tag').length
+      # else
+      #   $('#yy-tags').removeTag $('span.tag')[5].innerText
 
       $('.yy-customer-tags li').each ()->
         if $(this).text() == tag
           changeTagLiStyle($(this))
     onRemoveTag: (tag)->
-      $('.yy-textarea-number').html 5 - $('span.tag').length
+      # $('.yy-textarea-number').html 5 - $('span.tag').length
       $('.yy-customer-tags li').each ()->
         if $(this).text() == tag
           changeTagLiStyle($(this))
@@ -69,4 +69,9 @@ $ ($) ->
         count++
     if count == 0 && $.trim($('.other-reason').val()) == ''
       alert '原因不能为空～'
+    return
+
+
+  if $('.long-text').text().length <= 22
+    $('.long-point').hide()
     return

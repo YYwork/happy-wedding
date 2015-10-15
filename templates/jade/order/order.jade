@@ -5,6 +5,14 @@ block title
 
 block css
   link(rel="stylesheet" type="text/css" href="../../css/order.css")
+block js
+  script(src="../../js/jquery.min.js")
+  script.
+    $(function() {
+      if ($('.long-text').text().length <= 22) {
+        $('.long-point').hide();
+      }
+    })
 block body
   body
     div.orders.order-bg01
@@ -15,7 +23,8 @@ block body
         div.description
          div
           label 婚期 ：
-          |2016-10-01（周五）午宴
+          span.long-text 2016-10-01（周五）午宴, 2016-10-01（周五）午宴, 2016-10-01（周五）午宴
+          span.long-point ...
          div
           label 位置 ：
           |东三环，
