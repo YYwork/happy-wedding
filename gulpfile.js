@@ -113,14 +113,14 @@ gulp.task('copy:jslib:watch', function() {
 gulp.task('build', [
   'copy',
   'compass',
-  //'jade',
+  'jade',
   'coffee'
 ]);
 gulp.task('watch', [
   'copy:images:watch',
   'copy:jslib:watch',
   'compass:watch',
-  //'jade:watch',
+  'jade:watch',
   'coffee:watch'
 ]);
 
