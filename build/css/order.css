@@ -258,7 +258,7 @@ button {
 }
 
 .order-sprite, .order-center-down, .order-center-right, .order-center-x, .order-dui, .order-dui1, .order-dui3, .order-jia, .order-not-circle-no, .order-not-circle-yes, .order-voice {
-  background-image: url('../../images/order-s4c7ac533c3.png');
+  background-image: url('../images/order-s4c7ac533c3.png');
   background-repeat: no-repeat;
 }
 
@@ -332,7 +332,7 @@ button {
 
 @font-face {
   font-family: "Hua Kang";
-  src: url('../../fonts/HuakangGoldW8.ttf?1018439400') format('truetype');
+  src: url('../fonts/HuakangGoldW8.ttf?1018439400') format('truetype');
 }
 #yy-tags_tagsinput {
   overflow: scroll;
@@ -972,7 +972,7 @@ div.tagsinput div {
 .order-not-circle-no,
 .order-not-circle-yes,
 .order-voice {
-  background-image: url("../../images/order-s4c7ac533c3.png");
+  background-image: url("../images/order-s4c7ac533c3.png");
   background-repeat: no-repeat;
 }
 
